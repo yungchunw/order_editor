@@ -552,7 +552,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.model = QtGui.QStandardItemModel(self)
         self.proxy = QSortFilterProxyModel(self)
 
-        with open('./ERP/'+filename, "r") as fileInput:
+        with open('./ERP/'+filename, "r",encoding="utf8") as fileInput:
             for row in csv.reader(fileInput):
                 items = [
                     QtGui.QStandardItem(field)
