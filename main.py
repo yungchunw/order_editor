@@ -65,10 +65,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_list.clicked.connect(self.jsonclicked)
 
 
-        self.customer_load_btn.clicked.connect(lambda: self.loadCsv('./ERP/customerItem.csv',self.customer_view))
+        self.customer_load_btn.clicked.connect(lambda: self.loadCsv('customerItem.csv',self.customer_view))
         self.customer_search.textChanged.connect(self.filter)
 
-        self.loadCsv('./ERP/currency.csv',self.currency_view)
+        self.loadCsv('currency.csv',self.currency_view)
 
 
     def checkEdit(self, item, column):
@@ -547,32 +547,22 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 mylist.addItem(str(item))
             mylist.repaint()
 
-
     def loadCsv(self,filename,view):
         items = []
-        self.db = QSqlDatabase.addDatabase("QSQLITE")
-        self.db.setDatabaseName("./ERP/customerlist.db")
-        self.db.open()
-        self.model = QSqlQueryModel(self)
-        self.model.setQuery("SELECT * FROM customerItem", self.db)
-
-        self.column = self.model.columnCount()	#獲取列數
-        self.row = self.model.rowCount()		#獲取行數
-
-        # self.model = QtGui.QStandardItemModel(self)
+        self.model = QtGui.QStandardItemModel(self)
         self.proxy = QSortFilterProxyModel(self)
 
-        # with open(filename, "r", encoding='utf8') as fileInput:
-        #     for row in csv.reader(fileInput):
-        #         items = [
-        #             QtGui.QStandardItem(field)
-        #             for field in row
-        #         ]
-        #         self.model.appendRow(items)
-        # labels = []
-        # for i in range(self.model.columnCount()):
-        #     labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
-        # self.model.setHorizontalHeaderLabels(labels)
+        with open('./ERP/'+filename, "r") as fileInput:
+            for row in csv.reader(fileInput):
+                items = [
+                    QtGui.QStandardItem(field)
+                    for field in row
+                ]
+                self.model.appendRow(items)
+        labels = []
+        for i in range(self.model.columnCount()):
+            labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
+        self.model.setHorizontalHeaderLabels(labels)
 
         self.customer_view.horizontalHeader()
         self.model.removeRow(0)
@@ -584,6 +574,42 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
 
         view.horizontalHeader().setStretchLastSection(True)
+    # def loadCsv(self,filename,view):
+    #     items = []
+    #     self.db = QSqlDatabase.addDatabase("QSQLITE")
+    #     self.db.setDatabaseName("./ERP/customerlist.db")
+    #     self.db.open()
+    #     self.model = QSqlQueryModel(self)
+    #     self.model.setQuery("SELECT * FROM customerItem", self.db)
+
+    #     self.column = self.model.columnCount()	#獲取列數
+    #     self.row = self.model.rowCount()		#獲取行數
+
+    #     # self.model = QtGui.QStandardItemModel(self)
+    #     self.proxy = QSortFilterProxyModel(self)
+
+    #     # with open(filename, "r", encoding='utf8') as fileInput:
+    #     #     for row in csv.reader(fileInput):
+    #     #         items = [
+    #     #             QtGui.QStandardItem(field)
+    #     #             for field in row
+    #     #         ]
+    #     #         self.model.appendRow(items)
+    #     # labels = []
+    #     # for i in range(self.model.columnCount()):
+    #     #     labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
+    #     # self.model.setHorizontalHeaderLabels(labels)
+
+    #     self.customer_view.horizontalHeader()
+    #     self.model.removeRow(0)
+    #     self.proxy.setSourceModel(self.model)
+    #     self.proxy.setFilterKeyColumn(self.model.columnCount()-1)
+    #     view.setModel(self.proxy)
+    #     view.setEditTriggers(QAbstractItemView.NoEditTriggers)
+    #     for c in range(view.horizontalHeader().count()):
+    #         view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
+
+    #     view.horizontalHeader().setStretchLastSection(True)
 
     @QtCore.pyqtSlot(str)
     def filter(self, text):
