@@ -7,6 +7,11 @@ DSU OrderEditor
 
 ### Update
 
+2020-02-03:
+- v3.0.2 release
+- 料號收尋功能優化
+- Bug fix
+
 2019-11-22:
 - Bug fix
 - 訂單圖檔可縮放
