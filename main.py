@@ -588,8 +588,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.model = QSqlQueryModel(self)
         self.model.setQuery(query, self.db)
         
-        while self.model.canFetchMore():
-            self.model.fetchMore()
+        # while self.model.canFetchMore():
+        #     self.model.fetchMore()
 
         self.column = self.model.columnCount()	#獲取列數
         self.row = self.model.rowCount()		#獲取行數
