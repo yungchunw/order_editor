@@ -5,10 +5,10 @@ import os
 import json
 import csv
 import pandas as pd
-from UI import *
+from UI2 import *
 from PyQt5.QtWidgets import QTreeWidgetItem, QApplication, QHeaderView, QAbstractItemView
 from PyQt5.QtWidgets import QMainWindow, QMessageBox, QLabel, QMenu,QAction
-from PyQt5.QtGui import QPixmap, QImage
+from PyQt5.QtGui import QPixmap, QImage, QFont
 from PyQt5.QtCore import Qt, QSortFilterProxyModel
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel
 
@@ -34,12 +34,16 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_key = []
         self.oring_json={}
 
+        # setup database
+        self.db = QSqlDatabase.addDatabase("QSQLITE")
+        self.db.setDatabaseName("./ERP/customerItem.db")
+        self.db.open()
 
         # read shipaddr csv
 
         self.df_addr = pd.read_csv('./ERP/addr_df.csv',encoding='utf8')
 
-        self.vNum = QLabel('Version:3.0.0')
+        self.vNum = QLabel('Version:3.0.3')
         self.treeWidget.header().setDefaultSectionSize(210)
         self.treeWidget.itemDoubleClicked.connect(self.checkEdit)
 
@@ -64,12 +68,48 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.json_list.clicked.connect(self.jsonclicked)
 
+        self.read_comparelist_btn.clicked.connect(self.comparelist_import)
 
-        self.customer_load_btn.clicked.connect(lambda: self.loadCsv('./ERP/customerItem.csv',self.customer_view))
-        self.customer_search.textChanged.connect(self.filter)
+        self.customer_load_btn.clicked.connect(lambda: self.setQuery(self.customer_view))
+        self.customer_search.textChanged.connect(lambda: self.setQuery(self.customer_view))
 
         self.loadCsv('./ERP/currency.csv',self.currency_view)
+        # self.loadDB("./ERP/customerItem.db",self.customer_view)
 
+    def comparelist_import(self):
+        try:
+            path = (QtWidgets.QFileDialog.getOpenFileNames(None, 'Select File', '')[0])
+            path = path[0]
+
+            df = pd.read_excel(path,index_col=False,encoding='utf8')
+            df.fillna('',inplace=True)
+            view = self.compare_view
+            items=[]
+            labels = []
+            self.model = QtGui.QStandardItemModel(self)
+            self.proxy = QSortFilterProxyModel(self)
+
+            for col in df.columns:
+                items.append(QtGui.QStandardItem(col))
+            self.model.appendRow(items)
+
+            for index, row in df.iterrows():
+                items = [ QtGui.QStandardItem(str(field)) for field in row ]
+                self.model.appendRow(items)
+
+            for i in range(self.model.columnCount()):
+                labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
+            self.model.setHorizontalHeaderLabels(labels)
+
+            
+            view.setModel(self.model)
+            view.setFont(QFont("Tahoma", 10))
+            self.model.removeRow(0)
+            view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeToContents)
+            view.verticalHeader().setSectionResizeMode(QHeaderView.Fixed)
+            view.horizontalHeader().setStretchLastSection(True)
+        except :
+            pass
 
     def checkEdit(self, item, column):
         # allow editing only of column 1:
@@ -154,6 +194,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         else:
             return item.text(1)
 
+
     def change_color(self):
 
         # setting 'shipaddr' color
@@ -179,9 +220,14 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         all_child = []
 
         toplevel = self.treeWidget.topLevelItem(0)  # content
+        # toplevel = self.get_header(toplevel)
+        clist = self.treeWidget.findItems('header',Qt.MatchContains | Qt.MatchRecursive, 0)
+        toplevel = clist[0].parent() 
+
+        
         for ch in range(toplevel.childCount()):
             item = toplevel.child(ch)  # header & line
-            if ch == 1:
+            if item.text(0) == 'line':
                 nchild = item.childCount()  # line 的 child
                 for i in range(nchild):
                     all_child.append(item.child(i))
@@ -200,7 +246,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 elif item.child(i).text(0) in level_2:
                     item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#98cf19")))
                     item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#98cf19")))
-                elif item.child(i).text(0) in level_0:
+                elif item.child(i).text(0) in level_0 or 'id' in item.child(i).text(0).lower():
                     item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#34383C")))
                     item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#34383C")))
 
@@ -208,7 +254,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
     def insert_line(self):
         try:
             current = self.treeWidget.currentItem()
-            parent = self.treeWidget.topLevelItem(0).child(1)  # line
+            clist = self.treeWidget.findItems('line',Qt.MatchContains | Qt.MatchRecursive, 0)
+            parent = clist[0]
+            # parent = self.treeWidget.topLevelItem(0).child(1)  # line
             line_num = self.parent_is_line(current)
 
             if line_num :
@@ -229,7 +277,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
     def create_line(self):
 
         try:
-            parent = self.treeWidget.topLevelItem(0).child(1)
+            clist = self.treeWidget.findItems('line',Qt.MatchContains | Qt.MatchRecursive, 0)
+            parent = clist[0]
+            # parent = self.treeWidget.topLevelItem(0).child(1)
             line_num = parent.childCount()+1
             result = QMessageBox.question(None, 'Delete line', '\nDo you want to create line %d？' % (line_num),
                                           QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
@@ -249,7 +299,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         try :
             current = self.treeWidget.currentItem()
-            parent = self.treeWidget.topLevelItem(0).child(1) # line
+            clist = self.treeWidget.findItems('line',Qt.MatchContains | Qt.MatchRecursive, 0)
+            parent = clist[0]
+            # parent = self.treeWidget.topLevelItem(0).child(1) # line
             line_num = self.parent_is_line(current)
 
             if line_num :
@@ -398,6 +450,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             self.img_view.setPhoto(QtGui.QPixmap('%s/%s' % (self.img_dir, _img)))
             self.order_name.setText("Order Name:%s" % (_img))
             self.order_name.repaint()
+            self.statusBar.showMessage('Order Name:%s' % (_img), 0)
+            self.compare_img_name.setText("Cust Key : %s" % (_img.split('_')[2]) )
+            self.compare_img_name.repaint()
+
 
         except :
             QtWidgets.QMessageBox.warning(None, 'Fail', '\nImage Error, Try again！', QtWidgets.QMessageBox.Ok)
@@ -534,7 +590,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         df = self.df_addr
         file_name = self.json_list.currentItem().text().split('_')
         # name = file_name[0]+'@'+file_name[1]
-        name = file_name[0]+'@'
+        name = file_name[2]+'@'
         # print(name)
         addr_list = ['SHIP_TO','BILL_TO','DELIVER_TO']
 
@@ -547,34 +603,23 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 mylist.addItem(str(item))
             mylist.repaint()
 
-
     def loadCsv(self,filename,view):
         items = []
-        self.db = QSqlDatabase.addDatabase("QSQLITE")
-        self.db.setDatabaseName("./ERP/customerlist.db")
-        self.db.open()
-        self.model = QSqlQueryModel(self)
-        self.model.setQuery("SELECT * FROM customerItem", self.db)
-
-        self.column = self.model.columnCount()	#獲取列數
-        self.row = self.model.rowCount()		#獲取行數
-
-        # self.model = QtGui.QStandardItemModel(self)
+        self.model = QtGui.QStandardItemModel(self)
         self.proxy = QSortFilterProxyModel(self)
 
-        # with open(filename, "r", encoding='utf8') as fileInput:
-        #     for row in csv.reader(fileInput):
-        #         items = [
-        #             QtGui.QStandardItem(field)
-        #             for field in row
-        #         ]
-        #         self.model.appendRow(items)
-        # labels = []
-        # for i in range(self.model.columnCount()):
-        #     labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
-        # self.model.setHorizontalHeaderLabels(labels)
+        with open(filename, "r",encoding="utf8") as fileInput:
+            for row in csv.reader(fileInput):
+ 
+                items = [QtGui.QStandardItem(field) for field in row]
 
-        self.customer_view.horizontalHeader()
+                self.model.appendRow(items)
+        labels = []
+        for i in range(self.model.columnCount()):
+            labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
+        self.model.setHorizontalHeaderLabels(labels)
+
+        view.horizontalHeader()
         self.model.removeRow(0)
         self.proxy.setSourceModel(self.model)
         self.proxy.setFilterKeyColumn(self.model.columnCount()-1)
@@ -585,14 +630,49 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         view.horizontalHeader().setStretchLastSection(True)
 
-    @QtCore.pyqtSlot(str)
-    def filter(self, text):
-        search = QtCore.QRegExp(text,
-                                QtCore.Qt.CaseInsensitive,
-                                QtCore.QRegExp.RegExp
-                                )
+    def setQuery(self,view):
 
-        self.proxy.setFilterRegExp(search)
+        text = self.customer_search.text()
+
+        query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER LIKE \"%{}%\"'.format(text)
+
+        self.model = QSqlQueryModel(self)
+        self.model.setQuery(query, self.db)
+        
+        # while self.model.canFetchMore():
+        #     self.model.fetchMore()
+
+        self.column = self.model.columnCount()	#獲取列數
+        self.row = self.model.rowCount()		#獲取行數
+        print(self.row)
+
+        # self.model = QtGui.QStandardItemModel(self)
+        self.proxy = QSortFilterProxyModel(self)
+
+        view.horizontalHeader()
+        self.model.removeRow(0)
+        self.proxy.setSourceModel(self.model)
+        self.proxy.setFilterKeyColumn(self.model.columnCount()-1)
+        view.setModel(self.proxy)
+        view.setSortingEnabled(True)
+        view.setEditTriggers(QAbstractItemView.NoEditTriggers)
+
+        view.resizeColumnsToContents()
+        # for c in range(view.horizontalHeader().count()):
+        #     view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
+
+        view.horizontalHeader().setStretchLastSection(True)
+
+
+
+    # @QtCore.pyqtSlot(str)
+    # def filter(self, text):
+    #     search = QtCore.QRegExp(text,
+    #                             QtCore.Qt.CaseInsensitive,
+    #                             QtCore.QRegExp.RegExp
+    #                             )
+
+    #     self.proxy.setFilterRegExp(search)
 
     def closeEvent(self, event):
         summary = 'Confirm Exit'
