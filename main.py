@@ -43,7 +43,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.df_addr = pd.read_csv('./ERP/addr_df.csv',encoding='utf8')
 
-        self.vNum = QLabel('Version:3.0.3')
+        self.vNum = QLabel('Version:3.0.4')
         self.treeWidget.header().setDefaultSectionSize(210)
         self.treeWidget.itemDoubleClicked.connect(self.checkEdit)
 
@@ -243,6 +243,11 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 if item.child(i).text(0) in level_3:
                     item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
                     item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
+                    query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER LIKE \"%{}%\"'.format(item.child(i).text(1))
+                    model = QSqlQueryModel(self)
+                    model.setQuery(query, self.db)
+                    if model.rowCount() > 0:
+                        item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38")))
                 elif item.child(i).text(0) in level_2:
                     item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#98cf19")))
                     item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#98cf19")))
