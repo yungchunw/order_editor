@@ -243,7 +243,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 if item.child(i).text(0) in level_3:
                     item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
                     item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
-                    query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER LIKE \"%{}%\"'.format(item.child(i).text(1))
+                    query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER = \"{}\"'.format(item.child(i).text(1))
+                    print(query)
                     model = QSqlQueryModel(self)
                     model.setQuery(query, self.db)
                     if model.rowCount() > 0:
