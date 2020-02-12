@@ -5,6 +5,8 @@ import os
 import json
 import csv
 import pandas as pd
+import configparser
+import traceback
 from UI2 import *
 from PyQt5.QtWidgets import QTreeWidgetItem, QApplication, QHeaderView, QAbstractItemView
 from PyQt5.QtWidgets import QMainWindow, QMessageBox, QLabel, QMenu,QAction
@@ -33,6 +35,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_file= []
         self.json_key = []
         self.oring_json={}
+
+        # setup config
+        self.config = configparser.ConfigParser()
+        self.config.read("./config/setting.cfg")
 
         # setup database
         self.db = QSqlDatabase.addDatabase("QSQLITE")
@@ -244,7 +250,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
                     item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
                     query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER = \"{}\"'.format(item.child(i).text(1))
-                    print(query)
+                    # print(query)
                     model = QSqlQueryModel(self)
                     model.setQuery(query, self.db)
                     if model.rowCount() > 0:
@@ -509,9 +515,19 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     self.jsonlist(self.json_file[0])
 
                     self.treeWidget.customContextMenuRequested.connect(self.openMenu)
-            except :
 
-                QtWidgets.QMessageBox.information(None, 'Json path Error', '\nJson files error, Try again...', QtWidgets.QMessageBox.Ok)
+            except Exception as e:
+                error_class = e.__class__.__name__ #取得錯誤類型
+                detail = e.args[0] #取得詳細內容
+                cl, exc, tb = sys.exc_info() #取得Call Stack
+                lastCallStack = traceback.extract_tb(tb)[-1] #取得Call Stack的最後一筆資料
+                fileName = lastCallStack[0] #取得發生的檔案名稱
+                lineNum = lastCallStack[1] #取得發生的行號
+                funcName = lastCallStack[2] #取得發生的函數名稱
+                errMsg = "File \"{}\", line {}, in {}: [{}] {}".format(fileName, lineNum, funcName, error_class, detail)
+                print(errMsg)
+
+                QtWidgets.QMessageBox.information(None, 'Exception', errMsg, QtWidgets.QMessageBox.Ok)
 
         else:
             QtWidgets.QMessageBox.information(None, 'Json path Error', '\nPlease setting the path of image first!', QtWidgets.QMessageBox.Ok)
@@ -596,7 +612,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         df = self.df_addr
         file_name = self.json_list.currentItem().text().split('_')
         # name = file_name[0]+'@'+file_name[1]
-        name = file_name[2]+'@'
+        key = self.config.getint("DEFAULT","cust_key")
+        name = file_name[key]+'@'
         # print(name)
         addr_list = ['SHIP_TO','BILL_TO','DELIVER_TO']
 
