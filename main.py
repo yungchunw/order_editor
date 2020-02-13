@@ -225,43 +225,44 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         all_child = []
 
-        toplevel = self.treeWidget.topLevelItem(0)  # content
+        # toplevel = self.treeWidget.topLevelItem(0)  # content
         # toplevel = self.get_header(toplevel)
-        clist = self.treeWidget.findItems('header',Qt.MatchContains | Qt.MatchRecursive, 0)
-        toplevel = clist[0].parent() 
+        try:
+            clist = self.treeWidget.findItems('header',Qt.MatchContains | Qt.MatchRecursive, 0)
+            toplevel = clist[0].parent() 
 
-        
-        for ch in range(toplevel.childCount()):
-            item = toplevel.child(ch)  # header & line
-            if item.text(0) == 'line':
-                nchild = item.childCount()  # line 的 child
+            for ch in range(toplevel.childCount()):
+                item = toplevel.child(ch)  # header & line
+                if item.text(0) == 'line':
+                    nchild = item.childCount()  # line 的 child
+                    for i in range(nchild):
+                        all_child.append(item.child(i))
+                else:
+                    all_child.append(item)
+
+            for item in all_child:
+                nchild = item.childCount()
                 for i in range(nchild):
-                    all_child.append(item.child(i))
-            else:
-                all_child.append(item)
-
-        for item in all_child:
-            nchild = item.childCount()
-            for i in range(nchild):
-                # hide columns with 'ID' 2019-11-21
-                if  'ID' in item.child(i).text(0):
-                    item.child(i).setHidden(True);
-                if item.child(i).text(0) in level_3:
-                    item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
-                    item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
-                    query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER = \"{}\"'.format(item.child(i).text(1))
-                    # print(query)
-                    model = QSqlQueryModel(self)
-                    model.setQuery(query, self.db)
-                    if model.rowCount() > 0:
-                        item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38")))
-                elif item.child(i).text(0) in level_2:
-                    item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#98cf19")))
-                    item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#98cf19")))
-                elif item.child(i).text(0) in level_0 or 'id' in item.child(i).text(0).lower():
-                    item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#34383C")))
-                    item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#34383C")))
-
+                    # hide columns with 'ID' 2019-11-21
+                    if  'ID' in item.child(i).text(0):
+                        item.child(i).setHidden(True);
+                    if item.child(i).text(0) in level_3:
+                        item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
+                        item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
+                        query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER = \"{}\"'.format(item.child(i).text(1))
+                        # print(query)
+                        model = QSqlQueryModel(self)
+                        model.setQuery(query, self.db)
+                        if model.rowCount() > 0:
+                            item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38")))
+                    elif item.child(i).text(0) in level_2:
+                        item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#98cf19")))
+                        item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#98cf19")))
+                    elif item.child(i).text(0) in level_0 or 'id' in item.child(i).text(0).lower():
+                        item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#34383C")))
+                        item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#34383C")))
+        except:
+            QtWidgets.QMessageBox.information(None, 'NoData', '\nJson format Error.\n There is no \'header\' or \'line\' in content.', QtWidgets.QMessageBox.Ok)
 
     def insert_line(self):
         try:
