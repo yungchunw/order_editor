@@ -668,7 +668,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.column = self.model.columnCount()	#獲取列數
         self.row = self.model.rowCount()		#獲取行數
-        print(self.row)
+        #print(self.row)
 
         # self.model = QtGui.QStandardItemModel(self)
         self.proxy = QSortFilterProxyModel(self)
