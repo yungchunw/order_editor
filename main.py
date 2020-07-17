@@ -8,6 +8,8 @@ import pandas as pd
 import configparser
 import traceback
 from UI2 import *
+import fitz
+from PyPDF2 import PdfFileReader, PdfFileWriter
 from PyQt5.QtWidgets import QTreeWidgetItem, QApplication, QHeaderView, QAbstractItemView
 from PyQt5.QtWidgets import QMainWindow, QMessageBox, QLabel, QMenu,QAction
 from PyQt5.QtGui import QPixmap, QImage, QFont
@@ -47,7 +49,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         # read shipaddr csv
 
-        self.df_addr = pd.read_csv('./ERP/addr_df.csv',encoding='utf8')
+        self.df_addr = pd.read_csv('./ERP/active_address_table.csv',encoding='utf8',dtype=str)
 
         self.vNum = QLabel('Version:3.0.4')
         self.treeWidget.header().setDefaultSectionSize(210)
@@ -249,7 +251,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     if item.child(i).text(0) in level_3:
                         item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
                         item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
-                        query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER = \"{}\"'.format(item.child(i).text(1))
+                        query = 'SELECT * FROM customerItem WHERE cust_part_no = \"{}\"'.format(item.child(i).text(1))
                         # print(query)
                         model = QSqlQueryModel(self)
                         model.setQuery(query, self.db)
@@ -440,14 +442,30 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
     def imgpath(self):
 
-        path = QtWidgets.QFileDialog.getExistingDirectory(None, 'folder name', './')
+        fdir = QtWidgets.QFileDialog.getExistingDirectory(None, 'folder name', './')
 
-        if path != '':
-            self.img_dir = path
-            self.statusBar.showMessage('Image path:%s'%(self.img_dir),0)
+        if fdir != '':
+            
+            self.statusBar.showMessage('Image path:%s'%(fdir),0)
 
 
-
+            self.pdf_file = [f for f in os.listdir(fdir) if not f.startswith('.')]
+            if not os.path.exists('./tmp'):
+                os.mkdir('./tmp')
+            for f in self.pdf_file:
+                fpath = '%s/%s' % (fdir, f)
+                doc = fitz.open(fpath)
+                pages = PdfFileReader(open(fpath, "rb"), strict=False).numPages
+                for i in range(0,pages):
+                    page = doc.loadPage(i) #number of page
+                    zoom_x = 3 #(1.33333333-->1056x816)   (2-->1584x1224)
+                    zoom_y = 3
+                    mat = fitz.Matrix(zoom_x, zoom_y).preRotate(0)
+                    pix = page.getPixmap(matrix=mat, alpha=False)
+                    output = "./tmp/{}_{}.png".format(f.split('.pdf')[0],i)
+                    pix.writePNG(output)
+            
+            self.img_dir = './tmp'
             self.img_file = [f for f in os.listdir(self.img_dir) if not f.startswith('.')]
             self.img_file.sort()
 
@@ -570,6 +588,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         count = 0
 
 
+
         js_key = '_'.join(_json.split('.')[0].split('_')[0:3])
         for file in self.img_file:
             if js_key in file:
@@ -613,17 +632,21 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         df = self.df_addr
         file_name = self.json_list.currentItem().text().split('_')
         # name = file_name[0]+'@'+file_name[1]
-        key = self.config.getint("DEFAULT","cust_key")
-        name = file_name[key]+'@'
-        # print(name)
+        cust_key = self.config.getint("DEFAULT","cust_key")
+        ou_key = self.config.getint("DEFAULT","ou_key")
+        cust_id = file_name[cust_key]
+        ou_id = file_name[ou_key]
+        # print(cust_id,ou_id,'==============')
+        
+        
         addr_list = ['SHIP_TO','BILL_TO','DELIVER_TO']
 
         for use_code in addr_list:
-            addr = df[(df['custnum_ouid'] == name) & (df['SITE_USE_CODE'] == use_code)]
+            addr = df[(df['cust_id'] == cust_id) & (df['ou_id'] == ou_id) & (df['address_type'] == use_code)]
             # print(addr)
             mylist = getattr(self,use_code)
 
-            for item in addr['addr']:
+            for item in addr['address']:
                 mylist.addItem(str(item))
             mylist.repaint()
 
@@ -658,7 +681,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         text = self.customer_search.text()
 
-        query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER LIKE \"%{}%\"'.format(text)
+        query = 'SELECT * FROM customerItem WHERE cust_part_no LIKE \"%{}%\"'.format(text)
 
         self.model = QSqlQueryModel(self)
         self.model.setQuery(query, self.db)
