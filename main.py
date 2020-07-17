@@ -1,20 +1,25 @@
 # -*- coding: utf-8 -*-
 
-import sys
-import os
-import json
-import csv
-import pandas as pd
 import configparser
+import csv
+import json
+import os
+import shutil
+import sys
 import traceback
-from UI2 import *
+
 import fitz
+import pandas as pd
 from PyPDF2 import PdfFileReader, PdfFileWriter
-from PyQt5.QtWidgets import QTreeWidgetItem, QApplication, QHeaderView, QAbstractItemView
-from PyQt5.QtWidgets import QMainWindow, QMessageBox, QLabel, QMenu,QAction
-from PyQt5.QtGui import QPixmap, QImage, QFont
-from PyQt5.QtCore import Qt, QSortFilterProxyModel
+from PyQt5.QtCore import QSortFilterProxyModel, Qt
+from PyQt5.QtGui import QFont, QImage, QPixmap
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel
+from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication,
+                             QHeaderView, QLabel, QMainWindow, QMenu,
+                             QMessageBox, QTreeWidgetItem)
+
+from UI2 import *
+
 
 class MyMainWindow(QMainWindow, Ui_MainWindow):
 
@@ -730,6 +735,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         if result == QtWidgets.QMessageBox.Yes:
             event.accept()
+            shutil.rmtree('./tmp', ignore_errors=True)
 
 
 if __name__ == "__main__":
@@ -761,4 +767,6 @@ if __name__ == "__main__":
                 "\nCommand-J : Open Json location"
                 "\nCommand-S : Save Json")
     QMessageBox.information(None, 'INFO', star_info, QtWidgets.QMessageBox.Ok)
+    
+    shutil.rmtree('./tmp', ignore_errors=True)
     sys.exit(app.exec_())
