@@ -271,7 +271,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     if item.child(i).text(0) in level_4:
                         item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#59FAFC")))
                         item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#59FAFC")))
-                        
+                        font = QFont()
+                        font.setWeight(QFont.Bold)
+                        font.setPixelSize(25)
+                        item.child(i).setFont(1, font)
 
                     elif item.child(i).text(0) in level_3:
                         item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
