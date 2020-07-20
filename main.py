@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
-
 import configparser
 import csv
 import json
 import os
-import shutil
 import sys
+import shutil
 import traceback
-
+import check_pkg
 import fitz
 import pandas as pd
-from PyPDF2 import PdfFileReader, PdfFileWriter
 from PyQt5.QtCore import QSortFilterProxyModel, Qt
 from PyQt5.QtGui import QFont, QImage, QPixmap
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel
@@ -18,6 +16,8 @@ from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication,
                              QHeaderView, QLabel, QMainWindow, QMenu,
                              QMessageBox, QTreeWidgetItem)
 
+
+from PyPDF2 import PdfFileReader, PdfFileWriter
 from UI2 import *
 
 
@@ -479,7 +479,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
             # self.img_key =  ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.img_file]
             self.img_key =  [ '_'.join( f.split('.')[0].split('_')[0:-1] ) for f in self.img_file]
-            print(self.img_key)
+            # print(self.img_key)
             self.readimg(self.img_file[0])
 
 
