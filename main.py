@@ -437,7 +437,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         img = ''
         for file in self.img_file:
-            json_key = '_'.join( select_json.split('.')[0].split('_')[0:3])
+            # json_key = '_'.join( select_json.split('.')[0].split('_')[0:3])
+            json_key = select_json.split('.')[0]
             if json_key in file:
                 img = file
                 break
@@ -620,7 +621,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
 
 
-        js_key = '_'.join(_json.split('.')[0].split('_')[0:3])
+        # js_key = '_'.join(_json.split('.')[0].split('_')[0:3])
+        js_key = _json.split('.')[0]
         for file in self.img_file:
             if js_key in file:
                 count += 1
