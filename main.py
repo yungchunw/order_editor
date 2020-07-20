@@ -15,10 +15,12 @@ from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel
 from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication,
                              QHeaderView, QLabel, QMainWindow, QMenu,
                              QMessageBox, QTreeWidgetItem)
-
+from PyQt5.QtWidgets import QWidget, QProgressBar, QPushButton
+from PyQt5.QtCore import QBasicTimer
 
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from UI2 import *
+
 
 
 class MyMainWindow(QMainWindow, Ui_MainWindow):
@@ -89,6 +91,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.loadCsv('./ERP/currency.csv',self.currency_view)
         # self.loadDB("./ERP/customerItem.db",self.customer_view)
+    
+
 
     def comparelist_import(self):
         try:
@@ -219,6 +223,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
     def change_color(self):
 
         # setting 'shipaddr' color
+        level_4 = ["custPartNoStatus"]
         # orage
         level_3 = ["custPartNo"]
         # green
@@ -237,7 +242,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         # gray
         level_0 = ["paymentTerm", "tradeTerm", "tax","buyerName","supplierName",
                    "poDateStatus","billAddrStatus","deliverAddrStatus","payCurrencyStatus",
-                   "paymentTermStatus","taxStatus","tradeTermStatus","custPartNoStatus","originalRequestDateStatus" ]
+                   "paymentTermStatus","taxStatus","tradeTermStatus","originalRequestDateStatus" ]
 
         all_child = []
 
@@ -262,7 +267,13 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     # hide columns with 'ID' 2019-11-21
                     if  'ID' in item.child(i).text(0):
                         item.child(i).setHidden(True);
-                    if item.child(i).text(0) in level_3:
+
+                    if item.child(i).text(0) in level_4:
+                        item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#59FAFC")))
+                        item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#59FAFC")))
+                        
+
+                    elif item.child(i).text(0) in level_3:
                         item.child(i).setForeground(0, QtGui.QBrush(QtGui.QColor("#F38023")))
                         item.child(i).setForeground(1, QtGui.QBrush(QtGui.QColor("#F38023")))
                         query = 'SELECT * FROM customerItem WHERE cust_part_no = \"{}\"'.format(item.child(i).text(1))
