@@ -59,6 +59,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.vNum = QLabel('Version:3.0.4')
         self.treeWidget.header().setDefaultSectionSize(210)
         self.treeWidget.itemDoubleClicked.connect(self.checkEdit)
+        self.treeWidget.itemChanged.connect(self.enable_action)
 
         # statusBar
         self.statusBar.showMessage('Status:',0)
@@ -128,11 +129,18 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         # allow editing only of column 1:
         children = self.treeWidget.currentItem().childCount()
         tmp = item.flags()
+        self.treeWidget.blockSignals(True)
+        self.actionNext_Page.setEnabled(False)
+        self.actionPrev_Page.setEnabled(False)
         if column == 1 and children == 0:
             item.setFlags(tmp | QtCore.Qt.ItemIsEditable)
         elif tmp & QtCore.Qt.ItemIsEditable:
             item.setFlags(tmp ^ QtCore.Qt.ItemIsEditable)
-
+        self.treeWidget.blockSignals(False)
+    
+    def enable_action(self):
+        self.actionNext_Page.setEnabled(True)
+        self.actionPrev_Page.setEnabled(True)
 
     def openMenu(self, position):
 
