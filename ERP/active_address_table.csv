@@ -274,9 +274,11 @@
 1101,320,BILL_TO,"9F,NO.75,Sec .3. Minsheng E.Rd.,Taipei .Taiwan",200483
 1101,1391,BILL_TO,江蘇省昆山開發區加工區第二大道269號,260275
 1101,1778,BILL_TO,新竹市科學工業園區創新一路19之1號,341145
+1101,1778,MARKET,新竹市科學工業園區創新一路19之1號,341049
 1101,317,BILL_TO,新竹科學工業園區新竹縣寶山鄉研發二路1號,1785226
 1101,320,BILL_TO,新竹科學工業園區新竹縣寶山鄉研發二路1號4樓,1789700
 1101,320,BILL_TO,新竹科學工業園區新竹縣寶山鄉研發二路1號,1786841
+1101,320,SOLD_TO,新竹科學園區新竹縣研發二路1號4F,218598
 1101,317,SHIP_TO,新竹科學工業園區新竹縣寶山鄉研發二路1號4樓,60268
 1101,320,SHIP_TO,"No.269, 2nd Rd,Export Processing Zone,Changjiang South Road,Kunshan,Jiangsu,China",82242
 1101,690,SHIP_TO,新竹科學工業園區新竹縣寶山鄉研發二路1號4樓,119769
@@ -315,6 +317,7 @@
 1269,3169,BILL_TO,新北市土城區中山路18號,629317
 1269,82,BILL_TO,新北市土城區中山路18號TEL: 2268-9888FAX: 2268-5984,1952
 1269,320,BILL_TO,新北市土城區中山路18號,51986
+1269,320,SOLD_TO,新北市土城區中山路18號,37920
 1269,690,BILL_TO,新北市土城區土城工業區中山路18號,119805
 1269,1391,BILL_TO,新北市土城區中山路18號,201788
 1269,1391,SHIP_TO,新北市土城區中山路18號,201789
@@ -346,6 +349,7 @@
 1269,317,BILL_TO,台北市內湖區新湖三路196號2樓,61840
 1269,317,BILL_TO,新北市中和區中正路736號16樓,97954
 1269,320,BILL_TO,新北市土城區中央路4段49號,108148
+1269,320,SOLD_TO,新北市土城區中央路4段49號,108146
 1269,1391,BILL_TO,廣東省東莞市東坑鎮駿達工業區,255379
 1269,1778,BILL_TO,新北市土城區中山路18號,361281
 1269,1778,BILL_TO,台中市南區復興路一段270號9樓,564166
@@ -354,6 +358,7 @@
 1269,320,SHIP_TO,新界屯門建榮街25號百利中心10樓(全層) 及15樓(全層),37923
 1269,317,SHIP_TO,台中市南區復興路一段270號9樓,91214
 1269,320,SHIP_TO,"FU GANG ELECTRONIC (KUNSHAN) CO.LTDNo.6 Zheng wei West R.D,Jin Xi Town,Kun Shan",98196
+1269,109,ACK,,136488
 1269,320,DELIVER_TO,廣東省東莞市東坑鎮駿達工業區,127626
 1269,690,SHIP_TO,新竹市新竹科學工業園區研發一路8號,161648
 1269,317,SHIP_TO,"2F, No.8, R&D Rd . 1,Science-Based IndustrialPark, Hsinchu ,Taiwan",132471
@@ -362,10 +367,15 @@
 1269,317,SHIP_TO,新北市土城區中央路4段49號,174652
 1269,1388,SHIP_TO,"50 Shek Wu Wai Road, Yuen LongN.T, HK",202387
 1269,1388,SHIP_TO,"NO.6 Zheng Wei West Road,Jin Xi Town, Kun ShanCity,Jiang Su Province,China",321745
+1269,1778,LEGAL,"no.18,chung.shan road,tu-cheng industrypark,tu cheng city,taipei hsien,taiwan",361130
 1269,1778,SHIP_TO,新竹市新竹科學工業園區研發一路8號,361128
 1269,1778,SHIP_TO,新北市土城區中央路4段49號,361129
+1269,1780,LEGAL,"no.49, sec. 4, zhongyang rd., tuchengcity,taipei county taiwan",361203
+1269,1780,MARKET,"no.49, sec. 4, zhongyang rd., tuchengcity,taipei county taiwan",361204
 1269,1780,DELIVER_TO,"NO.6 Zheng Wei West Road,Jin Xi Town, Kun ShanCity,Jiang Su Province,China",1626539
 1269,1780,SHIP_TO,"NO.6 Zheng Wei West Road,Jin Xi Town, Kun ShanCity,Jiang Su Province,China",361206
+1269,1778,MARKET,新北市土城區中山路18號1樓,361279
+1269,1778,MARKET,"no.18,chung.shan road,tu-cheng industrypark,tu cheng city,taipei hsien,taiwan",361282
 1269,317,SHIP_TO,新北市土城區中央路4段49號,366864
 1269,1388,SHIP_TO,新北市土城區中央路4段49號,546258
 1269,3329,SHIP_TO,"NO.6 Zheng Wei West Road,Jin Xi Town, Kun ShanCity,Jiang Su Province,China",651484
@@ -442,8 +452,10 @@
 1269,3719,SHIP_TO,江蘇省昆山市錦溪鎮正崴西路6號,1887395
 1269,3719,SHIP_TO,江蘇省昆山市錦溪鎮正崴路2-18號,1887396
 1269,3172,SHIP_TO,"No.2-18 Zheng Wei West Road,Jin Xi Town,Kun Shan City,Jiang Su Province,China",1930018
+1269,3329,LEGAL,"no.49, sec. 4, zhongyang rd., tuchengcity,taipei county taiwan",1812414
 1269,320,SHIP_TO,馬鞍山經濟技術開發區正葳路2161號,1864214
 1269,3329,DELIVER_TO,"Room 3022-3026E, 3/F.,Atl Logistics Centre A, Berth 3Kwai Chung Container Terminal, Kwai Chung, N.T., HK",1811587
+1269,3329,MARKET,"no.49, sec. 4, zhongyang rd., tuchengcity,taipei county taiwan",1811580
 1269,3329,DELIVER_TO,"50 Shek Wu Wai Road, Yuen LongN.T, HK",1811583
 1269,320,SHIP_TO,江蘇省昆山市錦溪鎮正崴路6號,1805535
 1269,3715,SHIP_TO,新竹科學工業園區研發一路8號,1881721
@@ -519,6 +531,7 @@
 1449,1780,BILL_TO,"eletronic information industrial park,qian mid-roadguian new district, guizhou",809510
 1449,1780,SHIP_TO,"eletronic information industrial park,qian mid-roadguian new district, guizhou",885652
 1449,320,BILL_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,876819
+1449,320,SOLD_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,876822
 1449,317,BILL_TO,新北市土城區自由街2號,1788655
 1449,317,SHIP_TO,新北市土城區自由街2號,1942611
 1449,317,BILL_TO,科學園區新安路5號5樓之1,1785377
@@ -550,6 +563,7 @@
 1449,317,BILL_TO,新北市土城區中山路66號,32394
 1449,317,DELIVER_TO,香港 新界屯門龍門路201號 內河碼頭二號閘 散貨場 C倉,922230
 1449,317,SHIP_TO,香港 新界屯門龍門路201號 內河碼頭二號閘 散貨場 C倉,32397
+1449,317,SOLD_TO,"NO.2,2ND DONGHUAN ROAD,10 YOUSONG INDUSTRIAL DISTRICT,LONGHUA TOWN,SHENZHENGUANGDONG,518109,CHINA DIVISION:NSG",32398
 1449,317,DELIVER_TO,新界元朗石湖圍路50號,922231
 1449,317,SHIP_TO,新界元朗石湖圍路50號,32399
 1449,317,DELIVER_TO,"Terminal 1,Asia  Airfreight Terminal, 10 Chun Ping Road,Hong Kong International Airport,Chek Lap Kok, Hong Kong",922232
@@ -581,6 +595,7 @@
 1449,686,DELIVER_TO,"ShengZhen Furaihong Precision Industrial Co., ltd.FEDEX A/C NO. 260116819 TW",240503
 1449,686,SHIP_TO,"ShengZhen Furaihong Precision Industrial Co., ltd.FEDEX A/C NO. 260116819 TW",240501
 1449,320,SHIP_TO,"2nd donghuan road10th yousong industrial,districtlonghua,baoan,shenzhen city,guangdong province,china cmmsg-hdd135#district g,building5,5th floor",288766
+1449,1388,SOLD_TO,"PCEBG-EMD3 Tina# 27275 FOXCONN TECHNOLOGY GROUP3F-D1, No2, Donghuan 2nd rd, Yousong Industrial Zone,Longhua, Baoan, shenzhen, China",330626
 1449,1780,SHIP_TO,香港元朗廈村 廈村路 木人巷 地段DD125,362144
 1449,1780,DELIVER_TO,香港新界元朗石湖圍路50號,1626481
 1449,1780,SHIP_TO,香港新界元朗石湖圍路50號,365187
@@ -590,6 +605,7 @@
 1449,317,SHIP_TO,山東省煙臺經濟技術開發區A-7小區,390981
 1449,317,SHIP_TO,"B Section, Export Processing Zone, No.50, BeijingZhong Road, Yantai Economic And TechnologicalDevelopment Area, Shandong, P.R.C",393434
 1449,320,SHIP_TO,深圳市保安區龍華街道辦油淞第十工業區東環二路二號富士康H7楝3F,401591
+1449,1388,SOLD_TO,"Rm 1004W-1006W,ATL Logistic Center BBerth 3,Kwai Chung Container TerminalKwai Chung Hong Kong",413678
 1449,219,DELIVER_TO,香港元朗廈村 廈村路 木人巷 地段DD125,946857
 1449,219,SHIP_TO,香港元朗廈村 廈村路 木人巷 地段DD125,442329
 1449,320,DELIVER_TO,新北市土城區中山路3號2F,916775
@@ -914,6 +930,7 @@
 1449,320,DELIVER_TO,"Dinh Tram industry park, Viet Yen district,Bac Giang province, Viet Nam.",1789747
 1449,320,SHIP_TO,"Dinh Tram industry park, Viet Yen district,Bac Giang province, Viet Nam.",1789748
 1449,320,SHIP_TO,新北市土城區中山路66號,1787055
+1449,320,SOLD_TO,"NO.66, CHUNG SHAN RD., TU-CHENG INDUSTRIAL DIST.,TAIPEI HSIEN , TAIWAN",1787068
 1449,320,DELIVER_TO,"Foxconn Slovakia, spol.s r.o Dolne, Hony 29 949 01Nitra, Slovak Republic",1787040
 1449,320,DELIVER_TO,"3/F TSUEN WAN INDUSTRIALCENTRE,220-248 TEXACO ROAD,TSUEN WAN, NT",1786999
 1449,320,SHIP_TO,"3/F TSUEN WAN INDUSTRIALCENTRE,220-248 TEXACO ROAD,TSUEN WAN, NT",1786938
@@ -1029,6 +1046,7 @@
 1449,317,SHIP_TO,新北市土城區中山路3號2F,1788300
 1449,1780,SHIP_TO,"NO.318 YAOXING RD. NANJING ECONOMIC &TECHNICAL DEVELOPMENT ZONE,NANJING ,CHINA",1757962
 1449,317,SHIP_TO,新北市土城區中央路4段53號(頂埔科技園區),885621
+1449,219,SOLD_TO,"NO.66, CHUNG SHAN RD., TU-CHENG INDUSTRIAL DIST.,TAIPEI HSIEN , TAIWAN",1804656
 1269,1780,SHIP_TO,"NO.2-18,ZhengWei Road,JinXi Town,Kunshan City .Jiang Su Province",1830686
 1269,3169,DELIVER_TO,新界元朗石湖圍路50號,1967242
 140347,1570,BILL_TO,杭州市濱江區長河街道濱安路1199號F座1層,1796397
@@ -1048,7 +1066,14 @@
 1449,219,BILL_TO,"UNIT 408-4013., 4/F, ATL LOGISTICS CENTRE BBERCH 3,KWAI CHUNG CONTAINER TERMINALSKWAI CHUNG, N.T.",1804643
 1449,219,BILL_TO,新北市土城區自由街2號,1804582
 1449,219,BILL_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804644
+1449,219,SOLD_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804645
+1449,219,SOLD_TO,"2nd donghuan road10th yousong industrial,districtlonghua,baoan,shenzhen city,guangdong province,china cmmsg-hdd135#district g,building5,5th floor",1804742
+1449,219,SOLD_TO,"DD104 3719RP,KAM POK ROAD,YUEN LONG NT,HONG KONG Tel : (852) 31458200  31458217Attn : Nico Ip / Kit Tsang  Fax :(852) 24827760",1804678
+1449,219,SOLD_TO,"Industrial District,Longhua.Baoan,Shenzhen City,Guangdong.深圳市保安區龍華街道辦油淞第十工業區東環二路二號富士康H7楝3F",1804741
 1449,219,SHIP_TO,"DD129 LOT 3170 Ping Ha Road, Lau Fau Shan,YUEN LONG, NT.HK",1804642
+1449,219,SOLD_TO,"DD129 LOT 3170 Ping Ha Road, Lau Fau Shan,YUEN LONG, NT.HK",1804809
+1449,219,SOLD_TO,"NO.66, CHUNG SHAN RD., TUCHENGINDUSTRIAL DIST.,TAIPEI HSIEN, TAIWAN",1804655
+1449,219,SOLD_TO,新北市土城區中山路66號,1804857
 1449,3714,DELIVER_TO,"Unit 1-3, 5-12 & 19-21, 21st Floor,Metropole Square, 2 On Yiu Street, Shatin,N.T., H.K.",1875841
 1449,3715,DELIVER_TO,"Unit 1-3, 5-12 & 19-21, 21st Floor,Metropole Square, 2 On Yiu Street, Shatin,N.T., H.K.",1875842
 1449,317,SHIP_TO,台南市安南區本田路二段391號B棟一樓,1898271
@@ -1065,44 +1090,94 @@
 1449,3329,DELIVER_TO,香港上水彩園道9號深港中心5樓546室,1899079
 1449,3715,SHIP_TO,"No.2, Zebei Road Beijing Economic & TechnologicalDevelopment Area Beijing China",1922207
 1449,1780,SHIP_TO,"Lot A-10, MAS Freight Forwarders Complex,KLIAFree Commercial Zone,Southern Zone,64000Sepang,Selangor Darul Ehsan, Malaysia",1807736
+1449,219,SOLD_TO,新北市土城區中山路3號2F,1804770
+1449,219,SOLD_TO,"Foxconn Slovakia, spol.s r.o Dolne, Hony 29 949 01Nitra, Slovak Republic  Name:Lenka BlichovaTel:+421 37 69 44 615 Mail: lenka.blichova@mail.foxconn.com",1804763
 1449,219,SHIP_TO,"Building A02,No 36, NorthStreet, West zone,Economic & TechnologicalDevelopment Area, TianJin",1804790
+1449,219,SOLD_TO,"Building A02,No 36, NorthStreet, West zone,Economic & TechnologicalDevelopment Area, TianJin",1804674
 1449,219,SHIP_TO,山東省煙臺經濟開發區天津南路88號,1804846
+1449,219,SOLD_TO,山東省煙臺經濟開發區天津南路88號,1804845
 1449,219,SHIP_TO,"NO.51,Tongle Road, Foxconn Industrial ParkDistrict Jiangnan, Nanning, Guangxi China.",1804791
+1449,219,SOLD_TO,"NO.51,Tongle Road, Foxconn Industrial ParkDistrict Jiangnan, Nanning, Guangxi China.",1804623
 1449,219,SHIP_TO,"Lot No C3, Que Vo Industrial ZoneVan Duong commune, Bac Ninh province, Viet Nam.",1804641
+1449,219,SOLD_TO,"Lot No C3, Que Vo Industrial ZoneVan Duong commune, Bac Ninh province, Viet Nam.",1804714
 1449,219,SHIP_TO,桃園市蘆竹區南崁路一段151號,1804801
+1449,219,SOLD_TO,桃園市蘆竹區南崁路一段151號,1804581
+1449,219,SOLD_TO,"DD107 San Tam Road, 300 Fung Kat Heung,Kam Tin ,Yuen Long NT,HONG KONGTel:38992931.Nico香港新界元朗逢吉鄉300號DD107",1804594
 1449,219,SHIP_TO,"Hewlett Packard Korea Building ,83Uisadang-daero,Yeongdeungpo-gu 07325 SeoulSouth Korea.",1804716
+1449,219,SOLD_TO,"Hewlett Packard Korea Building ,83Uisadang-daero,Yeongdeungpo-gu 07325 SeoulSouth Korea.",1804802
 1449,219,SHIP_TO,新界元朗新田嘉龍路鹿尾村52號,1804718
+1449,219,SOLD_TO,新界元朗新田嘉龍路鹿尾村52號,1804717
 1449,219,SHIP_TO,"新界元朗大生圍文苑村3719RP,DD104 LOT永達B倉",1804651
+1449,219,SOLD_TO,"新界元朗大生圍文苑村3719RP,DD104 LOT永達B倉",1804680
 1449,219,SHIP_TO,香港新界元朗流浮山屏廈路DD129 LOT3170,1804756
+1449,219,SOLD_TO,香港新界元朗流浮山屏廈路DD129 LOT3170,1804682
 1449,5510,DELIVER_TO,香港新界元朗新田嘉龍路小磡村10號,1890513
 1449,5510,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1890514
 1449,5510,DELIVER_TO,香港新界元朗新田嘉龍路小磡村10號,1890515
 1449,5510,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1890516
 1449,219,SHIP_TO,"Zone, 318 Yao Xin Road Nanjing CHINA 210038",1804632
 1449,219,SHIP_TO,"3/F TSUEN WAN INDUSTRIALCENTRE,220-248 TEXACO ROAD,TSUEN WAN, NT",1804764
+1449,219,SOLD_TO,"3/F TSUEN WAN INDUSTRIALCENTRE,220-248 TEXACO ROAD,TSUEN WAN, NT",1804634
 1449,219,SHIP_TO,"Flat 08 15/F,Block B, New Trade Plaza6 On Ping Street, Shatin., Hong Kong",1804771
+1449,219,SOLD_TO,"Flat 08 15/F,Block B, New Trade Plaza6 On Ping Street, Shatin., Hong Kong",1804657
+1449,219,SOLD_TO,"Terminal 1,Asia Airfreight Termnial,10 Chun Ping Road,Hong Kong International Airport, HK",1804601
 1449,219,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1804637
+1449,219,SOLD_TO,香港新界元朗新田嘉龍路小磡村10號,1804636
+1449,219,SOLD_TO,"WaDD 104 3719RP ,KAM POK ROAD ,YUEN LONG NT , HONG KONGTEL : 31358210 , 24825105",1804648
+1449,219,SOLD_TO,香港赤臘角駿運路2號機場空運中心1樓136室,1804687
 1449,219,SHIP_TO,"Unit 4008-4013E, 4/Fl., ATL Logistics Centre B,Berth 3, Kwai Chung Container Terminal, Kwai Chung,New Territories.Hong Kong",1804669
+1449,219,SOLD_TO,"Unit 4008-4013E, 4/Fl., ATL Logistics Centre B,Berth 3, Kwai Chung Container Terminal, Kwai Chung,New Territories.Hong Kong",1804862
 1449,219,SHIP_TO,"Flat 08 15/F,Block B, New Trade Plaza6 On Ping Street, Shatin., Hong Kong",1804766
+1449,219,SOLD_TO,"Flat 08 15/F,Block B, New Trade Plaza6 On Ping Street, Shatin., Hong Kong",1804765
 1449,219,SHIP_TO,香港赤臘角駿運路2號機場空運中心1樓136室,1804773
+1449,219,SOLD_TO,香港赤臘角駿運路2號機場空運中心1樓136室,1804772
 1449,219,SHIP_TO,香港新界元朗新田石湖圍路圍路第102約，地段第781-821號LOT,1804840
+1449,219,SOLD_TO,香港新界元朗新田石湖圍路圍路第102約，地段第781-821號LOT,1804839
 1449,219,SHIP_TO,新界葵涌三號貨櫃碼頭亞洲貨櫃櫃物流中心B座四樓4008至4013室東翼,1804841
+1449,219,SOLD_TO,新界葵涌三號貨櫃碼頭亞洲貨櫃櫃物流中心B座四樓4008至4013室東翼,1804602
 1449,219,SHIP_TO,"CMMSG HNBD SCMM,B1 building,NO.299,NanSong Road,",1804767
+1449,219,SOLD_TO,"CMMSG HNBD SCMM,B1 building,NO.299,NanSong Road,",1804681
 1449,219,SHIP_TO,"Foxconn Industrial District,No.18,changsha Road,Yantai Economy and",1804670
+1449,219,SOLD_TO,"Foxconn Industrial District,No.18,changsha Road,Yantai Economy and",1804863
+1449,219,SOLD_TO,"NO.66, ZHONGSHAN RD., TUCHENG DIST., NEWTAIPEI CITY 236, TAIWAN (R.O.C.)",1804603
 1449,219,SHIP_TO,新北市土城區中山路66號,1804604
+1449,219,SOLD_TO,新北市土城區中山路66號,1804698
+1449,219,SOLD_TO,新北市土城區中山路3號2F,1804605
+1449,219,SOLD_TO,新北市土城區工業園區中山路66-1號,1804672
 1449,219,SHIP_TO,"3F.,NO.32,ZHONGCHENG RD., Tucheng Dist.,New Taipei City , Taiwan (R.O.C.)",1804616
+1449,219,SOLD_TO,"3F.,NO.32,ZHONGCHENG RD., Tucheng Dist.,New Taipei City , Taiwan (R.O.C.)",1804774
 1449,219,SHIP_TO,"No.24-1,Ding Hu Rd.,Guei Shan Hsiang,TaoYuan Hsien,Taiwan,R.O.C",1804778
+1449,219,SOLD_TO,"No.24-1,Ding Hu Rd.,Guei Shan Hsiang,TaoYuan Hsien,Taiwan,R.O.C",1804872
 1449,219,SHIP_TO,"No.32-1,Ding Hu Rd.,Guei Shan Hsiang,TaoYuan Hsien,Taiwan,R.O.C",1804617
+1449,219,SOLD_TO,"No.32-1,Ding Hu Rd.,Guei Shan Hsiang,TaoYuan Hsien,Taiwan,R.O.C",1804779
 1449,219,SHIP_TO,"1705 Junction Ct. Suite 200San Jose, CA",1804775
+1449,219,SOLD_TO,"1705 Junction Ct. Suite 200San Jose, CA",1804618
 1449,219,SHIP_TO,江蘇淮安經濟技術開發區富士康路168號,1804843
+1449,219,SOLD_TO,江蘇淮安經濟技術開發區富士康路168號,1804842
 1449,219,SHIP_TO,"NO.168 FOXCONN  RAOD  Huai'an  EconomicDevelopment  Zone JIANGSU PROVINCE,CHINA 223005",1804673
+1449,219,SOLD_TO,"NO.168 FOXCONN  RAOD  Huai'an  EconomicDevelopment  Zone JIANGSU PROVINCE,CHINA 223005",1804776
 1449,219,SHIP_TO,台北市內湖區基湖路32號,1804619
+1449,219,SOLD_TO,台北市內湖區基湖路32號,1804780
+1449,219,SOLD_TO,臺北市內湖區基湖路32號,1804620
+1449,219,SOLD_TO,台北市內湖區基湖路32號,1804844
 1449,219,SHIP_TO,新北市土城區自由街2號,1804700
+1449,219,SOLD_TO,新北市土城區自由街2號,1804789
+1449,219,SOLD_TO,新北市土城區土城工業區自由街街2號,1804702
 1449,219,SHIP_TO,新北市土城區土工業區民生街四之一號,1804703
+1449,219,SOLD_TO,新北市土城區土工業區民生街四之一號,1804781
 1449,219,SHIP_TO,新北市土城區工業園區中山路66-1號,1804783
+1449,219,SOLD_TO,新北市土城區工業園區中山路66-1號,1804782
+1449,219,SOLD_TO,"NO.66, CHUNG SHAN RD., TUCHENG DIST.,NEW TAIPEI CITY 236, TAIWAN",1804704
+1449,219,SOLD_TO,新北市土城區工業園區中山路66-1號,1804858
+1449,219,SOLD_TO,土城區中山路66號,1804784
 1449,219,SHIP_TO,新北市新店區北新路3段207號15F之5,1804874
+1449,219,SOLD_TO,新北市新店區北新路3段207號15F之5,1804792
+1449,219,SOLD_TO,新北市土城區土城工業區自由街街2號,1804847
+1449,219,SOLD_TO,新北市土城區自由街2號,1804675
 1449,219,SHIP_TO,科學園區新安路5號5樓,1804676
+1449,219,SOLD_TO,科學園區新安路5號5樓,1804793
 1449,219,SHIP_TO,科學園區新安路5號5樓之1,1804875
+1449,219,SOLD_TO,科學園區新安路5號5樓之1,1804794
 1449,5510,DELIVER_TO,香港新界元朗流浮山屏廈路DD129 LOT3170,1890517
 1449,5510,SHIP_TO,香港新界元朗流浮山屏廈路DD129 LOT3170,1890519
 1449,5510,DELIVER_TO,香港新界葵涌第三號貨柜碼頭亞洲貨柜物流中心Ｂ座一樓1004至1006東及西翼,1890520
@@ -1115,36 +1190,84 @@
 1449,5510,SHIP_TO,"Rm 1004W-1006W,ATL Logistic Center BBerth 3,Kwai Chung Container TerminalKwai Chung Hong Kong",1890527
 1449,5510,DELIVER_TO,"NO.51,Tongle Road, Foxconn Industrial ParkDistrict Jiangnan, Nanning, Guangxi China.",1890531
 1449,5510,SHIP_TO,"NO.51,Tongle Road, Foxconn Industrial ParkDistrict Jiangnan, Nanning, Guangxi China.",1890529
+1449,219,SOLD_TO,"B1 BUILDING,JIANGPU ROAD YUSHANTOWN,KUNSHAN CITY,JIANGSU PROVINCE,CHINA",1804868
 1449,219,SHIP_TO,"PCEG APD PURCHASEMENT DEPT,2ND FLOOR,BBUILDING,A AREA, NO.2,2ND DONG HUANG RD.,10TH YOU SONG IND.DISTRICT,LONGHUWA",1804876
+1449,219,SOLD_TO,"PCEG APD PURCHASEMENT DEPT,2ND FLOOR,BBUILDING,A AREA, NO.2,2ND DONG HUANG RD.,10TH YOU SONG IND.DISTRICT,LONGHUWA",1804626
 1449,219,SHIP_TO,"Room 1101,SEG Store & Transport BuildingTao Hua Road,Futian Free Trade Zone,Shenzhen,PR China.",1804697
+1449,219,SOLD_TO,"Room 1101,SEG Store & Transport BuildingTao Hua Road,Futian Free Trade Zone,Shenzhen,PR China.",1804706
 1449,219,SHIP_TO,廣東省深圳市寶安區觀蘭環觀南路18號,1804586
+1449,219,SOLD_TO,廣東省深圳市寶安區觀蘭環觀南路18號,1804795
 1449,219,SHIP_TO,10Th INDUSTRIAL DISTRICT; THE NORTH OF2ND DONGHUAN ROAD LONGHUA TOWN; BAOAN;SHENZHEN GUANGDONG CHINA,1804796
+1449,219,SOLD_TO,10Th INDUSTRIAL DISTRICT; THE NORTH OF2ND DONGHUAN ROAD LONGHUA TOWN; BAOAN;SHENZHEN GUANGDONG CHINA,1804688
 1449,219,SHIP_TO,江蘇省昆山市玉山鎮南淞路299號(富士康)B2-2F,1804707
+1449,219,SOLD_TO,江蘇省昆山市玉山鎮南淞路299號(富士康)B2-2F,1804797
 1449,219,SHIP_TO,"NO.299,NANSONG RD.,YU SHAN TOWNKUN SHAN CITY,JIANGSU PROVINCE,CHINA",1804689
+1449,219,SOLD_TO,"NO.299,NANSONG RD.,YU SHAN TOWNKUN SHAN CITY,JIANGSU PROVINCE,CHINA",1804877
 1449,219,SHIP_TO,"No.999 Beimen Road, Yu Shan Town.Kunshan City,JiangSu,China",1804587
+1449,219,SOLD_TO,"CO.,LTD B Section, Export ProcessingZone, No.50, Beijing Zhong Road, YantaiEconomic&Technological Development Area,",1804709
+1449,219,SOLD_TO,"CO.,LTD 中國山東省煙台經濟技術開發區區出口加工區B區",1804710
 1449,219,SHIP_TO,惠州市博羅縣龍溪鎮夏寮村委會會大門村小組十二溝地段VMI HUBA03棟,1804690
+1449,219,SOLD_TO,惠州市博羅縣龍溪鎮夏寮村委會會大門村小組十二溝地段VMI HUBA03棟,1804708
 1449,219,SHIP_TO,"A03 VMI HUB, DITCH 12 SECTOR, DAMENSUBCOMMITTEE, XIALIAO VILLAGE, LONGXITOWN, BOLUP COUNTY, HUIZHOU CITY,",1804798
+1449,219,SOLD_TO,"A03 VMI HUB, DITCH 12 SECTOR, DAMENSUBCOMMITTEE, XIALIAO VILLAGE, LONGXITOWN, BOLUP COUNTY, HUIZHOU CITY,",1804588
 1449,219,SHIP_TO,"10TH YOUSONG INDUSTRIAL DISTRICT,LONGHUA SUB-DISTRICT, BAOAN SHENZHEN,GUANGDONG, CHINA",1804691
+1449,219,SOLD_TO,"10TH YOUSONG INDUSTRIAL DISTRICT,LONGHUA SUB-DISTRICT, BAOAN SHENZHEN,GUANGDONG, CHINA",1804625
 1449,219,SHIP_TO,"HONGFUJIN PRECISION INDUSTRY <CNB> 2,2ND.DONG HUAN RD., 10TH YOU SONGINDUSTRIAL DISTRICT,LONGHUA TOWN,BAO'AN,",1804692
+1449,219,SOLD_TO,"HONGFUJIN PRECISION INDUSTRY <CNB> 2,2ND.DONG HUAN RD., 10TH YOU SONGINDUSTRIAL DISTRICT,LONGHUA TOWN,BAO'AN,",1804638
 1449,219,SHIP_TO,"HON HAI PRECISION INDUSTRY CO.LTD.No.2,2nd DongHuan Road, 10th YouSonglndustrial District, Long hua Town,",1804577
+1449,219,SOLD_TO,"HON HAI PRECISION INDUSTRY CO.LTD.No.2,2nd DongHuan Road, 10th YouSonglndustrial District, Long hua Town,",1804589
 1449,219,SHIP_TO,經濟技術開發區嘉興路8號A05棟,1804693
+1449,219,SOLD_TO,經濟技術開發區嘉興路8號A05棟,1804711
+1449,219,SOLD_TO,經濟技術開發區嘉興路8號A05棟,1804712
+1449,219,SOLD_TO,"(KUN SHAN)CO.,LTD. NO.299,NANSONG RD.,YU SHAN  TOWN KUN SHAN CITY,JIANGSUPROVINCE,CHINA",1804591
+1449,219,SOLD_TO,"3F., No.32, Zhongcheng Rd., Tucheng City, Taipei County 236, Taiwan  台灣省台",1804694
+1449,219,SOLD_TO,"No. 2, Dong Huan 2nd Road, YouSong 10thInd. District,Longhua, Bao'an, Shenzhen, China(zip code﹕518109)",1804592
+1449,219,SOLD_TO,香港元朗廈村 廈村路 木人巷 地段DD125,1804593
 1449,219,SHIP_TO,"UNIT 1024-1027 E1/F ASIA TERMINALSCENTRE B, BERTH3 KWAI CHUNGCONTAINERTERMINALS KWAI CHUNG, N.T. HONG",1804695
+1449,219,SOLD_TO,"UNIT 1024-1027 E1/F ASIA TERMINALSCENTRE B, BERTH3 KWAI CHUNGCONTAINERTERMINALS KWAI CHUNG, N.T. HONG",1804713
 1449,219,SHIP_TO,"3/F, TINS PLAZA,NO.3 SAN ON STREET,TUENMUN, N.T HONG KONG",1804639
+1449,219,SOLD_TO,"3/F, TINS PLAZA,NO.3 SAN ON STREET,TUENMUN, N.T HONG KONG",1804815
 1449,219,SHIP_TO,"UNIT 1024-1027 E1/F ASIA TERMINALSCENTRE B, BERTH3 KWAI CHUNG CONTAINER,TERMINALS KWAI CHUNG, N.T. HONG KONG",1804799
+1449,219,SOLD_TO,"UNIT 1024-1027 E1/F ASIA TERMINALSCENTRE B, BERTH3 KWAI CHUNG CONTAINER,TERMINALS KWAI CHUNG, N.T. HONG KONG",1804816
+1449,219,SOLD_TO,"3022-3026E,3/F.,ATL Logistics Centre A,Beth 3,Kwai Chung Container Terminal,",1804579
 1449,219,SHIP_TO,新界屯門新安街3號田氏廣場三樓,1804800
+1449,219,SOLD_TO,新界屯門新安街3號田氏廣場三樓,1804640
 1449,219,SHIP_TO,"DD104 3719RP, KAM POK ROAD,YUEN LONGN.T.HONG KONG",1804580
+1449,219,SOLD_TO,"DD104 3719RP, KAM POK ROAD,YUEN LONGN.T.HONG KONG",1804696
 1449,219,SHIP_TO,"(CESBG-EPDI-TJ)NO.36,N.ST.,West Zone,Tian Jin Economic &Technological Development Area,Tian Jin,China",1804867
+1449,219,SOLD_TO,"(CESBG-EPDI-TJ)NO.36,N.ST.,West Zone,Tian Jin Economic &Technological Development Area,Tian Jin,China",1804665
 1449,219,SHIP_TO,中國天津市經濟技術開發區西區北大街36號,1804869
+1449,219,SOLD_TO,中國天津市經濟技術開發區西區北大街36號,1804739
 1449,219,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1804614
+1449,219,SOLD_TO,香港新界元朗新田嘉龍路小磡村10號,1804613
 1449,219,SHIP_TO,"UNIT 4008-4013E,4F/1,ATL LOGISTICS CENTRE B,BERTH 3,KWAICHU",1804740
+1449,219,SOLD_TO,"UNIT 4008-4013E,4F/1,ATL LOGISTICS CENTRE B,BERTH 3,KWAICHU",1804666
+1449,219,SOLD_TO,新界葵涌三號貨櫃碼頭亞洲貨櫃電話： 852-26140663   聯系人： JERRY,1804649
 1449,219,SHIP_TO,江蘇省昆山市玉山鎮南淞路299號,1804627
+1449,219,SOLD_TO,江蘇省昆山市玉山鎮南淞路299號,1804615
+1449,219,SOLD_TO,35042419780611001X,1804743
+1449,219,SOLD_TO,香港新界元朗新田石湖圍路圍路第102約，地段第781-821號LOT,1804628
+1449,219,SOLD_TO,"3022-3026E, 3/F.,ATL Logistics Centre A,Berth 3,Kwai Chung Container Terminal,",1804850
+1449,219,SOLD_TO,"LOT 781-821, DD102, SHEK WU WAI ROAD,SAN TIN, YUEN LONG,HONG KONG",1804629
 1449,219,SHIP_TO,香港新界葵涌三號貨櫃碼頭亞洲貨櫃物流中心B座4樓4008-4013,1804824
+1449,219,SOLD_TO,香港新界葵涌三號貨櫃碼頭亞洲貨櫃物流中心B座4樓4008-4013,1804683
 1449,219,SHIP_TO,(CYT-PCEBG-DMDIII)香港新界葵涌三號貨櫃碼頭亞洲貨櫃物流中心B座4樓4008-4013東翼,1804744
+1449,219,SOLD_TO,(CYT-PCEBG-DMDIII)香港新界葵涌三號貨櫃碼頭亞洲貨櫃物流中心B座4樓4008-4013東翼,1804684
+1449,219,SOLD_TO,"Terminal 1, Asia Airfreight Termnial , 10 ChunPing Road,Hong Kong International Airport,Chek Lap Kok,Hong Kong",1804861
+1449,219,SOLD_TO,"C/O Taiwan Express (HK) Co., Ltd 3022-3026East Wing, ATL Logistics Berth A ,Berth 3,kwaiChung,N.T.HK. Attn:HOI Tel: 23426660",1804757
 1449,219,SHIP_TO,"13F, JinLuan Times Building﹐Heping East Rd.,LongHua, Baoan, Shenzhen City,Guangdong Province, China",1804855
+1449,219,SOLD_TO,"13F, JinLuan Times Building﹐Heping East Rd.,LongHua, Baoan, Shenzhen City,Guangdong Province, China",1804758
 1449,219,SHIP_TO,"DD104 3719RP,KAM POK ROAD,YUEN LONG N.T.,HONG KONG",1804826
+1449,219,SOLD_TO,"DD104 3719RP,KAM POK ROAD,YUEN LONG N.T.,HONG KONG",1804652
+1449,219,SOLD_TO,"新竹市科學工業園區新安路5號5樓之1,ATTN:郭俊葦,TEL:03-578-4975EXT.6820",1804653
 1449,219,SHIP_TO,香港新界葵涌第三號貨柜碼頭亞洲貨柜物流中心Ｂ座一樓1004至1006東及西翼,1804760
+1449,219,SOLD_TO,香港新界葵涌第三號貨柜碼頭亞洲貨柜物流中心Ｂ座一樓1004至1006東及西翼,1804685
 1449,219,SHIP_TO,"50 Shek Wu Wai Road, Yuen Long,N.T.,HONG KONG",1804761
+1449,219,SOLD_TO,"50 Shek Wu Wai Road, Yuen Long,N.T.,HONG KONG",1804654
 1449,219,SHIP_TO,"Dinh Tram industry park, Viet Yen district,Bac Giang province, Viet Nam.",1804769
+1449,219,SOLD_TO,"Dinh Tram industry park, Viet Yen district,Bac Giang province, Viet Nam.",1804856
+1449,219,SOLD_TO,新界葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座三樓3022-3026室東翼,1804630
+1449,219,SOLD_TO,"Room 205A,2/F., Wing Ming Industrial Centre,15 Cheung Yue Street,Cheung Sha Wan,Kowloon,Hong Kong",1804859
 1449,5510,DELIVER_TO,"HON HAI PRECISION INDUSTRY CO.LTD.No.2,2nd DongHuan Road, 10th YouSonglndustrial District, Long hua Town,",1890441
 1449,5510,SHIP_TO,"HON HAI PRECISION INDUSTRY CO.LTD.No.2,2nd DongHuan Road, 10th YouSonglndustrial District, Long hua Town,",1890444
 1449,5510,DELIVER_TO,台北市內湖區基湖路32號,1890451
@@ -1279,16 +1402,23 @@
 1449,219,SHIP_TO,"G/F, Terminal 1,Asia Airfreight Terminal,10 Chun Ping Road, Hong Kong international Airport,Chek Lap Kok, H.K.",1804804
 1449,219,SHIP_TO,"G17, G/F, Airport Freight Forwarding Centre, 2 Chun Wan Road, Chek",1804658
 1449,219,SHIP_TO,香港新界元朗石湖圍路50號,1804734
+1449,219,SOLD_TO,香港新界元朗石湖圍路50號,1804733
 1449,219,SHIP_TO,Godown (Windex) Yiu Lian Dock Yard 1-7 Sai TsoWan Road Tsing Yi N.T.HK,1804583
+1449,219,SOLD_TO,Godown (Windex) Yiu Lian Dock Yard 1-7 Sai TsoWan Road Tsing Yi N.T.HK,1804606
 1449,219,SHIP_TO,"Terminal 1,Asia  Airfreight Terminal, 10 Chun Ping Road,Hong Kong International Airport,Chek Lap Kok, Hong Kong",1804805
+1449,219,SOLD_TO,"Terminal 1,Asia  Airfreight Terminal, 10 Chun Ping Road,Hong Kong International Airport,Chek Lap Kok, Hong Kong",1804829
 1449,219,SHIP_TO,廣東省深圳市寶安區龍華鎮富士康科技集團CNSBG事業群CPEI事業處PM部(E5-1.5F),1804724
 1449,219,SHIP_TO,"No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen city,GuangDong Province,China",1804811
 1449,219,SHIP_TO,"Room 3022-3026E, 3/F.,Atl Logistics Centre ABerth 3,Kwai Chung Container TerminalKwai Chung, N.T.,Hong Kong",1804584
 1449,219,SHIP_TO,"Rm 1004W-1006W,ATL Logistic Center BBerth 3,Kwai Chung Container TerminalKwai Chung Hong Kong",1804659
 1449,219,SHIP_TO,香港 新界屯門龍門路201號 內河碼頭二號閘 散貨場 C倉,1804730
+1449,219,SOLD_TO,香港 新界屯門龍門路201號 內河碼頭二號閘 散貨場 C倉,1804647
 1449,219,SHIP_TO,新界元朗石湖圍路50號,1804810
+1449,219,SOLD_TO,新界元朗石湖圍路50號,1804595
 1449,219,SHIP_TO,"Tlanshan Road 3-6Area, Yntai Econ Omic AndTechnological Development Area, Shandong,P.R.China",1804721
+1449,219,SOLD_TO,"Tlanshan Road 3-6Area, Yntai Econ Omic AndTechnological Development Area, Shandong,P.R.China",1804731
 1449,219,SHIP_TO,"Unit 603, Hidc, Container Port Road South,Kwai Chung, N.T., HongKong Tel: 26140660佳宏倉 收貨人:賢哥",1804732
+1449,219,SOLD_TO,"Unit 603, Hidc, Container Port Road South,Kwai Chung, N.T., HongKong Tel: 26140660佳宏倉 收貨人:賢哥",1804722
 1449,219,SHIP_TO,"2nd donghuan road10th yousong industrial,districtlonghua,baoan,shenzhen city,guangdong province,china cmmsg-hdd135#district g,building5,5th floor",1804812
 1449,219,SHIP_TO,"DD104 3719RP,KAM POK ROAD,YUEN LONG NTHONG KONG",1804735
 1449,5510,DELIVER_TO,"Lot No C3, Que Vo Industrial ZoneVan Duong commune, Bac Ninh province, Viet Nam.",1890615
@@ -1304,12 +1434,21 @@
 1449,5510,SHIP_TO,"G17, G/F, Airport Freight Forwarding Centre, 2 Chun Wan Road, Chek",1890623
 1449,5510,DELIVER_TO,"Room 205A,2/F., Wing Ming Industrial Centre,15 Cheung Yue Street,Cheung Sha Wan,Kowloon,Hong Kong",1890625
 1449,219,SHIP_TO,新北市土城區中山路3號2F,1804831
+1449,219,SOLD_TO,新北市土城區中山路3號2F,1804813
 1449,219,SHIP_TO,新北市土城區自由街2號,1804660
+1449,219,SOLD_TO,新北市土城區自由街2號,1804607
 1449,219,SHIP_TO,"Sony Otay Logistics c/o RL Jones 8830 SiempreViva Road Ste 300 San Diego CA, 92154",1804814
+1449,219,SOLD_TO,"Sony Otay Logistics c/o RL Jones 8830 SiempreViva Road Ste 300 San Diego CA, 92154",1804736
+1449,219,SOLD_TO,"DD104 3719rp,Kam Pok Road,Yuen Long Nt,Hong KongTel : (852)31458200   31458217 ，Fax :(852)24827760Attn : Nico Ip / Kit Tsang",1804608
 1449,219,SHIP_TO,"Lot 2583-2585, DD102 Ka Lung Road,San Tin, Yuen Long, N.T. (ZONE A）",1804748
+1449,219,SOLD_TO,"Lot 2583-2585, DD102 Ka Lung Road,San Tin, Yuen Long, N.T. (ZONE A）",1804737
 1449,219,SHIP_TO,"Lot 2583-2585, DD102 Ka Lung RoadSan Tin, Yuen Long, N.T. (ZONE B）",1804825
+1449,219,SOLD_TO,"Lot 2583-2585, DD102 Ka Lung RoadSan Tin, Yuen Long, N.T. (ZONE B）",1804832
+1449,219,SOLD_TO,"27/F, Nanyang Plaza 57 Hung To Road Kwun Tong, Kowloon HKFEDEX A/C:154527567",1804726
 1449,219,SHIP_TO,"299,Nansong Road Yushan Town Kunshan CityJiang Su China",1804727
+1449,219,SOLD_TO,"299,Nansong Road Yushan Town Kunshan CityJiang Su China",1804806
 1449,219,SHIP_TO,"Lot No.C3,Que Vo industrial park,Van Duongcommune, Bac Ninh city, BacNinh province,Vietnam",1804807
+1449,219,SOLD_TO,"Lot No.C3,Que Vo industrial park,Van Duongcommune, Bac Ninh city, BacNinh province,Vietnam",1804585
 1449,5510,DELIVER_TO,"UNIT 1024-1027 E1/F ASIA TERMINALSCENTRE B, BERTH3 KWAI CHUNG CONTAINER,TERMINALS KWAI CHUNG, N.T. HONG KONG",1890629
 1449,5510,SHIP_TO,"UNIT 1024-1027 E1/F ASIA TERMINALSCENTRE B, BERTH3 KWAI CHUNG CONTAINER,TERMINALS KWAI CHUNG, N.T. HONG KONG",1890628
 1449,5510,DELIVER_TO,"13F, JinLuan Times Building﹐Heping East Rd.,LongHua, Baoan, Shenzhen City,Guangdong Province, China",1890634
@@ -1319,8 +1458,11 @@
 1449,5510,DELIVER_TO,"Flat 08 15/F,Block B, New Trade Plaza6 On Ping Street, Shatin., Hong Kong",1890638
 1449,5510,SHIP_TO,"Flat 08 15/F,Block B, New Trade Plaza6 On Ping Street, Shatin., Hong Kong",1890639
 1449,5510,SHIP_TO,"CO.,LTD . 999 BEIMEN RD.YUSHAN TOWNKUNSHAN CITY",1890641
+1449,5510,SOLD_TO,"NO.66, CHUNG SHAN RD., TUCHENGINDUSTRIAL DIST.,TAIPEI HSIEN, TAIWAN",1890642
 1449,5510,DELIVER_TO,"2nd donghuan road10th yousong industrial,districtlonghua,baoan,shenzhen city,guangdong province,china cmmsg-hdd135#district g,building5,5th floor",1890651
 1449,5510,SHIP_TO,"2nd donghuan road10th yousong industrial,districtlonghua,baoan,shenzhen city,guangdong province,china cmmsg-hdd135#district g,building5,5th floor",1890643
+1449,5510,SOLD_TO,"NO.66, CHUNG SHAN RD., TU-CHENG INDUSTRIAL DIST.,TAIPEI HSIEN , TAIWAN",1890649
+1449,5510,SOLD_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1890650
 1449,5510,DELIVER_TO,"Foxconn Industrial District,No.18,changsha Road,Yantai Economy and",1890653
 1449,5510,SHIP_TO,"Foxconn Industrial District,No.18,changsha Road,Yantai Economy and",1890652
 1449,5510,DELIVER_TO,"Foxconn Slovakia, spol.s r.o Dolne, Hony 29 949 01Nitra, Slovak Republic",1890654
@@ -1335,19 +1477,45 @@
 1449,5510,DELIVER_TO,"Dinh Tram industry park, Viet Yen district,Bac Giang province, Viet Nam.",1890663
 1449,5510,SHIP_TO,"Dinh Tram industry park, Viet Yen district,Bac Giang province, Viet Nam.",1890664
 1449,219,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1804610
+1449,219,SOLD_TO,香港新界元朗新田嘉龍路小磡村10號,1804596
 1449,219,SHIP_TO,"元朗大生圍文苑村3719RP,;DD104 LOT C-2 高新(近錦繡花園);Contact Person: Dickson LeeWH",1804664
+1449,219,SOLD_TO,"元朗大生圍文苑村3719RP,;DD104 LOT C-2 高新(近錦繡花園);Contact Person: Dickson LeeWH",1804611
 1449,219,SHIP_TO,"183 Jinfeng Rd.,Hi-tech DevelopmentZone,Suzhou,Jiangsu,China",1804609
+1449,219,SOLD_TO,"183 Jinfeng Rd.,Hi-tech DevelopmentZone,Suzhou,Jiangsu,China",1804750
 1449,219,SHIP_TO,"No 36, North Street, West zone, Economic & TechnologicalDevelopment Area, TianJin, China",1804754
+1449,219,SOLD_TO,"No 36, North Street, West zone, Economic & TechnologicalDevelopment Area, TianJin, China",1804738
 1449,219,SHIP_TO,"Dell Inc. One Dell Way MS PS3-57Round Rock, Texas 78682",1804600
+1449,219,SOLD_TO,"Dell Inc. One Dell Way MS PS3-57Round Rock, Texas 78682",1804848
 1449,219,SHIP_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804838
+1449,219,SOLD_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804599
 1449,219,SHIP_TO,貴陽市貴安新區黔中大道電子信息產業園富士康B棟1.5F,1804753
+1449,219,SOLD_TO,貴陽市貴安新區黔中大道電子信息產業園富士康B棟1.5F,1804818
 1449,219,SHIP_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1804835
+1449,219,SOLD_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1804662
+1449,219,SOLD_TO,"Rm1004W- 1006W,ATL Logistics Centre B,Berth 3,Kwai Chung Container Terminal,Kwai Chung,Hong Kong.ATTN:Dick Leung.TEL:34180841",1804837
+1449,219,SOLD_TO,"No.2, Zihyou St., Tucheng Dist.,New Taipei City 236, TaiwanAtt:Adam   Tel : + (886) 2-22683466 ext. 2926",1804751
+1449,219,SOLD_TO,"Room 3022-3026E, 3/F.,ATL Logistics Centre A,Berth 3,Kwai Chung Container Terminal, KwaiChung,N.T.,Hong Kong",1804597
 1449,219,SHIP_TO,"DD107 San Tam Road, 300 Fung Kat HeungKam Tin ,Yuen Long NT,HONG KONG",1804834
+1449,219,SOLD_TO,"DD107 San Tam Road, 300 Fung Kat HeungKam Tin ,Yuen Long NT,HONG KONG",1804598
 1449,219,SHIP_TO,"DD107 San Tam Road, 300 Fung Kat Heung,Kam Tin ,Yuen Long NT,HONG KONG",1804833
+1449,219,SOLD_TO,"DD107 San Tam Road, 300 Fung Kat Heung,Kam Tin ,Yuen Long NT,HONG KONG",1804808
 1449,219,SHIP_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804866
+1449,219,SOLD_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804752
 1449,219,SHIP_TO,江蘇省南京市堯新路318號,1804865
+1449,219,SOLD_TO,江蘇省南京市堯新路318號,1804723
 1449,219,SHIP_TO,江蘇省南京市堯新路318號,1804631
+1449,219,SOLD_TO,江蘇省南京市堯新路318號,1804667
+1449,219,SOLD_TO,河南省南陽市臥龍區龍升工業園區淯龍光電園,1804746
 1449,219,SHIP_TO,"3719RP,DD104 LOT WINGTAT WAREHOUSE B,Man Yuen Chuen , Tai Sang Wai , YuenLong ,New Territories, Hong Kong",1804612
+1449,219,SOLD_TO,"3719RP,DD104 LOT WINGTAT WAREHOUSE B,Man Yuen Chuen , Tai Sang Wai , YuenLong ,New Territories, Hong Kong",1804820
+1449,219,SOLD_TO,"10th Industrial District, The North Of 2ndDonghuan Road, Longhua Town, Baoan, ShenzhenGuangdong, China",1804851
+1449,219,SOLD_TO,"C/O:Expeditors Hong Kong Limited   G/F, Terminal 1,Asia Airfreight Terminal,10 Chun Ping Road, Hong Kong international Airport,Chek Lap Kok, H.K. Attn:Jason Fong T:852-21905696",1804679
+1449,219,SOLD_TO,"C/O DHL Global Forwarding (HONG KONG) LimitedG17, G/F, Airport Freight Forwarding Centre, 2 Chun Wan Road, ChekAtt:ATTN: Ip Ho Chuen (葉先生)/ Raymond Chan  (陳先生) Tel:(+852) 2976 8291",1804852
+1449,219,SOLD_TO,廣東省深圳市寶安區龍華鎮富士康科技集團CNSBG事業群CPEI事業處PM部(E5-1.5F)ATTN:Cindy  分機:29049 Mobile:13725510495、Jasmine : 64813,1804860
+1449,219,SOLD_TO,"No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen city,GuangDong Province,ChinaCindy/江昕 Tel:0755-28129188-29049 Cell phone:13725510495",1804822
+1449,219,SOLD_TO,"DD125,HA TSUEN ROAD,PANG SHAN,YUEN LONG,N.T  HK. Contact Person:JennyTEL:00852-24750889#1#229,Fax:00852-24759208",1804853
+1449,219,SOLD_TO,"Room 3022-3026E, 3/F.,Atl Logistics Centre ABerth 3,Kwai Chung Container TerminalKwai Chung, N.T.,Hong Kong",1804854
+1449,219,SOLD_TO,"Rm 1004W-1006W,ATL Logistic Center BBerth 3,Kwai Chung Container TerminalKwai Chung Hong Kong",1804823
 1449,5510,DELIVER_TO,香港新界元朗新田嘉龍路小磡村10號,1890504
 1449,5510,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1890506
 1449,5510,DELIVER_TO,"CO.,LTD. NO.299,NANSONG RD.,YU SHAN TOWNKUN SHAN CITY,JIANGSU PROVINCE,CHINA",1890505
@@ -1525,6 +1693,7 @@
 162063,1373,DELIVER_TO,"UNIT B25,6/F.,BLOCK B,PROFICIENTINDUSTRIAL CENTER, NO.6, WANG KWUN RD.KOWLOON BAY, KOWLOON, HONGKONG",1724391
 169387,320,BILL_TO,"74 Northeastern Blvd Unit 12Nashus, NH 03062, USA",879145
 169387,219,BILL_TO,"74 Northeastern Blvd Unit 12Nashus, NH 03062, USA",842834
+169387,219,SOLD_TO,"74 Northeastern Blvd Unit 12Nashus, NH 03062, USA",842837
 169387,3171,BILL_TO,"107 Northeastern Blvd, Nashua, NH, 03062, USA",1926058
 169387,3171,SHIP_TO,"107 Northeastern Blvd, Nashua, NH, 03062, USA",1926059
 169387,686,BILL_TO,"107 Northeastern Blvd, Nashua, Nh, United States",1926939
@@ -1551,6 +1720,7 @@
 169387,219,SHIP_TO,"Unit B, 23/F, Excelsior Industrial BuildingNos 68-76 Sha Tsui Road Tsuen Wan,New Territories, Hong Kong",1953603
 19070,221,BILL_TO,"Lot J9,J10 Export Processing Zone,Wuxi Jiangsu Province,PRC ATTN,David ZhuTEL,0510 85206000 FAX,0510 85203471 post code: 214028",71640
 19070,221,SHIP_TO,"Lot J9,J10 Export Processing Zone,Wuxi Jiangsu Province,PRC ATTN,David ZhuTEL,0510 85206000 FAX,0510 85203471 post code: 214028",71644
+19070,221,SOLD_TO,"Lot J9,J10 Export Processing Zone,Wuxi Jiangsu Province,PRC ATTN,David ZhuTEL,0510 85206000 FAX,0510 85203471 post code: 214028",71642
 19070,1228,BILL_TO,"Jabil Circuit (WUXI) Ltd. Lot J9 & J10Wuxi Export Processing Zone, 287 Gaolang RoadWuxi, Jiangsu Province, China 214028",179750
 19070,686,BILL_TO,"Lot J9,J10 Export Processing Zone,Wuxi Jiangsu Province,PRCATTN,David Zhu TEL:0510 85206000 FAX:0510 85203471",469716
 19070,2630,BILL_TO,"捷普電子(無錫)有限公司Lot J9,J10 Export Processing Zone,Wuxi Jiangsu Province,PRCATTN,David Zhu TEL:0510 85206000 FAX:0510 85203471",498003
@@ -1778,14 +1948,14 @@
 25997,3329,DELIVER_TO,香港新界屯門洪祥路三號田氏中心第二座地下,1526934
 25997,3329,SHIP_TO,香港新界屯門洪祥路三號田氏中心第二座地下,781268
 25997,3715,DELIVER_TO,"Lot Dd104,Lin Ban Wai Po,San Tin,Yuenlong,N.T. Hong Kong",906211
-25997,3718,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. ",902243
+25997,3718,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",902243
 25997,3718,DELIVER_TO,"1/F, Ever Gain Centre, 28 On Muk Street, Shatin , N. T.Hong Kong",902245
 25997,3718,DELIVER_TO,"Lot Dd104,Lin Ban Wai Po,San Tin,Yuenlong,N.T. Hong Kong",902246
 25997,3717,SHIP_TO,"No.88, Yanghu Road, Wujin Hi-Tech IndustrialDevelopment Zone Jiangsu Province,ChinaPanda(沙田倉)",757550
 25997,3717,SHIP_TO,"30# technology Road,Yin Hu Industrial Area,QingXi Town,DongGuan City,GuangDong,ChinaPANDA(粉嶺倉)",757547
 25997,3717,SHIP_TO,"Middle of Technology Rd., HengJiao Ind.,ShiJie Town, DongGuan, GuangDong, P.R.C.523290",757551
 25997,3714,DELIVER_TO,"Lot Dd104,Lin Ban Wai Po,San Tin,Yuenlong,N.T. Hong Kong",898664
-25997,3719,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. ",904650
+25997,3719,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",904650
 25997,3719,DELIVER_TO,"1/F, Ever Gain Centre, 28 On Muk Street, Shatin , N. T.Hong Kong",904644
 25997,3719,DELIVER_TO,"Lot No. 4609 A in D.D.104 Ngau Tam Mei,Yuen Long. NT.Hong Kong",904645
 25997,3719,DELIVER_TO,"Lot Dd104,Lin Ban Wai Po,San Tin,Yuenlong,N.T. Hong Kong",904646
@@ -2116,6 +2286,8 @@
 3260,219,BILL_TO,"5306 Hollister, Houston, TX 77040, USA",72730
 3260,320,BILL_TO,"5306 Hollister, Houston, TX 77040, USA美國",72726
 3260,1388,BILL_TO,"7/F, West Wing, Warwick House Taikoo Place,979 King's Road, Quarry Bay, HK",250466
+3260,1778,MARKET,"KINWICK CENTRE, 22ND FLOOR,RM 2201 32 HOLLYWOOD ROAD CENTRAL,HONG KONG",345478
+3260,1780,MARKET,"KINWICK CENTRE, 22ND FLOORRM 2201 32 HOLLYWOOD ROAD CENTRAL,HONG KONG",345982
 3260,320,BILL_TO,"KINWICK CENTRE, 22ND FLOOR,RM 2201 32 HOLLYWOOD ROAD CENTRAL,HONG KONG",767476
 3260,1388,BILL_TO,"5306 HOLLISTER HOUSTON,TX 77040 USA",803412
 3260,320,BILL_TO,"Suites 2607-10, Tower Two, Times Square,1 Matheson Street, Causeway Bay, Hong Kong",1796994
@@ -2147,6 +2319,7 @@
 3260,686,DELIVER_TO,FEDEX # 1898-7042-6,116877
 3260,686,SHIP_TO,"Zijlstaat 44 2011TN Haarlem, The NetherlandsTel# 31-21-750-4000 Attn: Sri Nair",142176
 3260,686,DELIVER_TO,WPG Fedex Acct #: 194409494,142196
+3260,686,SELF_SERVICE_USER,"1004-1005 Central Plaza,227 HuangPi Road NorthShanghai, 200003 China",161629
 3260,686,SHIP_TO,Leisteen 3-5 2132 ME HoofddorpThe NetherlandsTel: 31.23.554.6070 Attn:Mr Marlon,160953
 3260,692,SHIP_TO,"7/F, West Wing, Warwick House Taikoo Place,979 King's Road, Quarry Bay, HK",187314
 3260,1368,DELIVER_TO,"2201-4 KINWICK CENTRE32 HOLLYWOOD ROADCENTRAL, HONG KONG TEL:852 2 854 3232 FAX:852 2 854 9996",195128
@@ -2158,6 +2331,7 @@
 3260,686,DELIVER_TO,,240063
 3260,1388,SHIP_TO,"7/F, West Wing, Warwick House Taikoo Place,979 King's Road, Quarry Bay, HK",250464
 3260,686,DELIVER_TO,,316639
+3260,2630,SELF_SERVICE_USER,"1004-1005 Central Plaza,227 HuangPi Road NorthShanghai, 200003 China",506103
 3260,2630,DELIVER_TO,"7/F, WEST WING, WARWICK HOUSETAIKOO PLACE, 979 KING'S ROAD, QUARRY BAY,HONG KONG",1680779
 3260,2630,SHIP_TO,"7/F, WEST WING, WARWICK HOUSETAIKOO PLACE, 979 KING'S ROAD, QUARRY BAY,HONG KONG",506104
 3260,2630,DELIVER_TO,"AMSTERDAM OFFICE (TEL : 3123-540-5151)AMSTERDAMSE VAART 268,2032 EK HAARLEM,THE NERTHERLANDS",1680780
@@ -2207,6 +2381,7 @@
 3260,2629,SHIP_TO,"AMSTERDAMSE VAART 268,2032EK HAARLEM, THE NETHERLANDSTEL : 31-23-750-4000. Attn: Marlon",597574
 3260,2629,DELIVER_TO,Leisteen 3-5 2132 ME HoofddorpThe NetherlandsTel: 31.23.554.6070 Attn:Mr Marlon,1672414
 3260,2629,SHIP_TO,Leisteen 3-5 2132 ME HoofddorpThe NetherlandsTel: 31.23.554.6070 Attn:Mr Marlon,597575
+3260,2629,SELF_SERVICE_USER,"1004-1005 Central Plaza,227 HuangPi Road NorthShanghai, 200003 China",597572
 3260,2629,DELIVER_TO,,597570
 3260,221,DELIVER_TO,"7/F, WEST WING, WARWICK HOUSE TAIKOOPLACE 979 KING'S ROAD QUARRY BAY, HONGKONGCONTACT:TERRY FY/BRIAN TSOI 00852-28543232",727505
 3260,219,DELIVER_TO,"1/F, Continental Electric Industrial Building,17 Wang Chiu Road, Kowloon Bay,Kowloon, Hong Kong",1625338
@@ -2310,8 +2485,11 @@
 4577,320,BILL_TO,"1st Row Yin Shan Rd.,Yin Hwu Ind.Area,QingXi Town,Dongguan city",122061
 4577,5510,BILL_TO,"P.O. Box 3444, Road Town, TortolaBritish Virgin Islands",1943016
 4577,320,SHIP_TO,"1st Row Yin Shan Rd.,Yin Hwu Ind.Area,QingXi Town,Dongguan cityGuangdong Province,China",1899221
+4577,320,SOLD_TO,"1st Row Yin Shan Rd.,Yin Hwu Ind.Area,QingXi Town,Dongguan cityGuangdong Province,China",27524
+4577,1778,LEGAL,"Lst Row Yin Shan Rd., Yin Hwu IndufrialAren, Qingxi Town, Dongguan City,Guangdong Province. China",345411
+4577,1778,MARKET,"Lst Row Yin Shan Rd., Yin Hwu IndufrialAren, Qingxi Town, Dongguan City,Guangdong Province. China",345412
 4577,1388,SHIP_TO,"(NABU) C/O PANDA LOGISTICS LTD.1/F,EverGain Centre, 28 On Muk Street,Shatin ,N.T. HK.",607610
-4577,317,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. ",923288
+4577,317,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",923288
 4577,5510,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",1890998
 4577,5510,SHIP_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",1890999
 4577,219,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. CTC:William Chung/Michelle LeungTel: 852-27462540/27467131",947165
@@ -2319,7 +2497,7 @@
 4577,219,DELIVER_TO,"Room RCG04, Ground Floor, South Office Block,Super Terminal 1, Hongkong International Airport,Hong Kong",1862467
 4577,317,DELIVER_TO,"Room RCG04, Ground Floor, South Office Block,Super Terminal 1, Hongkong International Airport,Hong Kong",1862506
 4577,320,DELIVER_TO,"Room RCG04, Ground Floor, South Office Block,Super Terminal 1, Hongkong International Airport,Hong Kong",1862466
-4577,320,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. ",917202
+4577,320,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",917202
 4577,5510,DELIVER_TO,"香港元朗公奄路DD117地段744B, 745-747, 750-752, 754-757",1891095
 4577,5510,SHIP_TO,廣東省東莞市長安鎮上角管理區振安路段一號,1890706
 4577,5510,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. CTC:William Chung/Michelle LeungTel: 852-27462540/27467131",1890707
@@ -2328,6 +2506,7 @@
 4577,5510,DELIVER_TO,香港国际机场骏运路9号超级一号货站南座地下C04室,1890709
 4577,5510,DELIVER_TO,"Room RCG04, Ground Floor, South Office Block,Super Terminal 1, Hongkong International Airport,Hong Kong",1890710
 4577,219,SHIP_TO,廣東省東莞市長安鎮上角管理區振安路段一號,1899535
+3252,3175,SOLD_TO,"DD129,LOT 1983,DEEP BAY ROADLAU FAU SHAN YUEN LONG NT",1772731
 3252,3991,DELIVER_TO,"DD124 Lot No.2557, 2559, 2561 S.A ,TAN KWAI TSUEN ROAD, HUNG SHUI KIU,YUEN LONG, N.T., HONG KONG",1938679
 3252,3991,DELIVER_TO,香港元朗洪水橋丹桂村路450號,1938680
 3252,3172,DELIVER_TO,香港元朗洪水橋丹桂村路450號,1897791
@@ -2370,7 +2549,7 @@
 3892,3171,SHIP_TO,FLAT/RM 6-9 27F NEW TECH PLAZA 34 TAIYAU STREET SAN PO KONG KOWLOON HONG KONG,1827067
 3892,1371,DELIVER_TO,"RM2802,NEW TECH PLAZA,NO.34 TAI YAU STREET,SAN PO KONG, KOWLOON, HONG KONG SAR",949291
 40440,219,BILL_TO,深圳市南山區高新南一道創維大廈A座14樓,157451
-40440,1651,BILL_TO, 深圳市南山區高新南一道創維大廈A座14樓TEL:0755-26010018,274519
+40440,1651,BILL_TO,深圳市南山區高新南一道創維大廈A座14樓TEL:0755-26010018,274519
 40440,1651,SHIP_TO,深圳市南山區高新南一道創維大廈A座14樓TEL:0755-26010078  FAX:0755-26010028ATTN:嶽晃,274518
 40440,1388,BILL_TO,深圳市南山區高新南一道創維大廈A座14樓,436015
 40440,1388,SHIP_TO,香港鰂魚涌華蘭路20號華蘭中心1705室,436016
@@ -2381,9 +2560,9 @@
 40440,219,BILL_TO,"14/F., Block A, Skyworth Building,Gaoxin AVE. 1.SNanshan District, Shenzhen",1780354
 40440,3991,SHIP_TO,香港鍘魚湧華蘭路20號華蘭中心17樓1705室香港鍘魚湧華蘭路20號華蘭中心17樓1705室,1888240
 40440,3993,SHIP_TO,香港鍘魚湧華蘭路20號華蘭中心17樓1705室香港鍘魚湧華蘭路20號華蘭中心17樓1705室,1887559
-4577,320,SHIP_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. ",249680
+4577,320,SHIP_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",249680
 4577,219,SHIP_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. CTC:William Chung/Michelle LeungTel: 852-27462540/27467131",249663
-4577,317,SHIP_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong. ",249665
+4577,317,SHIP_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",249665
 4577,1780,DELIVER_TO,"1-5/F.,Wu Tung Development Centre,31 On Kui Street,Fanling, N.T. Hong Kong.",1626618
 4577,1388,SHIP_TO,"C/O Panda Logistics Ltd. 1-5/F.,Wu Tung Development Centre,31 On Kui Street, Fanling, N.T. Hong Kong.",708742
 4577,219,DELIVER_TO,"香港元朗公奄路DD117地段744B, 745-747, 750-752, 754-757",1869932
@@ -2512,6 +2691,7 @@
 5440,1569,BILL_TO,惠州市仲愷高新技術產業開發區16號區,630525
 5440,3592,BILL_TO,惠州市仲愷高新技術產業開發區16號,730575
 5440,3175,BILL_TO,惠州市高新區惠臺三橫路18號,686780
+5440,3175,MARKET,惠州市高新區惠臺三橫路18號,686782
 5440,3993,BILL_TO,"No.16 Zone, Zhongkai, High&Technology IndustryDevelopment Zone, Huizhou Guangdong China",795892
 5440,4478,BILL_TO,惠州市仲恺高新技术产业开发区16号区0752-2629988,1791206
 5440,1570,BILL_TO,惠州市仲愷高新技術產業開發區16號區,1790556
@@ -2522,6 +2702,7 @@
 5440,1569,SHIP_TO,惠州市仲愷高新技術產業開發區16號區,1802465
 5440,1569,DELIVER_TO,惠州市仲愷高新技術產業開發區16號區,1726595
 5440,3172,DELIVER_TO,"No.16 Zone, Zhongkai, High&Technology IndustryDevelopment Zone, Huizhou Guangdong China",892422
+5440,3175,LEGAL,惠州市仲愷高新技術產業開發區16號區,686781
 5440,3993,SHIP_TO,"DD 105  Lot 87-88 Mai Po Lung Road, ShekWu Wai, Yuen Long,N.T Hong Kong",795894
 5440,3991,SHIP_TO,"DD 105 Lot 87-88 Mai Po Lung Road,Shek Wu Wai, Yuen Long,N.T,Hong KongAttn:王小姐/昂小姐 Tel：24827617",1860718
 5440,4478,DELIVER_TO,惠州市仲恺高新技术产业开发区16号区0752-2629988,1791207
@@ -2587,7 +2768,9 @@
 55763,219,SHIP_TO,香港新界元朗新田嘉龍路小磡村10號,1804330
 55763,219,SHIP_TO,"dd125, ha tsuen road, pang shan,yuen long, n.t.",1804337
 55763,219,SHIP_TO,香港新界元朗新田古洞路第98約地段165-181號,1804328
+55763,219,SOLD_TO,"3722RP, DD104, Man Yuen Chuen, Tai Sang Wai,Yuen Long, NT",1804336
 55763,219,SHIP_TO,"No 8,Street 6,VSIP Bac Ninh,Phu Chan Commune,Tu Son Town,Bac Ninh,Vietnam",1804340
+55763,219,SOLD_TO,"Unit 46-47,1 Floor,(Registration Counter-Unit 17)Airport Freight Forwarding Centre,2 Chun Wan Road,Chek Lap Kok,Hong Kong",1804341
 55763,219,SHIP_TO,"No.8, street 6, VSIP, Phu Chan communeTU SON TOWN, BAC NINH PROVINCE  VIETNAM",1804325
 55763,3992,DELIVER_TO,香港新界元朗大樹下西路 DD118 LOT 1120油渣埔村B&C倉,1937434
 55763,3718,DELIVER_TO,"DD107 SAN TAM ROAD ,FUNG KAT HEUNG,YUEN LOMG,NEW TERRITORIES HK",1850502
@@ -2818,6 +3001,7 @@
 7045,2629,DELIVER_TO,Jabil DHL Acc# 964395503,773003
 7045,686,DELIVER_TO,HU08 DHL# 960668586,868690
 7045,2629,DELIVER_TO,,821776
+7045,219,SOLD_TO,"6/F., EVER GAIN #3 BLDG 22 ON SUM STREET,SHATIN,N,T.,HK",880663
 7045,686,DELIVER_TO,DHL Account Number: 966125779,862076
 7045,2629,DELIVER_TO,DHL Account Number: 966125779,862077
 7045,221,DELIVER_TO,"Lot No. 1812SB.RP,Demarcation District 125 Ping Ha Road,Ha Tsuen,Yuen Long, N.T., Hong Kong",927255
@@ -3090,6 +3274,8 @@
 7045,2629,SHIP_TO,"16 Tampines Industrial Crescent,Singapore 528604.",589472
 7045,2629,DELIVER_TO,,589429
 7045,219,BILL_TO,16 TAMPINES INDUSTRIAL CRESCENTSINGAPORE 528604TEL: (+65) 6882 4800,881283
+7045,219,SOLD_TO,16 TAMPINES INDUSTRIAL CRESCENTSINGAPORE 528604TEL: (+65) 6882 4800,881286
+7045,219,SOLD_TO,"600 TIAN LIN ROAD, 200233, SHANGHAI",881189
 7045,2629,DELIVER_TO,BLK 513 #01-129 KAMPUNG BAHRU ROADKEPPEL DISTRIPARKSINGAPORE (SEA WAREHOUSE).,514468
 7045,2629,DELIVER_TO,61 ALPS AVENUESINGAPORE 498798 (AIR WAREHOUSE),514469
 7045,686,SHIP_TO,"56, Hilir Sungai Keluang 1,Bayan Lepas Industrial Park, Phase 411900 Penang",553426
@@ -3187,6 +3373,7 @@
 75707,320,SHIP_TO,"CONVERGE, FOUR TECHNOLOGY DRIVE,PEABODY MA 01960,UNITED STATES.",286522
 75707,686,DELIVER_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",290023
 75707,686,SHIP_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",290022
+75707,686,SOLD_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",290024
 75707,686,DELIVER_TO,"C/O Converge Asia Pte Ltd20 Toh Guan Road, #06-00, CJ Korea ExpressBuilding, Singapore 608839",290045
 75707,686,DELIVER_TO,"C/O GS Logistics SVCSUnit 11-01, Kerry Warehouse ( Chaiwan)50, KA Yip Street, Chaiwan, Hong Kong",290049
 75707,686,SHIP_TO,"C/O GS Logistics SVCSUnit 11-01, Kerry Warehouse ( Chaiwan)50, KA Yip Street, Chaiwan, Hong Kong",290047
@@ -3231,6 +3418,7 @@
 75707,2630,DELIVER_TO,"C/O GS Logistics SVCSUnit 11-01, Kerry Warehouse ( Chaiwan)50, KA Yip Street, Chaiwan, Hong Kong",502463
 75707,2630,DELIVER_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",502464
 75707,2630,SHIP_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",502467
+75707,2630,SOLD_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",502468
 75707,2630,DELIVER_TO,"C/O GS Logistics SVCSUnit 11-01, Kerry Warehouse ( Chaiwan)50, KA Yip Street, Chaiwan, Hong Kong",1679547
 75707,2630,SHIP_TO,"C/O GS Logistics SVCSUnit 11-01, Kerry Warehouse ( Chaiwan)50, KA Yip Street, Chaiwan, Hong Kong",502465
 75707,686,BILL_TO,"20 TOH GUAN ROAD,#06-00 CJ KOREA EXPRESS BUILDING,SINGAPORE 608839",585178
@@ -3246,6 +3434,7 @@
 75707,2630,SHIP_TO,"20 TOH GUAN ROAD,#06-00 CJ GLS BUILDING,SINGAPORE 608839",517977
 75707,2629,DELIVER_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",592518
 75707,2629,SHIP_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",592521
+75707,2629,SOLD_TO,"PCG Trading,LLC dba Converge4 Technology Drive Peabody,MA 01960",592522
 75707,3172,DELIVER_TO,20 TOH GUAN ROAD #06-00 CJ GLS BUILDING608839 SINGAPORE,888951
 75707,3171,DELIVER_TO,"C/O GS LOGISTICS SVCS UNIT 11-01,KERRYWAREHOUSE(CHAIWAN) 50,KA YIP STREET",1736036
 75707,3171,SHIP_TO,"CONVERGE, FOUR CONVERGE PEABODY, PEABODYMA, 01960, CONVERGE, FOUR TECHNOLOGYDRIVE, UNITED STATES",644809
@@ -3685,8 +3874,8 @@
 81184,134,SHIP_TO,廣東東莞長安鎮上沙社區麒麟路20號蒂雅克電子有限公司  李英明 18676912080,1761446
 81184,134,SHIP_TO,北京海淀区三环以内首体南路9号主语城8号楼1单元1002  杜雪 18610883702,1768957
 81184,134,SHIP_TO,湖北武汉市黄陂区汉口北商贸物流枢纽区管委会汉口北大道汉口北国际商品交易中心轻纺辅料城-西六门4楼,1852326
-81184,4249,DELIVER_TO,广东省惠州市惠阳区三和大道南嘉民产业园  ,1760780
-81184,4249,SHIP_TO,广东省惠州市惠阳区三和大道南嘉民产业园  ,1760779
+81184,4249,DELIVER_TO,广东省惠州市惠阳区三和大道南嘉民产业园,1760780
+81184,4249,SHIP_TO,广东省惠州市惠阳区三和大道南嘉民产业园,1760779
 81184,134,SHIP_TO,福建泉州市晋江市永和镇永和旧街32号,1927305
 81184,134,SHIP_TO,福建福州市台江区宁化路126福机新苑5号楼2804,1927306
 81184,134,SHIP_TO,广西柳州市三江县古宜镇荣兴嘉园22门面艾依格,1927307
@@ -3972,11 +4161,14 @@
 85107,219,BILL_TO,深圳市南山區南海大道1057號科技大廈二期A棟501A號,1884008
 85107,219,SHIP_TO,深圳市南山區南海大道1057號科技大廈二期A棟501A號,1884009
 85107,3175,BILL_TO,深圳市南山區南海大道1057號科技大廈二期A棟501A號,693179
+85107,3175,LEGAL,深圳市南山區南海大道1057號科技大廈二期A棟501A號,693180
+85107,3175,MARKET,深圳市南山區南海大道1057號科技大廈二期A棟501A號,693181
 85107,1568,SHIP_TO,惠州市大亞灣西區響水鎮荷茶村比亞迪電子有限公司C6-4F收料房,825794
 85107,219,DELIVER_TO,香港新界沙田安平街8號偉達中心7字樓701-702室,1884007
 85107,3175,DELIVER_TO,"Unit 701-702,7/F,Grandtech Center,No.8 On Ping Street,Shatin HK",1852246
 85464,692,BILL_TO,"NO.66 Xiqu Sceond Road, Shapingba District,ChongQing CITY, China",363642
 85464,320,BILL_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",363577
+85464,320,SOLD_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",363580
 85464,690,BILL_TO,重慶市沙坪壩區西區二路66號,363640
 85464,1780,BILL_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",364365
 85464,1778,BILL_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",364809
@@ -3990,6 +4182,9 @@
 85464,3715,BILL_TO,重慶市沙坪壩區西區二路66號,1856539
 85464,3732,BILL_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1968772
 85464,320,BILL_TO,重慶市沙坪壩區西區二路66號,363573
+85464,320,SOLD_TO,重慶市沙坪壩區西區二路66號,363576
+85464,320,SOLD_TO,(401331)重慶市沙坪壩區西園二路98號三樓,363566
+85464,320,SOLD_TO,"3F,No. 98 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing 401331 ,China",363570
 85464,690,BILL_TO,"Units C&G,15th Floor,CDW Building, 388 Castle Peak RoadTsuen Wan,N.T.,Hong Kong",363708
 85464,3719,BILL_TO,重慶市沙坪壩區西區二路66號,747699
 81184,134,SHIP_TO,山東濰坊市高新區金馬路北首孵化二巷光電產業園第一加速器2樓215,1828545
@@ -4063,13 +4258,13 @@
 85464,320,DELIVER_TO,"NO.3Warehouse,BW3,XiyongCBZ,Shapingba District, Chongqing City",915617
 85464,320,SHIP_TO,"NO.3Warehouse,BW3,XiyongCBZ,Shapingba District, Chongqing City",859506
 85464,3718,SHIP_TO,"NO.3 Warehouse,BW-3, Xiyong CBZ,Shapingba District,Chongqing China",872020
-85464,690,SHIP_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. ",871885
+85464,690,SHIP_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City.",871885
 85464,320,DELIVER_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1831412
 85464,320,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1831413
 85464,320,DELIVER_TO,重慶市沙坪壩區西區二路66號,1831414
 85464,320,SHIP_TO,重慶市沙坪壩區西區二路66號,1831415
 85464,3731,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1855183
-85464,690,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. ",1650578
+85464,690,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City.",1650578
 85464,317,DELIVER_TO,"NO3.and NO.4,Warehouse BW-11, XiyongCBZ,,Zongbao Road, Shapingba District,Chongqing",1788445
 85464,317,SHIP_TO,"NO3.and NO.4,Warehouse BW-11, XiyongCBZ,,Zongbao Road, Shapingba District,Chongqing",1788447
 85464,317,DELIVER_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1788442
@@ -4089,6 +4284,7 @@
 85464,5510,SHIP_TO,重慶市沙坪壩區西區二路66號,1890104
 85464,5510,DELIVER_TO,重慶市沙坪壩區西區二路66號,1890105
 85464,5510,DELIVER_TO,重慶市沙坪壩區西園二路98號3樓,1890106
+85464,5510,SOLD_TO,"3F,No. 98 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing 401331 ,China",1890107
 85464,5510,DELIVER_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba DistrictChongqing 401332 China",1890108
 85464,5510,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba DistrictChongqing 401332 China",1890115
 85464,5510,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. 401331(Inventec (ChongQing) Corporation.)",1890109
@@ -4102,6 +4298,9 @@
 85464,5510,SHIP_TO,"No.3-2, Zongbao Road, Xiyong FTZ,Shapingba District, Chongqing City.",1890113
 85464,5510,DELIVER_TO,"ROOM 211, 2/F., HEWLETT CENTRE, 54 HOI YUENROAD, KWUN TONG, KOWLOON, HONG KONG",1890114
 85464,5510,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing 401331 ,ChinaTEL:023-65398888",1890118
+85464,5510,SOLD_TO,(401331)重慶市沙坪壩區西園二路98號三樓,1890120
+85464,5510,SOLD_TO,"No. 66 Xi Qu 2nd Rd, , Sha Ping Ba District,Chongqing 401331 ,China",1890121
+85464,5510,SOLD_TO,重慶市沙坪壩區西區二路66號,1890122
 85464,3714,SHIP_TO,"No.66, Xi Qu 2nd Road, Shapingba District,Chongqing, China",1857813
 85464,3715,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1856538
 85464,3732,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1968773
@@ -4110,9 +4309,12 @@
 86122,3172,BILL_TO,"4 Kaki Bukit Avenue 1, #05-02 to 05-05,Singapore",638278
 86122,3169,BILL_TO,4 Kaki Bukit Avenue 1 #05-04 Singapore 417939,697918
 86122,2630,BILL_TO,"4 Kaki Bukit Avenue 1, #05-04Singapore 417939",702345
+86122,2630,SOLD_TO,"4 Kaki Bukit Avenue 1, #05-04Singapore 417939",702348
 86122,3329,BILL_TO,4 Kaki Bukit Avenue 1 #05-04 Singapore 417939,697897
 86122,2629,BILL_TO,"4 Kaki Bukit Avenue 1, #05-04Singapore 417939",702340
+86122,2629,SOLD_TO,"4 Kaki Bukit Avenue 1, #05-04Singapore 417939",702342
 86122,686,BILL_TO,"4 Kaki Bukit Avenue 1, #05-04Singapore 417939",702333
+86122,686,SOLD_TO,"4 Kaki Bukit Avenue 1, #05-04Singapore 417939",702336
 86122,3718,BILL_TO,4 Kaki Bukit Avenue 1 #05-04 Singapore 417939,743126
 86122,690,BILL_TO,臺北市內湖區堤頂大道二段489號4樓,782701
 86122,317,BILL_TO,台北市內湖區堤頂大道二段489號4樓,1788453
@@ -4135,10 +4337,10 @@
 86122,5510,BILL_TO,"4, Kaki Bukit Avenue 1, #05-04.Singapore 417939",1891226
 86122,5510,BILL_TO,"RichPower Electronic Devices Co., Ltd.台北市內湖區堤頂大道二段489號4樓4F., No. 489, Sec. 2, Tiding Blvd., Neihu Dist., Taipei City 11493, Taiwan",1891227
 86122,219,BILL_TO,"Pte.Ltd.4 Kaki Bukit Avenue 1,#05-02 to05-05 Singapore 417939",1815425
-85464,1780,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. ",1625940
-85464,1780,SHIP_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. ",869860
-85464,1778,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. ",1627673
-85464,1778,SHIP_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City. ",869906
+85464,1780,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City.",1625940
+85464,1780,SHIP_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City.",869860
+85464,1778,DELIVER_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City.",1627673
+85464,1778,SHIP_TO,"NO.3 Warehouse,BW-3,Xiyong CBZ,ShapingbaDistrict, Chongqing City.",869906
 85464,3329,SHIP_TO,重慶市沙坪壩區西區二路66號,1908263
 85464,1780,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1831690
 85464,3719,SHIP_TO,"No. 66 Xi Qu 2nd Rd, Sha Ping Ba District,Chongqing,China",1831851
@@ -4346,12 +4548,16 @@
 86408,1388,DELIVER_TO,香港新界元朗大樹下西路 DD118 LOT 1120油渣埔村B&C倉,1928507
 86408,5510,SHIP_TO,"Building F01 1F, Comprehensive Bonded Area,East Zhenxing Road,Zheng Zhou Airport,Henan,China",1890973
 86408,3329,DELIVER_TO,"10 Siu Hum Tsuen, San Tin, Yuen Long, N.T. Hong Kong",1875518
+86408,219,SOLD_TO,香港元朗廈村 廈村路 木人巷 地段DD125,1804420
 86408,219,SHIP_TO,"Building F01 1F, Comprehensive Bonded Area,East Zhenxing Road,Zheng Zhou Airport,Henan,China",1804422
+86408,219,SOLD_TO,香港新界元朗新田嘉龍路小磡村10號,1804419
 86408,1780,DELIVER_TO,香港新界元朗大樹下西路 DD118 LOT 1120油渣埔村B&C倉,1941816
 86408,3715,DELIVER_TO,香港元朗廈村 廈村路 木人巷 地段DD125,1862323
 86408,3719,DELIVER_TO,香港新界元朗大樹下西路 DD118 LOT 1120油渣埔村B&C倉,1928891
 86408,1388,SHIP_TO,"L07 Dock,General Export Zone,EastZhenXingRoad,Zhengzhou Airport HeNan,China",1759697
 86408,5510,DELIVER_TO,香港新界元朗新田嘉龍路小磡村10號,1890163
+86408,5510,SOLD_TO,香港新界元朗新田嘉龍路小磡村10號,1890164
+86408,5510,SOLD_TO,香港元朗廈村 廈村路 木人巷 地段DD125,1890165
 86408,5510,DELIVER_TO,香港元朗廈村 廈村路 木人巷 地段DD125,1890166
 86408,3714,DELIVER_TO,香港元朗廈村 廈村路 木人巷 地段DD125,1862333
 86408,3714,DELIVER_TO,香港新界元朗新田嘉龍路小磡村10號,1808800
@@ -4423,6 +4629,7 @@
 87608,320,DELIVER_TO,"3719RP, DD104 LOT WingTat Warehouse B,Man Yuen Chuen, Tai Sang Wai,Yuen Long, N.T, HONG KONG",1821599
 87608,320,SHIP_TO,"3719RP, DD104 LOT WingTat Warehouse B,Man Yuen Chuen, Tai Sang Wai,Yuen Long, N.T, HONG KONG",1839794
 87608,219,DELIVER_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1935561
+87608,219,SOLD_TO,"27/F, Nanyang Plaza 57 Hung To Road Kwun Tong, Kowloon HKFEDEX A/C:260116819",1804428
 87608,320,DELIVER_TO,"Rm 1004W-1006W,ATL Logistic Center BBerth 3,Kwai Chung Container TerminalKwai Chung Hong Kong",1928675
 87608,3715,DELIVER_TO,"Rm 1004W-1006W, ATL Logistics Centre B, Berth 3,Kwai Chung Container Terminal, Kwai Chung, N.T.,Hong Kong",1929011
 87608,3719,DELIVER_TO,"3719RP, DD104 LOT WingTat Warehouse B,Man Yuen Chuen, Tai Sang Wai,Yuen Long, N.T, HONG KONG",1818786
@@ -4437,9 +4644,12 @@
 87608,5510,DELIVER_TO,"3719RP,DD104 LOT WINGTAT WAREHOUSE D,Man Yuen Chuen,Tai Sang Wai,Yuen Long,New Territories,HONG KONG",1890176
 87608,320,DELIVER_TO,"3719RP, DD104 LOT C-1,Man Yuen ChuenTai Sang Wai,Yuen Long ,New Territories,Hong Kong.",1816418
 87608,5510,SHIP_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1890974
+87608,5510,SOLD_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1890167
+87608,5510,SOLD_TO,"27/F, Nanyang Plaza 57 Hung To Road Kwun Tong, Kowloon HKFEDEX A/C:260116819",1890168
 87608,5510,DELIVER_TO,"27/F, Nanyang Plaza 57 Hung To Road Kwun Tong, Kowloon HKFEDEX A/C:260116819",1890169
 87608,5510,DELIVER_TO,"3719RP, DD104 LOT C-1,Man Yuen ChuenTai Sang Wai,Yuen Long ,New Territories,Hong Kong.",1890170
 87608,5510,DELIVER_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1890171
+87608,5510,SOLD_TO,"元朗大生圍文苑村3719RP, DD104 LOT C-1 沙井(近錦繡花園)",1890172
 87608,1780,SHIP_TO,"NO.51, Tongle Road, Foxconn Industrial Park,District Jiangnan, Nanning, Guangxi China.",1822033
 87608,1780,DELIVER_TO,"3719RP, DD104 LOT WingTat Warehouse B,Man Yuen Chuen, Tai Sang Wai,Yuen Long, N.T, HONG KONG",1822034
 87608,3714,DELIVER_TO,"3719RP, DD104 LOT WingTat Warehouse B,Man Yuen Chuen, Tai Sang Wai,Yuen Long, N.T, HONG KONG",1857855
@@ -4453,15 +4663,17 @@
 87608,3732,SHIP_TO,"3719RP, DD104 LOT C-1,Man Yuen ChuenTai Sang Wai,Yuen Long ,New Territories,Hong Kong.",1968790
 87608,3732,SHIP_TO,廣西南寧同樂大道51號富士康南寧科技園B廠區,1968791
 87608,3732,DELIVER_TO,"3719RP, DD104 LOT SJ,Man Yuen Chuen,Tai SangWai,Yuen Long ,New Territories, Hong Kong.",1968792
+87827,1391,SOLD_TO,廣州省惠州市博羅縣湖鎮鎮湖廣路168號,569472
 87827,3719,BILL_TO,"168 Huguang. RD, Huzhen.Town, BoluoCounty,Huizhou, Guangdong, China",764158
 87827,3991,BILL_TO,"168Huguang. RD, Huzhen.Town, BoluoCounty,Huizhou,Guangdong, China",1888445
 87827,219,BILL_TO,惠州市博罗县湖镇镇湖广场168号,1929452
 87827,219,SHIP_TO,惠州市博罗县湖镇镇湖广场168号,1929453
 87827,3715,BILL_TO,"168Huguang. RD, Huzhen.Town, BoluoCounty,Huizhou,Guangdong, China",1856602
+87827,1391,SOLD_TO,葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東翼1004-1008,613190
 87827,3719,SHIP_TO,"Room 1004E-1008E, 1F., ATL Logistics CenterA,Berth 3, Kwai Chung, H.K.",764201
 87827,3172,SHIP_TO,"Room1004E-1008E, 1/F., ATL LogisticsCenter A, Berth 3, Kwai Chung, H. K.葵涌第三號貨櫃",818018
 87827,320,DELIVER_TO,"葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東翼1004-1008Room 1004E-1008E, 1/F., ATL Logistics Center ABerth 3, Kwai Chung, H.K.",1848031
-87827,320,SHIP_TO,葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東異1004-1008 ,1831429
+87827,320,SHIP_TO,葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東異1004-1008,1831429
 87827,219,DELIVER_TO,葵湧第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東翼1004 - 1008,1932210
 87827,3715,SHIP_TO,"Room 1004E-1008E, 1F., ATL Logistics CenterA,Berth 3, Kwai Chung, H.K.",1856604
 86122,690,SHIP_TO,"No. 68 Jiuhua North Road,Wuhu Export Processing Zones,Wuhu City, Anhui Province",800051
@@ -4495,7 +4707,8 @@
 87827,3175,BILL_TO,廣東省惠州市博羅縣湖鎮鎮湖廣路168號,1851601
 87827,3175,SHIP_TO,廣東省惠州市博羅縣湖鎮鎮湖廣路168號,1851602
 87827,3175,DELIVER_TO,葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東異1004-1008,1851600
-87827,320,DELIVER_TO,葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東異1004-1008 ,567454
+87827,320,DELIVER_TO,葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座1樓東異1004-1008,567454
+87827,320,SOLD_TO,"COMPEQ TECHNOLOGY (HUIZHOU)CO.,LTD惠州市博羅縣湖鎮鎮湖廣路168號",567455
 87827,3991,SHIP_TO,"Room1004E-1008E, 1/F., ATL LogisticsCenter A, Berth 3, Kwai Chung, H. K.葵涌第三號貨櫃",1888448
 98001,219,BILL_TO,WORKSHOP NO.1 20/F EW INTERNATIONALTOWER NO.120 TEXACO ROAD TSUEN WAN NT,433466
 98001,692,BILL_TO,WORKSHOP NO.1 20/F EW INTERNATIONALTOWER NO.120 TEXACO ROAD TSUEN WAN NT,709884
@@ -4613,3 +4826,862 @@
 9974,3169,SHIP_TO,新北市汐止區大同路二段159號4樓,626199
 9974,690,SHIP_TO,新北市汐止區大同路二段173號C棟7樓,713224
 9974,82,DELIVER_TO,新北市汐止區大同路二段159號4樓,929413
+1334,3169,BILL_TO,台北市士林區後港街66號,626022
+1334,320,BILL_TO,"66Hou-Kang St.,Shih-Lin District,Taipei111,TWNVAT # CZ681393608TEL:886-2-28810721 FAX:886-2-28811266",25597
+1334,3719,BILL_TO,臺北市士林區後港街66號,1911398
+1334,3731,BILL_TO,台北市士林區後港街66號,741276
+1334,3718,BILL_TO,33068 桃園市桃園區大智路88號,1767200
+1334,3718,SHIP_TO,33068 桃園市桃園區大智路88號,1767201
+1334,706,BILL_TO,台北市士林區後港街66號,148184
+1334,1778,BILL_TO,桃園市桃園區大智路88號,1791691
+1334,1778,SHIP_TO,桃園市桃園區大智路88號,1791692
+1334,317,BILL_TO,桃園市大溪區仁和路二段255號,41926
+1334,3718,BILL_TO,台北市士林區後港街66號,859540
+1334,317,BILL_TO,"255, JEN-HO RD., SEC.2 TACHI, TAOYUAN, TAIWAN",44568
+1334,1388,BILL_TO,台北市士林區後港街66號台北一廠(英業達集團士林廠),536577
+1334,1388,SOLD_TO,台北市士林區後港街66號台北一廠(英業達集團士林廠),536580
+1334,320,BILL_TO,台北市士林區後港街66號,1789689
+1334,317,BILL_TO,"66Hou-Kang St.,Shih-Lin District,Taipei111,TWNVAT # CZ681393608TEL:886-2-28810721 FAX:886-2-28811266",31890
+1334,317,BILL_TO,台北市士林區後港街66號,31891
+1334,317,SHIP_TO,"66Hou-Kang St.,Shih-Lin District,Taipei111,TWNVAT # CZ681393608TEL:886-2-28810721 FAX:886-2-28811266",40408
+1334,317,SHIP_TO,台北市士林區後港街66號,36925
+1334,690,BILL_TO,台北市士林區後港街66號,119453
+1334,3171,BILL_TO,臺北市士林區後港街66號,646091
+1334,1780,BILL_TO,臺北市士林區後港街66號,366431
+1334,3714,BILL_TO,台北市士林區後港街66號,1858806
+1334,3714,BILL_TO,33068 桃園市桃園區大智路88號,1858802
+1334,320,BILL_TO,"255, JEN-HO RD., SEC.2 TACHI, TAOYUAN, TAIWAN",142882
+1334,1778,BILL_TO,台北市士林區後港街66號,342872
+1334,3329,BILL_TO,臺北市士林區後港街66號,649904
+1334,1388,BILL_TO,桃園市桃園區大智路88號,1773877
+1334,1388,SHIP_TO,桃園市桃園區大智路88號,1767770
+1334,3169,SHIP_TO,臺北市士林區後港街66號,626233
+1334,1780,SHIP_TO,上海市漕河涇出口加工區浦星路789號,366432
+1334,1388,SHIP_TO,台北市士林區後港街66號台北一廠(英業達集團士林廠),536578
+1334,3171,SHIP_TO,"No.66, West District 2nd Rd., ShapingbaDistrict, Chongqing, China",646095
+1334,3171,SHIP_TO,No.789 Puxing Rd. Caohejing Export Processing Zone Shanghai China,646155
+1334,3171,SHIP_TO,台北市士林區後港街66號,646164
+1334,3329,SHIP_TO,"NO.66 WEST DISTRICT 2ND RD, SHAPINGBADISTEICT,CHONGQING,CHINA.",649925
+1334,317,SHIP_TO,"Evropska 863 66442 Modrice Czech RepublicCompanyID# 26919389 ,IEC VAT#CZ681393608",97446
+1334,320,SHIP_TO,"Evropska 863 66442 Modrice Czech RepublicCompanyID# 26919389 ,IEC VAT#CZ681393608",87886
+1334,690,SHIP_TO,台北市士林區後港街66號,529013
+1334,3731,SHIP_TO,台北市士林區後港街66號,741278
+1334,3718,SHIP_TO,台北市士林區後港街66號,859541
+1334,1388,SHIP_TO,桃園市大溪區仁和路二段349號6樓(台北六廠),1853450
+1334,317,SHIP_TO,桃園市龜山區文德路27-3號,1785164
+1334,317,SHIP_TO,"No.88, Dazhi Rd., Taoyuan Dist., Taoyuan City33068, Taiwan",1785163
+1334,317,SHIP_TO,"NO.66 WEST DISTRICT 2ND RD, SHAPINGBADISTEICT,CHONGQING,CHINA.",1785190
+1334,317,SHIP_TO,"NO.699, PUXING ROAD, MINGHANG DISTRICT,SHANGHAI CHINA",1785192
+1334,317,SHIP_TO,No.789 Puxing Rd. Caohejing Export Processing Zone Shanghai China,1785196
+1334,317,DELIVER_TO,"NO.789,PUXING ROAD.,CAOHEJING EXPORTPROCESSING ZONE, SHANGHAI,CHINA",1785184
+1334,317,SHIP_TO,"NO.789,PUXING ROAD.,CAOHEJING EXPORTPROCESSING ZONE, SHANGHAI,CHINA",1785198
+1334,320,SHIP_TO,"NO.66 WEST DISTRICT 2ND RD, SHAPINGBADISTEICT,CHONGQING,CHINA.",1786824
+1334,320,DELIVER_TO,重慶市沙坪壩區西區二路66號 NO.66 W,1786813
+1334,320,SHIP_TO,重慶市沙坪壩區西區二路66號 NO.66 W,1786825
+1334,320,DELIVER_TO,"NO.699, PUXING ROAD, MINGHANG DISTRICT,SHANGHAI CHINA",1786814
+1334,320,SHIP_TO,"NO.699, PUXING ROAD, MINGHANG DISTRICT,SHANGHAI CHINA",1786826
+1334,320,DELIVER_TO,No.789 Puxing Rd. Caohejing Export Processing Zone Shanghai China,1786817
+1334,320,SHIP_TO,No.789 Puxing Rd. Caohejing Export Processing Zone Shanghai China,1786829
+1334,320,DELIVER_TO,上海市浦星路699號 NO.699 PU XIN,1786819
+1334,320,SHIP_TO,上海市浦星路699號 NO.699 PU XIN,1786831
+1334,320,DELIVER_TO,"No.789,PUXING ROAD, MINHANG DISTRICTSHANGHAI, CHINA",1786822
+1334,320,SHIP_TO,"No.789,PUXING ROAD, MINHANG DISTRICTSHANGHAI, CHINA",1786834
+1334,3714,SHIP_TO,33371 桃園市龜山區文德路27-3號,1858800
+1334,3714,SHIP_TO,33068 桃園市桃園區大智路88號,1858801
+1334,3714,SHIP_TO,"No.88, Dazhi Rd., Taoyuan Dist., Taoyuan City, Taiwan",1858803
+1334,3714,SHIP_TO,桃園市大溪區仁和路二段349號6F,1858804
+1334,3719,SHIP_TO,"6F.,No.349, Sec.2,Renhe Rd., Daxi Dist.,Taoyuan City, Taiwan",1911411
+1334,3169,SHIP_TO,"桃園市大溪區仁和路二段349號3F,",1902400
+1334,317,SHIP_TO,桃園市龜山區文德路27號B棟,1785211
+1334,317,SHIP_TO,33068 桃園市桃園區大智路88號,1765403
+1334,3718,SHIP_TO,33371 桃園市龜山區文德路27-3號,1762570
+1334,317,SHIP_TO,桃園市龜山區長壽路107巷2號,1960174
+1334,317,SHIP_TO,台北市南港區成功路一段76號,883761
+1334,320,SHIP_TO,"Inventec IEC Technologies C/O EP Logistics LLC9601 Pan American Drive, El Paso Texas 79927, U.S.A.TEL1:1-915-637-0591/1-915-881-9100",874894
+1334,320,DELIVER_TO,"NO.66 WEST DISTRICT 2ND RD, SHAPINGBADISTEICT,CHONGQING,CHINA.",916651
+1334,320,SHIP_TO,"NO.66 WEST DISTRICT 2ND RD, SHAPINGBADISTEICT,CHONGQING,CHINA.",885130
+1334,320,DELIVER_TO,"No.66, West District 2nd Rd., ShapingbaDistrict, Chongqing, China",1789043
+1334,320,SHIP_TO,"No.66, West District 2nd Rd., ShapingbaDistrict, Chongqing, China",1789048
+1334,317,SHIP_TO,"No.66, West District 2nd Rd., ShapingbaDistrict, Chongqing, China",1788063
+1334,317,SHIP_TO,"Room 308, Airfreight Building, Shanghai Pudong",1788065
+1334,1780,DELIVER_TO,"1F 15BULIDING NO 789 PUXING RD,MINHAN DISTRICT,SHAZHANGLEI",1626439
+1334,1778,DELIVER_TO,"1F 15BULIDING NO 789 PUXING RD,MINHAN DISTRICT,SHAZHANGLEI",1628616
+1334,3718,SHIP_TO,"No.88, Dazhi Rd., Taoyuan Dist., Taoyuan City, Taiwan",1815135
+1334,320,DELIVER_TO,台北市士林區後港街66號,1789691
+1334,320,SHIP_TO,台北市士林區後港街66號,1789696
+1334,690,SHIP_TO,桃園市大溪區仁和路二段349號3樓,1903895
+1334,320,SHIP_TO,"No.88, Dazhi Rd., Taoyuan Dist., Taoyuan City33068, Taiwan.",1786836
+1334,317,SHIP_TO,桃園市大溪區仁和路二段349號 6F,1814536
+1334,317,SHIP_TO,"6F., No.349, Sec. 2, Renhe Rd.,Daxi Dist., Taoyuan City, Taiwan (R.O.C.)",1814537
+1334,3714,SHIP_TO,台北市士林區後港街66號,1858810
+144123,219,BILL_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,613689
+144123,219,SOLD_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,613692
+144123,690,SHIP_TO,蘇州工業園區蘇虹中路200號綜合保稅區建屋三期4C廠房,1931771
+144123,219,SHIP_TO,"4C building, Jianwu Phase III, Integrated bondedarea, No.200 Suhong Road, Suzhou industry park,Suzhou, Jiangsu Province, China",1932239
+1503,1778,BILL_TO,臺北市內湖區瑞光路581號,361502
+1503,1778,LEGAL,臺北市內湖區瑞光路581號,361503
+1503,1778,MARKET,臺北市內湖區瑞光路581號,361504
+1503,3171,BILL_TO,臺北市內湖區瑞光路581號,646098
+1503,1778,SHIP_TO,桃園市平鎮區南東路8號,361505
+1503,3171,SHIP_TO,臺北市內湖區瑞光路581號,646140
+1503,3171,SHIP_TO,No.15 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,646141
+1503,3171,SHIP_TO,"No.58, First Avenue, A Zone,Kunshan Comprehensive Free Trade Zone,Kunshan, Jiangsu, China",646143
+1503,3329,SHIP_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",649944
+1503,3329,SHIP_TO,No.15 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,649962
+1503,3329,SHIP_TO,"No.58, First Avenue, A Zone,Kunshan Comprehensive Free Trade Zone,Kunshan, Jiangsu, China",649975
+1503,3731,SHIP_TO,桃園市平鎮區南東路8號,741272
+1334,1778,SHIP_TO,"1F 15BULIDING NO 789 PUXING RD,MINHAN DISTRICT,SHAZHANGLEI",869875
+1334,1778,SHIP_TO,桃園市龜山區文德路27-3號,1759886
+1334,3171,SHIP_TO,9601 Pan American Drive El Paso TX 79927U.S.A.,1922081
+1334,3171,SHIP_TO,ICZEvropska 863 664 42 Modrice CzechRepublic,1922082
+1334,320,SHIP_TO,桃園市桃園區大智路88號,1794968
+1334,317,SHIP_TO,33371桃園市龜山區文德路27-3號,1762096
+1334,317,SHIP_TO,桃園市桃園區大智路88號,1766632
+1334,3718,SHIP_TO,桃園市大溪區仁和路二段349號6F,1817404
+1334,3329,DELIVER_TO,c/o EP Logistic LLC9601 Pan American Drive El Paso TX 79927U.S.A.,1965565
+1503,1388,BILL_TO,臺北市內湖區瑞光路581號,203268
+1503,1388,SHIP_TO,臺北市內湖區瑞光路581號,203269
+1503,320,BILL_TO,臺北市內湖區瑞光路581號,25575
+1503,320,SHIP_TO,臺北市內湖區瑞光路581號,25576
+1503,320,BILL_TO,臺北市內湖區瑞光路581號,25573
+1503,320,SHIP_TO,臺北市內湖區瑞光路581號,25574
+1503,320,DELIVER_TO,臺北市內湖區瑞光路581號,916626
+1503,320,DELIVER_TO,臺北市內湖區瑞光路581號,916625
+1503,3169,DELIVER_TO,"No.58, First Avenue, A Zone,Kunshan Comprehensive Free Trade Zone,Kunshan, Jiangsu, China",1691562
+1334,317,SHIP_TO,桃園市桃園區大智路88號,1763035
+1334,317,SHIP_TO,"No.88, Dazhi Rd., Taoyuan Dist., Taoyuan City 33068,Taiwan",1763036
+1334,1778,SHIP_TO,桃園市大溪區仁和路二段349號 6F,1813071
+1334,317,SHIP_TO,桃園市龜山區文德路27號 (B棟),883385
+1334,3171,SHIP_TO,桃園市大溪區仁和路二段349號3F,1954896
+1503,3731,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792671
+1503,3714,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792650
+1503,317,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792462
+144123,3175,BILL_TO,"香港灣仔港灣道6-8號,里安中心33字樓3312室",726066
+144123,3175,SHIP_TO,香港新界沙田山尾街36-42號嘉裡（沙田）貨倉7樓,726067
+144123,219,DELIVER_TO,"香港新界粉嶺安全街11號2樓（车场入口位于安居街）2/F, No.11,On Chuen Street,Fanling,N.T.,Hong Kong.(Vehicle Entrance at On Kui St",942902
+144123,3171,SHIP_TO,"No.83,Wuxiang Rd., No.200 Cenrtal SuHong Rd.,Suzhou Industrial Park Integrate Free Trade Zone,Suzhou Jiangsu 215021, China",785520
+144123,320,SHIP_TO,香港新界粉嶺安全街11號2樓（車場入口位於安居街）,837174
+144123,3991,DELIVER_TO,"2/F, No.11, On Chuen Street, Fanling, N. T., Hong Kong(Vehicle Entrance at On Kui Street )",1861046
+144123,3993,SHIP_TO,"4C building, Jianwu Phase III, Integrated bondedarea, No.200 Suhong Road, Suzhou industry park,Suzhou, Jiangsu Province, China",1931364
+144123,1780,SHIP_TO,"4C building, Jianwu Phase III, Integrated bondedarea, No.200 Suhong Road, Suzhou industry park,Suzhou, Jiangsu Province, China",1931331
+144123,219,SHIP_TO,"2F.,No.240, Sec. 1,Neihu Rd.,Neihu Dist.,Taipei City,Taiwan",1937270
+1503,3169,SHIP_TO,台北市內湖區陽光街385號,776159
+1503,317,DELIVER_TO,"The Third Street,Kunshan Export 		Processing ZoneKunshan, Jiangsu, China",138461
+1503,317,SHIP_TO,"The Third Street,Kunshan Export 		Processing ZoneKunshan, Jiangsu, China",138463
+1503,317,SHIP_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",694895
+1503,320,DELIVER_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",916627
+1503,320,SHIP_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",694921
+1503,3731,SHIP_TO,No.25 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,765844
+1503,3715,SHIP_TO,No.25 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,765872
+1503,1778,SHIP_TO,臺北市內湖區瑞光路581號,865398
+1503,320,DELIVER_TO,"8F, NO.74,76, SEC. 1, CHENG KUNG RD.,NANKANG, DISTRICT, TAIPEI CITY , TAIWAN.",916629
+1503,320,SHIP_TO,"8F, NO.74,76, SEC. 1, CHENG KUNG RD.,NANKANG, DISTRICT, TAIPEI CITY , TAIWAN.",857181
+1503,219,DELIVER_TO,台北市内湖區瑞光路581號,946802
+1503,219,SHIP_TO,台北市内湖區瑞光路581號,843043
+1503,690,SHIP_TO,桃園市平鎮區南東路8號,1762384
+1503,3715,SHIP_TO,"No.385, Yangguang St., Neihu Dist., Taipei CityTaiwan",1899721
+1334,3169,SHIP_TO,桃園市桃園區大智路88號,1762990
+1334,3169,SHIP_TO,"No.88, Dazhi Rd., Taoyuan Dist., Taoyuan City33068, Taiwan",1763080
+1334,3731,SHIP_TO,桃園市大溪區仁和路二段349號6F,1855149
+1334,3329,SHIP_TO,"Calle Manuel Talamas Camandari # 10050Sur Lote Bravo Cp 32695 Cd. Juarez , Mexico",1952012
+144123,3991,BILL_TO,"TONGFANG HONGKONG LIMITEDRoom 3312，33/F Shui On Centre, 6-8 Harbour RoadWan Chai, Hong Kong",1860233
+144123,3715,SHIP_TO,"4C building, Jianwu Phase III, Integrated bondedarea, No.200 Suhong Road, Suzhou industry park,Suzhou, Jiangsu Province, China",1931017
+144123,3329,SHIP_TO,蘇州工業園區蘇虹中路200號綜合保稅區建屋三期4C廠房,1930937
+1503,3715,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792672
+1503,3718,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792669
+1503,3719,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792670
+1503,320,BILL_TO,台北市內湖區瑞光路581號及581之1號,1792461
+1503,317,BILL_TO,臺北市內湖區瑞光路581號,32828
+144123,690,BILL_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,695432
+144123,690,SHIP_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,1914108
+144123,3175,DELIVER_TO,香港新界沙田山尾街36-42號嘉裡（沙田）貨倉7樓,1631550
+144123,1388,BILL_TO,"香港灣仔港灣道6-8號,瑞安中心33字樓3312室",695984
+144123,3329,BILL_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,695682
+144123,3169,BILL_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,694523
+144123,3169,SHIP_TO,"昆山綜合保稅區第一大道24號標準廠商,巨兆電腦(昆山)公司",694443
+144123,3171,BILL_TO,"Rm. 3312, 33/F Shui On Centre, 6-8 Harbour Rd.,Wan Chai, Hong Kong",717081
+144123,3715,BILL_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,752076
+144123,3715,SHIP_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,752077
+144123,3715,SHIP_TO,"NO.83,Wuxiang Road, No. 200 Cenrtal SuHongRoad,Suzhou Industrial Park Integrated FreeTrade Zone,Suzhou Jiangsu, China.",752079
+144123,1388,SHIP_TO,"香港灣仔港灣道6-8號,瑞安中心33字樓3312室",619226
+144123,1388,SHIP_TO,"7/F.,Kerry  Warehouse(Shatin),36-42 Shan MeiStreet,Fotan,N.T.",695243
+144123,3171,DELIVER_TO,"No.83,Wuxiang Rd., No.200 Cenrtal SuHong Rd.,Suzhou Industrial Park Integrate Free Trade Zone,Suzhou Jiangsu 215021, China",1736170
+144123,3169,SHIP_TO,"NO.83,Wuxiang Road, No. 200 Cenrtal SuHong Road,Suzhou Industrial Park Integrated Free Trade Zone ,Suzhou Jiangsu, China.",785515
+144123,3329,SHIP_TO,"NO.83,Wuxiang Road, No. 200 Cenrtal SuHong Road,Suzhou Industrial Park Integrated Free Trade Zone ,Suzhou Jiangsu, China.",785497
+144123,3993,DELIVER_TO,香港新界元朗落馬洲DD99 LOT255（新田皇崗新田交匯處威峰車場入口）,1748408
+144123,320,DELIVER_TO,香港新界粉嶺安全街11號2樓（車場入口位於安居街）,915975
+144123,1778,SHIP_TO,"4C building, Jianwu Phase III, Integrated bondedarea, No.200 Suhong Road, Suzhou industry park,Suzhou, Jiangsu Province, China",1931332
+1503,706,BILL_TO,臺北市內湖區瑞光路581號,211981
+1503,690,BILL_TO,臺北市內湖區瑞光路581號,319356
+1503,219,BILL_TO,台北市内湖區瑞光路581號,843042
+1503,219,SOLD_TO,台北市内湖區瑞光路581號,843044
+1503,219,SHIP_TO,"No.58, First Avenue, A Zone,Kunshan Comprehensive Free Trade Zone,Kunshan, Jiangsu, China",176792
+1503,317,DELIVER_TO,臺北市內湖區瑞光路581號,921853
+1503,317,DELIVER_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",921854
+1503,317,DELIVER_TO,台北市內湖區陽光街385號,921855
+1503,317,DELIVER_TO,台北市內湖區瑞光路585號3F,921856
+1503,317,SHIP_TO,台北市內湖區陽光街385號,763456
+1503,3714,SHIP_TO,No.25 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,765843
+1503,317,SHIP_TO,台北市內湖區瑞光路585號3F,782791
+1503,317,SHIP_TO,臺北市內湖區瑞光路581號,872274
+1503,3718,SHIP_TO,台北市內湖區陽光街385號,1899741
+1503,3719,SHIP_TO,"No.385, Yangguang St., Neihu Dist., TaipeiTaiwan",1899742
+1503,1778,SHIP_TO,台北市內湖區瑞光路585號3F,811628
+144123,320,DELIVER_TO,"No.24,1st Avenue,KunShan Intergrated BondedArea",915974
+144123,1780,BILL_TO,"香港灣仔港灣道6-8號,瑞安中心33字樓3312室",826271
+144123,1778,BILL_TO,"香港灣仔港灣道6-8號,瑞安中心33字樓3312室",826277
+144123,3993,BILL_TO,"TONGFANG HONGKONG LIMITEDRoom 3312，33/F Shui On Centre, 6-8 Harbour RoadWan Chai, Hong Kong",794945
+144123,3993,DELIVER_TO,"2/F, No.11,On Chuen Street,Fanling,N.T.,Hong Kong.(Vehicle Entrance at On Kui Street )",1748409
+144123,3993,DELIVER_TO,"新田洲頭村B-19C(近落馬洲黃巴站,即(落馬洲公共交通轉車站))",1748407
+144123,3175,DELIVER_TO,"NO.83,Wuxiang Road,No.200 Cenrtal SuHong RoadSuzhou Industrial Park Integrated FreeTrade Zone,Suzhou Jiangsu, China.",1631551
+144123,3991,DELIVER_TO,"新田洲頭村B-19C(近落馬洲黃巴站,即(落馬洲公共交通轉車站))",1860234
+144123,3991,DELIVER_TO,香港新界元朗落馬洲DD99 LOT255（新田皇崗新田交匯處威峰車場入口）,1860235
+144123,1388,SHIP_TO,苏州工业园区苏虹中路200号综合保税区西区内吴巷83号,1855511
+1503,3169,BILL_TO,台北市內湖區瑞光路581號及581之1號,1797272
+1503,3169,SHIP_TO,台北市內湖區瑞光路581號及581之1號,1797273
+1503,3329,BILL_TO,"No. 581, Ruiguang Rd., Neihu District Taipei City 11492, Taiwan",1797332
+1503,2629,BILL_TO,"No. 581 & 581-1 Ruiguang Road, Neihu DistrictTaipei, Taiwan, R.O.C.",1949691
+1503,1778,BILL_TO,台北市內湖區瑞光路581號及581-1號,1791868
+1503,317,SHIP_TO,桃園市平鎮區南東路8號,62504
+1503,219,DELIVER_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",946801
+1503,219,SHIP_TO,"760# West Yangguang Rd, Zhangpu Town,Kunshan City, Jiangsu Province,China.",726802
+1503,3718,SHIP_TO,桃園市平鎮區南東路8號,1932592
+1503,3719,SHIP_TO,桃園市平鎮區南東路8號,1932639
+1503,219,DELIVER_TO,葵涌三號貨櫃碼頭亞洲貨櫃物流中心B座三樓,1892622
+1503,3329,SHIP_TO,"NO.69 Guilin Road. B Central Avenue,Zone Area Export Processing Zone,Kunshan City",867740
+1503,320,DELIVER_TO,No.169 Sinotrans 2# warehouse Zhong Yang RoadB District Kunshan Free Trade ZoneJiangsu China.,916628
+1503,320,SHIP_TO,No.169 Sinotrans 2# warehouse Zhong Yang RoadB District Kunshan Free Trade ZoneJiangsu China.,813568
+1503,1778,SHIP_TO,台北市內湖區基湖路35巷16號5樓,842989
+1503,690,SHIP_TO,臺北市內湖區瑞光路581號,796652
+1503,3171,SHIP_TO,桃園市平鎮區南東路8號,827337
+1503,219,DELIVER_TO,"No.68,Zhong Yang Road B District Kunshan Free Trade Zonejiangsu China  ,中國江蘇省昆山綜合保稅區B區中央大道68號",946803
+1503,320,DELIVER_TO,桃園市平鎮區南東路8號,916631
+1503,320,SHIP_TO,桃園市平鎮區南東路8號,827092
+1503,317,DELIVER_TO,桃園市平鎮區南東路8號,921852
+1503,3714,SHIP_TO,"G01,Zone G,AirPort Section of Liang Lu CunTanFree Trade Port Area, YuBei District,Chongqing,China #401120",1802080
+1503,219,DELIVER_TO,"No.58, First Avenue, A Zone,Kunshan Comprehensive Free Trade Zone,Kunshan, Jiangsu, China",946800
+1503,3731,SHIP_TO,"No.385, Yangguang St., Neihu Dist., TaipeiTaiwan",1943200
+1503,3171,SHIP_TO,重慶市渝北區兩路寸灘保稅港區空港功能區A區A03,1935051
+1503,2629,SHIP_TO,"No.58, First Avenue, A Zone, KunshanComprehensive Free Trade Zone, Kunshan, Jiangsu, China",1949692
+1503,2629,DELIVER_TO,90 Alps Avenue SingaporeYosun Fedex acc#176056789,1949693
+1503,3714,SHIP_TO,桃園市平鎮區南東路8號,1932580
+1503,3715,SHIP_TO,桃園市平鎮區南東路8號,1932651
+1503,3715,SHIP_TO,"G01,Zone G,AirPort Section of Liang Lu CunTanFree Trade Port Area, YuBei District,Chongqing,China #401120",1802081
+1503,3169,SHIP_TO,桃園市平鎮區平東路659巷56-1號,1959800
+1503,3169,SHIP_TO,桃園市觀音區中山路一段1560號1樓,1969452
+1503,317,SHIP_TO,桃園市觀音區中山路一段1560號1樓 (北碼頭),1971167
+151029,219,DELIVER_TO,香港新界沙田區安麗街11號企業中心12樓1219室,1932263
+151029,3175,DELIVER_TO,香港新界沙田區安麗街11號企業中心3樓17-18室,1855069
+151029,219,DELIVER_TO,"2/F,Zone B,NO.11 On Chuen Street,Fanling,N.T.Hong Kong",1955118
+1703,1780,BILL_TO,江蘇省昆山綜合保稅區第一大道168號,347015
+1703,3719,BILL_TO,"First Avenue,Kunshan Integrated Free Trade Zone,Kunshan,Jiangsu,China",745963
+1503,219,SHIP_TO,"No. 88, Sec.1, ZongBao Avenue Chengdu Hi-techComprehensive Bonded Zone (Shuangliu),Shuangliu County, Chengdu City, SiChuan, China.",1918691
+144123,320,BILL_TO,"Rm. 3312, 33/F Shui On Centre, 6-8 Harbour Rd.,Wan Chai, Hong Kong",702161
+144123,320,SHIP_TO,"No.24,1st Avenue,KunShan Intergrated BondedArea",702162
+144123,3714,BILL_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,737205
+144123,3714,SHIP_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,737206
+144123,3714,SHIP_TO,"NO.83,Wuxiang Road, No. 200 Cenrtal SuHongRoad,Suzhou Industrial Park Integrated FreeTrade Zone,Suzhou Jiangsu, China.",737207
+144123,3991,SHIP_TO,香港灣仔港灣道6-8號瑞安中心33字樓3312室,788408
+144123,3329,SHIP_TO,"香港新界粉嶺安全街11號2樓(车场入口位于安居街)2/F, No.11,On Chuen Street,Fanling,N.T.,Hong Kong.(Vehicle Entrance at On Kui St",820995
+1503,3169,BILL_TO,"No. 581, Ruiguang Rd., Neihu District Taipei City 11492, Taiwan",1797322
+1503,219,SHIP_TO,No.15 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,140117
+1503,3714,SHIP_TO,"No.18-5, Baohong Avenue, Liangjiang New District,Chongqing, China(No.G01, Zone G,Air Port Section OfLianglu Cuntan Free Trade Port Area)",1805561
+1503,3715,SHIP_TO,"No.18-5, Baohong Avenue, Liangjiang New District,Chongqing, China(No.G01, Zone G,Air Port Section OfLianglu Cuntan Free Trade Port Area)",1805562
+1503,690,SHIP_TO,"NO.69 Guilin Road. B Central Avenue,Zone Area Export Processing Zone,Kunshan City",867756
+1503,1388,SHIP_TO,桃園市平鎮區南東路8號,837802
+1503,219,SHIP_TO,"No.68,Zhong Yang Road B District Kunshan Free Trade Zonejiangsu China  ,中國江蘇省昆山綜合保稅區B區中央大道68號",824461
+1503,3718,SHIP_TO,"No.385, Yangguang St., Neihu Dist., TaipeiTaiwan",1943201
+1503,3714,SHIP_TO,"No.385, Yangguang St., Neihu Dist., TaipeiTaiwan",1943227
+1503,219,SHIP_TO,重慶市渝北區兩路寸灘保稅港區空港功能區A區A03,1918382
+1503,1778,SHIP_TO,桃園市觀音區金湖里中山路一段1560號1樓,1965851
+1503,1388,SHIP_TO,桃園市觀音區中山路一段1560號,1965995
+1503,317,SHIP_TO,桃園市觀音區中山路一段1560號,1966964
+151029,3172,BILL_TO,上海市徐汇区虹漕路25-1号二层193室,1962308
+151029,3172,SHIP_TO,上海市徐汇区虹漕路25-1号二层193室,1962309
+151029,3172,DELIVER_TO,香港新界葵湧第三號貨櫃碼頭亞洲貨櫃物流中心B座三樓3024-3027E,1962307
+151029,3991,DELIVER_TO,香港沙田小瀝源安平街8號偉達中心7樓701-702室,1752499
+151029,3991,SHIP_TO,香港沙田小瀝源安平街8號偉達中心7樓701-702室,882111
+151029,3175,DELIVER_TO,"3024-3027E, 3/F., ATL Logistics Centre B, Berth 3Kwai Chung, N.T., Hong Kong",1965660
+1703,3719,SHIP_TO,"First Avenue,Kunshan Integrated Free Trade Zone,Kunshan,Jiangsu,China",1803277
+1703,320,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,39809
+1703,320,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,39815
+1503,3169,SHIP_TO,桃園市平鎮區南東路8號,822978
+1503,3719,SHIP_TO,"No.581 & 581-1, Ruiguang Rd.,Neihu District, Taipei City, Taiwan(R.O.C)",1822174
+1503,3329,SHIP_TO,"No.10-3,BaoHong Avenue,Yubei District,ChongQing,China.",1893207
+1503,3731,SHIP_TO,台北市內湖區陽光街385號,1779914
+1503,3714,SHIP_TO,桃園市觀音區中山路一段1560號1樓,1968276
+1503,3715,SHIP_TO,桃園市觀音區中山路一段1560號1樓,1968228
+1503,3718,SHIP_TO,桃園市觀音區中山路一段1560號1樓,1968272
+1703,109,BILL_TO,江蘇省昆山綜合保稅區第一大道168號,3714
+1703,82,BILL_TO,江蘇省昆山開發區出口加工區第一大道,8830
+1703,320,BILL_TO,江蘇省昆山綜合保稅區第一大道168號,37854
+1703,320,DELIVER_TO,江蘇省昆山綜合保稅區第一大道168號,914614
+1703,320,SHIP_TO,江蘇省昆山綜合保稅區第一大道168號,38783
+1703,5510,BILL_TO,江蘇省昆山綜合保稅區第一大道168號,1891185
+1503,3714,SHIP_TO,"No.581 & 581-1, Ruiguang Rd.,Neihu District, Taipei City, Taiwan(R.O.C)",1822150
+1503,3169,SHIP_TO,"No.10-3,BaoHong Avenue,Yubei District,ChongQing,China.",1893199
+1503,3719,SHIP_TO,"NO.G01, Zone G, Air Port Section ofLiangLu CunTan Free Trade PortArea, YuBei District, Chongqing, China",1938421
+1503,3718,SHIP_TO,"NO.G01, Zone G, Air Port Section ofLiangLu CunTan Free Trade PortArea, YuBei District, Chongqing, China",1938431
+1503,3718,SHIP_TO,No.25 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,1916791
+1503,3719,SHIP_TO,No.25 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,1916792
+1503,3714,SHIP_TO,台北市內湖區陽光街385號,1779902
+1503,3731,SHIP_TO,桃園市觀音區中山路一段1560號1樓,1968271
+1503,3719,SHIP_TO,桃園市觀音區中山路一段1560號1樓,1968273
+151029,3991,BILL_TO,上海市田州路99號13棟401A室,788463
+151029,3991,SHIP_TO,上海市田州路99號13棟401A室,1775825
+151029,3175,DELIVER_TO,"UNIT 701-702,7/F,GRANDTECH CENTER,NO.8ON PING STREET,SHATIN",1886498
+1503,3169,SHIP_TO,台北市內湖區內湖路一段320號1樓,1958744
+1503,3169,SHIP_TO,桃園市龜山區頂湖路24-1號,1961835
+151029,3991,DELIVER_TO,香港新界粉嶺安全街11號2樓(車場入口位于安居街),1776281
+151029,3172,DELIVER_TO,香港新界元朗屏山橋盛街7號地下,1892031
+1703,1388,BILL_TO,"江蘇省昆山綜合保稅區第一大道168號168# First Avenue,Kunshan Integrated Free Trade Zone,Kunshan,Jiangsu,China",323655
+1703,1391,BILL_TO,"No.168 First Avenue, Kunshan Integrated FreeTrade Zone Kunshan, Jiangsu, China.",401485
+1703,1391,SHIP_TO,"No.168 First Avenue, Kunshan Integrated FreeTrade Zone Kunshan, Jiangsu, China.",401487
+1703,3073,BILL_TO,江蘇省昆山市綜合保稅區第一大道168號,572941
+1703,3073,SHIP_TO,江蘇省昆山市綜合保稅區第一大道168號,572806
+1703,3718,BILL_TO,"First Avenue,Kunshan Integrated Free Trade Zone,Kunshan,Jiangsu,China",741751
+1703,317,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,80522
+1703,1388,BILL_TO,"No.68,Zhong Yang Road,B district Kunshan Export Processing Zone,Kunshan,Suzhou,jiangsu ,China",524103
+1703,1388,SOLD_TO,"No.68,Zhong Yang Road,B district Kunshan Export Processing Zone,Kunshan,Suzhou,jiangsu ,China",524106
+151029,3175,DELIVER_TO,"2/F,Zone B,NO.11 On Chuen Street,Fanling,N.T.Hong Kong",1954325
+151029,3175,SHIP_TO,上海市徐汇区虹漕路25-1号二层193室,1954326
+1703,5510,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,1891183
+1703,5510,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,1891184
+1703,1780,MARKET,"168# First Avenue,Kunshan Integrated Free Trade Zone215300 Kunshan,Jiangsu,China",345857
+1703,3718,SHIP_TO,"First Avenue,Kunshan Integrated Free Trade Zone,Kunshan,Jiangsu,China",741753
+1703,3718,DELIVER_TO,"No. 99, Zhong Yang Road, B districtKunshan Export Processing Zone,Kunshan, Jiangsu, China.",902325
+1703,3719,SHIP_TO,"No. 99, Zhong Yang Road, B districtKunshan Export Processing Zone,Kunshan, Jiangsu, China.",745966
+1703,5510,DELIVER_TO,江蘇省昆山綜合保稅區第一大道168號,1889896
+1703,5510,SHIP_TO,江蘇省昆山綜合保稅區第一大道168號,1889897
+1703,5510,DELIVER_TO,"No.99,Zhong Yang Road, B district Kunshan FreeTrade Zone, Kunshan (beside No.5 EPZ Gate)昆山綜合保稅區B區中央大道99號",1889900
+1703,5510,SHIP_TO,"No.99,Zhong Yang Road, B district Kunshan FreeTrade Zone, Kunshan (beside No.5 EPZ Gate)昆山綜合保稅區B區中央大道99號",1889901
+187443,3175,BILL_TO,廣州市高新技術產業開發區科珠路192號3樓310,1829265
+187443,3175,SHIP_TO,廣州市高新技術產業開發區科珠路192號3樓310,1829266
+187443,1569,BILL_TO,广州市黄埔区连琨路6号,1933299
+187443,1569,SHIP_TO,广州市黄埔区连琨路6号,1933300
+187443,1570,BILL_TO,广州市黄埔区连琨路6号,1942595
+187443,1570,SHIP_TO,广州市黄埔区连琨路6号,1942596
+187443,3175,DELIVER_TO,"香港新界元朗新田古洞路第98約地段,第165-181號",1829267
+187443,219,DELIVER_TO,"香港新界元朗廈村，石埗路，DD.125, Lot #1998R. P. (由屏廈路轉入石埗路)",1922092
+187443,219,SHIP_TO,"DD125,Lot #1998 R. P. & Others, Shek Po Road,Ha Tsuen, Yuen Long, N.T,Hong Kong.",1922093
+29939,219,SHIP_TO,"Unit 601,Grandtech Centre,No.8 On Ping Street,Siu Lek Yuen, Shatin, New Territories, HK",1930949
+1503,3714,SHIP_TO,臺北市內湖區瑞光路581號,1771270
+1503,3731,SHIP_TO,臺北市內湖區瑞光路581號,1771271
+151029,3175,BILL_TO,上海市田州路99號13幢401A室,710260
+151029,219,BILL_TO,上海市徐匯區虹梅路1801號B區701室,1863829
+151029,219,SHIP_TO,上海市徐匯區虹梅路1801號B區701室,1863830
+151029,3172,DELIVER_TO,香港沙田小瀝源安平街8號偉達中心7樓701-702室,1809890
+1703,317,BILL_TO,江蘇省昆山綜合保稅區第一大道168號,28293
+1703,1778,BILL_TO,"First Avenue,Kunshan Integrated Free Trade Zone,Kunshan,Jiangsu,China",341850
+1703,1778,MARKET,"168# First Avenue,Kunshan Export Processing Zone,215300 Kunshan,JiangsuChina",344013
+1703,1391,SHIP_TO,"No.99 Zhong Yang Road B District Kunshan Free ,CN",1836961
+178734,3991,BILL_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN,1860582
+178734,3991,SHIP_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN,1860581
+178734,219,SHIP_TO,"NO.3 TaiHong Road,hi-tech Industry Park,,kunshan,JiangSu,China postcode:215300",1762636
+178734,3993,SHIP_TO,"No.3 taihong road, kunshan hi-tech industrialdevelopment zone, jiangsu province",1911574
+187443,3175,DELIVER_TO,"香港屯門藍地福亨村路DD130 LOT1038S.BDD130 LOT1038S.B SECTION B DD130 LOT 1038,FUK HANG TSUEN ROAD,LAM MEN,TUEN MUN",1892625
+187443,219,DELIVER_TO,广东省惠州市惠城区惠风西一路与金时发大道交叉口南100米,1960434
+187443,3175,DELIVER_TO,香港葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座4022W-4024W室,1958769
+187443,219,DELIVER_TO,香港葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座4022W-4024W室,1958768
+29939,692,BILL_TO,福州市金山大道618號橘園洲星網銳捷科技園22＃樓4層,367468
+29939,219,DELIVER_TO,"Unit 601,Grandtech Centre,No.8 On Ping Street,Siu Lek Yuen, Shatin, New Territories, HK",932219
+187443,3172,BILL_TO,广州市高新技术产业开发区科珠路192号3楼310,1915865
+187443,3172,SHIP_TO,广州市高新技术产业开发区科珠路192号3楼310,1915866
+29939,3175,DELIVER_TO,香港新界上水新寶街2號嘉裏貨倉(上水)B座102A室,1629605
+178734,219,BILL_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN NT,1760220
+178734,219,SHIP_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN NT,1760221
+178734,3175,BILL_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN,1855281
+178734,3175,SHIP_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN,1855282
+187443,3175,DELIVER_TO,广东省惠州市惠城区惠风西一路与金时发大道交叉口南100米,1945939
+29939,3175,BILL_TO,福州市金山大道618號桔園洲20-22#樓星網銳捷科技園,677160
+29939,3175,SHIP_TO,香港新界上水新寶街2號嘉裏貨倉(上水)B座102A室,677164
+187443,3991,DELIVER_TO,香港葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座4022W-4024W室,1958952
+193768,219,BILL_TO,"11 Floor, No.466 Changhe Road, Binjiang District,Hangzhou, Zhejiang, China",1916649
+193768,219,SHIP_TO,"11 Floor, No.466 Changhe Road, Binjiang District,Hangzhou, Zhejiang, China",1916650
+193768,219,DELIVER_TO,"2 WH, NO.13 KAM POK ROAD WEST,YUAN LONG, N.T. HONGKONG",1955986
+29939,219,DELIVER_TO,"UNIT 102, 1/F, KERRY WAREHOUSE,2 SAN POSTREET,SHEUNG SHUI,N.T.,HONG KONG",932222
+29939,219,SHIP_TO,福州市倉山區金山大道618號桔園洲星網銳捷科技園19-22棟,1855224
+33772,690,BILL_TO,廣東省深圳市寶安區龍華鎮大浪工業區,120149
+33772,320,DELIVER_TO,香港新界沙田源順圍5-7號沙田工業中心b座2樓10室,1946275
+3529,690,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",139696
+3529,3074,BILL_TO,江蘇省蘇州市昆山市出口加工區第三大道25號,578877
+178734,692,BILL_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA11 ON SUM STREET SHATIN N.T. HK,1814155
+178734,692,SHIP_TO,"NO.3 TaiHong Road, Hi-Tech Industry ParkKunshan ,JiangSu ,China",1814157
+178734,692,SHIP_TO,"Unit 1701 Topsail Plaza 11 On Sum St, Shatin, N.T. HongKong",1814158
+187443,1569,SHIP_TO,江苏省苏州市吴江市经济开发区兴东路与兴瑞路交叉口往西230（锐迈科技）米物料仓,1940019
+187443,3172,DELIVER_TO,香港葵涌第三號貨櫃碼頭亞洲貨櫃物流中心A座4022W-4024W室,1958857
+187443,3172,DELIVER_TO,广东省惠州市惠城区惠风西一路与金时发大道交叉口南100米,1961015
+193768,219,SHIP_TO,广东省深圳市龍華街道清湖社区清宁路6#彩煌工业园北门二栋,1957594
+29939,219,BILL_TO,福州市金山大道618號桔園洲20-22#樓星網銳捷科技園,109702
+29939,3172,BILL_TO,福州市倉山區金山大道618號桔園洲星網銳捷科技園19-22棟,833391
+29939,219,BILL_TO,"FUJIAN CENTERM INFORMATION CO.,LTD",117435
+33772,3717,SHIP_TO,"Rm10, 2 F, B1k B, Shatin Lnd, Center,5-7 Yuen ShunCircuit, Shatin, N.T. Hong Kong",864133
+33772,3719,SHIP_TO,"Rm10, 2 F, B1k B, Shatin Lnd, Center,5-7 Yuen ShunCircuit, Shatin, N.T. Hong Kong",864135
+33772,3718,SHIP_TO,"Rm10, 2 F, B1k B, Shatin Lnd, Center,5-7 Yuen ShunCircuit, Shatin, N.T. Hong Kong",864134
+33772,3329,SHIP_TO,"Suzhou ASEN Semiconductors Co.,Ltd.苏州工业园区苏虹西路188号No.188 Su Hong West Road Suzho, China.",1951813
+1703,320,DELIVER_TO,"No.99,Zhong Yang Road, B district Kunshan FreeTrade Zone, Kunshan (beside No.5 EPZ Gate)昆山綜合保稅區B區中央大道99號",914615
+178734,3993,BILL_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN,1848633
+178734,3993,SHIP_TO,FLAT/RM 1715 17/F TOPSAIL PLAZA 11 ON SUMSTREET SHATIN,1848634
+33772,1780,BILL_TO,"48 Mei Bao Rd., Dalang St., LongHua Dist.ShenZhen, China",1828885
+33772,1780,SHIP_TO,"48 Mei Bao Rd., Dalang St., LongHua Dist.ShenZhen, China",1828886
+3529,3718,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",745354
+1703,320,SHIP_TO,"No.99,Zhong Yang Road, B district Kunshan FreeTrade Zone, Kunshan (beside No.5 EPZ Gate)昆山綜合保稅區B區中央大道99號",424925
+187443,3991,BILL_TO,廣州市高新技術產業開發區科珠路192號3樓310,1815921
+187443,3991,SHIP_TO,廣州市高新技術產業開發區科珠路192號3樓310,1815922
+187443,219,BILL_TO,广州市高新技术产业开发区科珠路192号3楼310（仅限办公用途）,1800857
+187443,219,SHIP_TO,广州市高新技术产业开发区科珠路192号3楼310（仅限办公用途）,1800858
+33772,3329,SHIP_TO,"48 Mei Bao Rd., Dalang , LongHua Dist.,ShenZhen, China",1828888
+29939,1570,BILL_TO,福州市倉山區金山大道618號桔園洲星網銳捷科技園19-22棟,848463
+29939,3991,BILL_TO,福建福州市倉山區金山大道618號桔園洲星網銳捷科技園19-22棟,1888214
+29939,3172,BILL_TO,福州市金山大道618號桔園洲20-22#樓星網銳捷科技園,1809393
+29939,3172,SHIP_TO,"Unit 701-702 , 7 / F , Grandtech Center,No.8 On Ping Street,ShatinANDY Tel:（852）27555690 FAX:27557014",1809392
+29939,3991,SHIP_TO,"UNIT 102, 1/F KERRY WAREHOUSE, 2 SAN POSTREET, SHEUNG SHUI, N.T.,HONG KONG",864930
+29939,219,DELIVER_TO,香港九龍灣宏開道19號健力工業中心5樓513室,932221
+33772,320,BILL_TO,廣東省深圳市龍華區大浪街道美寶路48號,1846530
+33772,320,SHIP_TO,廣東省深圳市龍華區大浪街道美寶路48號,1946065
+29939,1570,SHIP_TO,福州市倉山區金山大道618號桔園洲星網銳捷科技園19-22棟,848464
+29939,3175,DELIVER_TO,"UNIT701-702,7/F,GRANDTECH CENTER,NO.8ON PING STREET,SHATIN",1629607
+33772,1391,BILL_TO,廣東省深圳市寶安區龍華鎮大浪工業區,225801
+33772,3714,BILL_TO,中國廣東省深圳市龍華區大浪街道美寶路48號,1815599
+33772,1388,BILL_TO,"#50, Mei-Pao Rd., Da Loung Ind Park, Loughua,ShenZhen,China.",456246
+33772,1388,SHIP_TO,"RM 10, 2/F, BLK B, 5-7 Yuen Shun Circuit,Shatin,N.T.,Hong Kong",456247
+33772,3329,SHIP_TO,"ROOM 10,2/F,BIOCK B,SHATIN IND,CENTRE,5-7 YUENSHUN CIRCUIT, SHATIN,N.T.HONG KONG.",650595
+33772,1780,DELIVER_TO,"Room 10, 2/F, Block B, Shatin Industrial Centre,5-7 Yuen Shun Circuit, Shatin, H K",1626587
+3529,3073,BILL_TO,江蘇省蘇州市昆山市出口加工區第三大道25號,573229
+3529,1391,BILL_TO,"no.15,third avenue,a zone,kunshan comprehensivefree trade zone,kunshan,jiangsu,china",409813
+3529,692,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",142257
+3529,3171,BILL_TO,No.15 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,1927011
+3529,3171,SHIP_TO,No.15 Third Avenue A Zone KunshanComprehensive Free Trade Zone KunshanJiangsu China,1927012
+3529,1388,SHIP_TO,江蘇省昆山市張浦鎮陽光西路760號,207621
+3529,1780,DELIVER_TO,江蘇省昆山市張浦鎮陽光西路760號,1626651
+3529,3074,SHIP_TO,江蘇省蘇州市昆山出口加工區B區中央大道99號海關5號卡口旁,578989
+3529,3718,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",745357
+33772,320,BILL_TO,深圳市龍華區大浪街道美寶路48號,1829371
+29939,1570,DELIVER_TO,福州市倉山區金山大道618號桔園洲星網銳捷科技園19-22棟,1722134
+29939,3172,DELIVER_TO,香港新界上水新寶街2號嘉里貨倉1樓102室,888029
+29939,3172,SHIP_TO,香港新界上水新寶街2號嘉里貨倉1樓102室,859298
+29939,3175,SHIP_TO,"UNIT701-702,7/F,GRANDTECH CENTER,NO.8ON PING STREET,SHATIN",810818
+33772,3717,BILL_TO,中國廣東省深圳市龍華區大浪街道美寶路48號,1815601
+33772,3719,BILL_TO,中國廣東省深圳市龍華區大浪街道美寶路48號,1815605
+33772,3718,BILL_TO,中國廣東省深圳市龍華區大浪街道美寶路48號,1815604
+33772,3715,BILL_TO,中國廣東省深圳市龍華區大浪街道美寶路48號,1815607
+33772,3329,BILL_TO,"48 Meibao Road,Dalang Office,Longhua District. Shenzhen City China",1843021
+33772,3732,BILL_TO,中國廣東省深圳市龍華區大浪街道美寶路48號,1969056
+33772,3732,SHIP_TO,"Rm10, 2 F, B1k B, Shatin Lnd, Center,5-7 Yuen ShunCircuit, Shatin, N.T. Hong Kong",1969057
+3529,3732,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1969067
+33772,1780,SHIP_TO,"Room 10, 2/F, Block B, Shatin Industrial Centre,5-7 Yuen Shun Circuit, Shatin, H K",418762
+3529,3731,BILL_TO,"No. 58, The First Street, Kunshan Export Processing Zone,Kunshan, Jiangsu, China",741389
+3529,3731,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",741391
+3529,5510,BILL_TO,昆山出口加工區第三大道,1891349
+3529,5510,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,1891347
+3529,5510,BILL_TO,昆山市張浦鎮南港街道陽光路295號,1891348
+3529,320,BILL_TO,昆山出口加工區第三大道,38047
+3529,320,BILL_TO,昆山市張浦鎮南港街道陽光路295號,40202
+3529,320,BILL_TO,江蘇省昆山市張浦鎮陽光西路760號,40186
+3529,320,SHIP_TO,江蘇省昆山市張浦鎮陽光西路760號,40188
+3529,690,BILL_TO,"Units C&G, 15/F CDW Building, 388 Castle Peak Road, Tsuen WanNew Territories, Hong Kong",139989
+3529,3073,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",574464
+3529,3073,DELIVER_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1743705
+3529,3073,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",575095
+3529,219,SHIP_TO,"No. 25, The Third Street, Kunshan Export Processing Zone,Jiangsu, PRC",131631
+3529,3074,DELIVER_TO,"No.99, Zhong Yang Road, B districtKunshan Export Processing Zone, Kunshan",1739623
+3529,3074,DELIVER_TO,江蘇省蘇州市昆山出口加工區B區中央大道99號海關5號卡口旁,1739625
+3529,3074,SHIP_TO,"No.99, Zhong Yang Road, B districtKunshan Export Processing Zone, Kunshan",580131
+3529,3715,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",752601
+3529,1780,LEGAL,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359824
+3529,1780,MARKET,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359825
+3529,1780,SHIP_TO,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359826
+3529,320,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1958253
+3529,320,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",709025
+3529,3719,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",749193
+3529,3714,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",738736
+29939,3175,DELIVER_TO,香港新界元朗屏山橋盛街7號地下,1840637
+29939,3175,DELIVER_TO,"Rm102, 1/F., Kerry Warehouse, No.2 San Po StreetSHEUNG SHUI, N.T., HONG KONG",1822973
+33772,1388,BILL_TO,"48 Mei Bao Road, Dalang OfficeLongHua District. ShenZhen City, Guangdong ,China",1828756
+33772,3991,BILL_TO,深圳市龍華區大浪街道美寶路48號,1967243
+33772,3991,SHIP_TO,深圳市龍華區大浪街道美寶路48號,1967244
+33772,1780,SHIP_TO,苏州工业园区苏虹西路188号,1967235
+33772,3714,SHIP_TO,"Rm10, 2 F, B1k B, Shatin Lnd, Center,5-7 Yuen ShunCircuit, Shatin, N.T. Hong Kong",873627
+33772,3715,SHIP_TO,"Rm10, 2 F, B1k B, Shatin Lnd, Center,5-7 Yuen ShunCircuit, Shatin, N.T. Hong Kong",873650
+3529,219,BILL_TO,昆山出口加工區第三大道,14944
+3529,219,BILL_TO,"The third Street, Kunshan Export Processing Zone Kunshan,Jiangsu, P.R.C",14946
+3529,1388,BILL_TO,江蘇省昆山綜合保稅區A區第三大道15號,206696
+3529,1388,SHIP_TO,江蘇省昆山綜合保稅區A區第三大道15號,206697
+3529,1651,BILL_TO,"The third Street, Kunshan Export Processing Zone Kunshan,Jiangsu, P.R.C",274559
+3529,1651,SHIP_TO,"The third Street, Kunshan Export Processing Zone Kunshan,Jiangsu, P.R.C",274558
+3529,1651,BILL_TO,昆山長江南路出口加工區第三大道tel:0512-57355000 fax:0512-57355204/200ATTN:婁寶安,274561
+3529,1651,SHIP_TO,昆山長江南路出口加工區第三大道tel:0512-57355000 fax:0512-57355204/200ATTN:婁寶安,274560
+3529,1780,BILL_TO,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359823
+3529,1778,BILL_TO,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359812
+3529,1778,LEGAL,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359810
+3529,1778,MARKET,"NO. 25, THE THIRD STREET, KUNSHAN EXPORTPROCESSING ZONE, KUNSHAN.JIANGSU CHINA",359815
+3529,3329,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",651115
+3529,3329,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",651131
+3529,3329,DELIVER_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1528656
+3529,219,DELIVER_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",947478
+3529,219,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",709060
+3529,3992,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",791498
+3529,3719,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",749190
+3529,3714,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",738734
+3529,3715,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",752599
+3529,3169,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",628497
+3529,3991,BILL_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",789183
+3529,317,BILL_TO,江蘇省昆山綜合保稅區A區第三大道15號,1880763
+3529,3169,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",628514
+3529,3074,DELIVER_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1739624
+3529,3074,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",712069
+3529,3992,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",791499
+3529,1388,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",864862
+3529,320,DELIVER_TO,江蘇省昆山市張浦鎮陽光西路760號,917294
+3529,1778,SHIP_TO,江蘇省昆山市綜合保稅區A區第三大道15號,1892505
+3529,219,SHIP_TO,"No.69 Guilin Road, B Central Avenue,Comprehensive Free Trade Zone,Kunshan City, China",1880768
+3529,317,SHIP_TO,"No.69 Guilin Road, B Central Avenue,Comprehensive Free Trade Zone,Kunshan City, China",1880764
+3529,3715,SHIP_TO,"No.1 warehouse,on the left side of the Xinsong Rd aboutfifty metres,caijing factory,No.68,Third Avenue,A Zone,Kunshan Comprehensive Free Trade Zone,CN",1801063
+3529,317,SHIP_TO,"No.55 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone, Kunshan City",1965727
+3529,219,SHIP_TO,"No.55 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone, Kunshan City",1965728
+3529,3732,SHIP_TO,昆山综合保税区B区桂林路55号,1969063
+3529,3732,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",1969064
+3529,3732,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1969065
+3529,3732,SHIP_TO,"No.1 warehouse,on the left side of the Xinsong Rd aboutfifty metres,caijing factory,No.68,Third Avenue,A Zone,Kunshan Comprehensive Free Trade Zone,CN",1969066
+72793,221,BILL_TO,No6 21/F Enterprise Square 2 No 3 Shueng Yuet Rd Kowloon Bay kowloon Hk,234578
+72793,1368,BILL_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",234587
+72793,1368,DELIVER_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",234591
+72793,1368,SHIP_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",234589
+72793,1368,DELIVER_TO,Upper Serangoon Road Post OfficeP.O Box 329 Singapore 915431Attn: Mr Kevin 65422966 / 96952615,428055
+3529,320,SHIP_TO,"NO.99,ZHONG YANG ROAD,B DISTRICTKUNSHAN EXPORT PROCESSING ZONE,KUNSHAN CHINA",765961
+3529,320,DELIVER_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",861420
+3529,3714,SHIP_TO,昆山综合保税区B区桂林路55号,1966840
+3529,320,SHIP_TO,"No.55 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone, Kunshan City",1965726
+3529,3731,SHIP_TO,昆山综合保税区B区桂林路55号,1966828
+3529,3718,SHIP_TO,昆山综合保税区B区桂林路55号,1966829
+3529,3719,SHIP_TO,昆山综合保税区B区桂林路55号,1966833
+3529,3715,SHIP_TO,昆山综合保税区B区桂林路55号,1966837
+72793,686,BILL_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",234395
+72793,221,DELIVER_TO,"No6 21/F Enterprise Square 2No 3 Sheung Yuet Rd, Kowloon Bay, KowloonHongkong",927378
+72793,221,SHIP_TO,"No6 21/F Enterprise Square 2No 3 Sheung Yuet Rd, Kowloon Bay, KowloonHongkong",234676
+72793,1368,DELIVER_TO,,234654
+72793,1368,DELIVER_TO,"Cargo Agents' Building E,Unit 02-18/18A, Changi Airfreight Centre,Singapore 918106.",234606
+72793,686,DELIVER_TO,"Unit 6, 21/F, Enterprise Square Two,, No. 3 Sheung Yuent Rd,Kowloon Bay, Kowloon, Hong Kong",699483
+72793,686,SHIP_TO,"Unit 6, 21/F, Enterprise Square Two,, No. 3 Sheung Yuent Rd,Kowloon Bay, Kowloon, Hong Kong",234396
+72793,686,DELIVER_TO,,234437
+72793,1368,DELIVER_TO,NO. 10 CHANGI SOUTH LANE#02-01 OSSIA BUILDINGSINGAPORE 486162,289972
+72793,1368,DELIVER_TO,"C/O AIR MARKET EXPRESS PTE LTD9 Airline Road, #02-17,Cargo Agents Bldg 'D'Changi Airfreight Centre / Attn: Ms. Katherine/Mr. Bryant",428193
+72793,2099,DELIVER_TO,"51 Alps Avenue, Singapore 498783Tel: 62455120 / 65410856Contact: Thomas Jachmann/Ivy Goh/Ang Liang Seng",440153
+3529,3169,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",868038
+3529,3329,DELIVER_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",1528658
+3529,3329,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",868020
+3529,219,DELIVER_TO,"No. 25, The Third Street, Kunshan Export Processing Zone,Jiangsu, PRC",947477
+72793,686,DELIVER_TO,,317936
+83114,3171,SHIP_TO,"Room 2707,27/F.,New Tech Plaza,34 Tai Yau Street,, San Po Kong,Kowloon,",644875
+9222,3719,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",748883
+9222,3715,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",752333
+9222,3714,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",738145
+9222,1780,BILL_TO,"3F.,No.205,See.3,BeisinRoad Sindian City,Taipei County 231,Taiwan,ROC",346736
+9222,1780,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",359856
+9222,2629,BILL_TO,"Limited. 191/54, 191/57 18th FL., CTI TowerRachadapisek Road, Klongtoey, Bangkok 10110Thailand. Tel:66-2-261-5033-4",597220
+9222,686,DELIVER_TO,,210704
+9222,1388,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",206689
+9222,320,DELIVER_TO,,236054
+9222,686,DELIVER_TO,70 ALPS AVENUE#01-07 SINGAPORE 498801ATTN: MR JEOW,299650
+9222,686,DELIVER_TO,,321512
+9222,686,SHIP_TO,"191/54, 57 18 FL., CTI Tower, Rachadapisek Road,Klong Toey Bangkok 10110, Thailand.ATTN: Jintana Chairotwattana (MAH-2IC)",373350
+9222,2629,DELIVER_TO,"5TH FLOOR , EVERGAIN NO. 3 BLDG , 22 ONSUM STREET SHATIN, NEWTERRITORIES , HONG KONG TEL: 852-2686-2388",597316
+3529,3991,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",864247
+3529,692,SHIP_TO,江蘇省昆山市張浦鎮陽光西路760號,187330
+72793,1373,BILL_TO,"UNIT 6, 21/F, ENTERPRISE SQUARE TWONO.3 SHEUNG YUET RD., KOWLOON BAY,KOWLOON,HK",404336
+72793,1373,DELIVER_TO,"UNIT 6, 21/F, ENTERPRISE SQUARE TWONO.3 SHEUNG YUET RD., KOWLOON BAY,KOWLOON,HK",404338
+72793,1373,SHIP_TO,"UNIT 6, 21/F, ENTERPRISE SQUARE TWONO.3 SHEUNG YUET RD., KOWLOON BAY,KOWLOON,HK",404337
+72793,2099,BILL_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, KowloonHong Kong",429416
+72793,2099,DELIVER_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, KowloonHong Kong",429418
+72793,2099,SHIP_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, KowloonHong Kong",429417
+3529,692,DELIVER_TO,江蘇省昆山市張浦鎮陽光西路760號,1658744
+3529,5510,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1890834
+3529,5510,DELIVER_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",1890835
+3529,5510,DELIVER_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",1890837
+3529,5510,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",1890836
+3529,5510,DELIVER_TO,江蘇省昆山市張浦鎮陽光西路760號,1890838
+3529,5510,SHIP_TO,江蘇省昆山市張浦鎮陽光西路760號,1890839
+72793,1371,BILL_TO,"Unit 6, 21/F, Enterprise Square TwoNo. 3 Sheung Yuent Rd,Kowloon Bay, Kowloon",396806
+72793,1371,DELIVER_TO,"Unit 6, 21/F, Enterprise Square TwoNo. 3 Sheung Yuent Rd,Kowloon Bay, Kowloon",396808
+72793,1371,SHIP_TO,"Unit 6, 21/F, Enterprise Square TwoNo. 3 Sheung Yuent Rd,Kowloon Bay, Kowloon",396807
+72793,1371,DELIVER_TO,"Lot D18,MAS Freight Forwarder’s Complex,43900 KLIA, Sepang, Selangor D.E.,Malaysia.Tel: 603-8787-4395 Fax: 603-8787-4396",396855
+72793,686,BILL_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",559557
+72793,1368,DELIVER_TO,", CARGO AGENTS BUILDING C #02-13,BOX 652 CHANGI AIRFREIGHT CENTRE,SINGAPORE 918106CONTACT : ANNA +65-9685-6835",235124
+72793,1368,DELIVER_TO,,288017
+72793,1368,DELIVER_TO,"51 Alps Avenue, Singapore 498783Tel: 62455120 / 65410856Contact: Thomas Jachmann/Ivy Goh/Ang Liang Seng",372097
+72793,1371,DELIVER_TO,"Lot 1 & 3 Persiaran Pasak BumiBukit Jelutong Industrial Park Section U8Shah Alam, Selangor, Malaysia",1884843
+83114,320,BILL_TO,"Room 2707,27/F.,New Tech Plaza,34 Tai Yau Street,, San Po Kong,Kowloon,",523793
+83114,3171,BILL_TO,香港九龍新蒲崗大有街34號新科科技廣場27字樓2707室,644873
+9222,109,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",132354
+9222,109,SHIP_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",132356
+9222,1689,BILL_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",319283
+9222,1689,DELIVER_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",319285
+9222,1689,SHIP_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",319284
+9222,1689,SHIP_TO,"PLT(L2) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S819454",319286
+9222,1689,SHIP_TO,"PLT(L3) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD SINGAPORE 819454",319287
+9222,1689,SHIP_TO,"IMPORT SECTION, R&D BUILDING (3RD FLR),60 MOO 8,SETHAKIJ RD,SECTION 5,KLONG MADUEA,KRATOOM BAEN,SAMUTSAKORN 74110, THAILAND",319288
+9222,1689,SHIP_TO,"PLT (T2) C/O # 02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S 819454",319289
+9222,1689,SHIP_TO,"PLT (T4) C/O #02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CENTRE,119 AIRPORT CARGO RD S819454",319290
+9222,3731,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",741308
+9222,686,DELIVER_TO,"60 MOO 8 SETHAKIJ RDKLONG MADUEA, KRATOOM BEANSAMATHSAKORN 74110",117117
+9222,686,DELIVER_TO,,225818
+9222,320,DELIVER_TO,,235060
+9222,1689,DELIVER_TO,"PLT(L2) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S819454",1731840
+9222,1689,DELIVER_TO,"PLT(L3) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD SINGAPORE 819454",1731841
+9222,1689,DELIVER_TO,"IMPORT SECTION, R&D BUILDING (3RD FLR),60 MOO 8,SETHAKIJ RD,SECTION 5,KLONG MADUEA,KRATOOM BAEN,SAMUTSAKORN 74110, THAILAND",1731842
+9222,1689,DELIVER_TO,"PLT (T2) C/O # 02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S 819454",1731843
+9222,1689,DELIVER_TO,"PLT (T4) C/O #02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CENTRE,119 AIRPORT CARGO RD S819454",323307
+9222,2629,DELIVER_TO,,597312
+9222,2629,SHIP_TO,"SINGAPORE REPRESENTATICE OFFICE215 HENDERSON ROAD, #03-01HENDERSON INDUSTRIAL PARK SINGAPORE 159554",597322
+9222,2629,SHIP_TO,COMPANY LIMITED 60 MOO 8SETHAKIJ RD KLONG MADUEAKRATOOM BEAN SAMUTHSAKORN 74110,597320
+9222,2629,SHIP_TO,"7F,99 NAN-KING E.RD.,SEC.5,TAIPEI(105),TAIWAN,ROC.",597323
+9222,2629,SHIP_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (T4) Attn:Ms.Vipa",597324
+9222,2629,SHIP_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (VMI/WPG/CS2)",597325
+9222,2629,SHIP_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom Bean Samuthsakorn74110 Thailand (L1)",597326
+9222,2629,DELIVER_TO,,597313
+9222,2629,DELIVER_TO,"SINGAPORE REPRESENTATICE OFFICE215 HENDERSON ROAD, #03-01HENDERSON INDUSTRIAL PARK SINGAPORE 159554",1672269
+9222,2629,DELIVER_TO,COMPANY LIMITED 60 MOO 8SETHAKIJ RD KLONG MADUEAKRATOOM BEAN SAMUTHSAKORN 74110,1672270
+9222,2629,DELIVER_TO,"7F,99 NAN-KING E.RD.,SEC.5,TAIPEI(105),TAIWAN,ROC.",1672271
+9222,2629,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (T4) Attn:Ms.Vipa",1672272
+9222,2629,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (VMI/WPG/CS2)",1672273
+9222,2629,DELIVER_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom Bean Samuthsakorn74110 Thailand (L1)",1672274
+3529,320,DELIVER_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",917292
+72793,1368,DELIVER_TO,"7 Airline Rd, #04-09 Cargo AgentsBuilding E, S(819834).",251031
+72793,2099,DELIVER_TO,"7, Airline Road #04-09Cargo Agent Building ESingapore 819834",438113
+72793,2099,DELIVER_TO,CARGO AGENTS BUILDING C #02-13BOX 652 CHANGI AIRFREIGHT CENTRESINGAPORE 918106CONTACT : ANNA +65-9685-6835,438173
+9222,1388,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",206898
+9222,320,SHIP_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd., KlongMaduea,Kratoom Bean,Samuthsakorn 74110TB1000 (MAH-2NPI)",284361
+9222,2629,DELIVER_TO,,597221
+72793,686,DELIVER_TO,"7 Airline Rd, #04-09 Cargo AgentsBuilding E, ( S819834)",537533
+72793,2099,DELIVER_TO,"UNIT 01, 1/F, YUEN FAT INDUSTRIAL BUILDING,25 WANG CHIU ROAD, KOWLOON BAYKLN, HONG KONG",1740593
+72793,686,SHIP_TO,"Flat B, 9/F, Roxy Industrial Centre58-66 Tai Lin Pai Road, Kwai Chung, Hong Kong",1839892
+72793,1373,SHIP_TO,"Unit 01, 1/F, Yuen Fat Industrial Building25 Wang Chiu Road, Kowloon BayKLN, Hong Kong",1798934
+9222,317,DELIVER_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",922457
+9222,317,SHIP_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",37326
+9222,320,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",37836
+9222,320,DELIVER_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",916855
+9222,320,SHIP_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",38775
+9222,2488,BILL_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",452422
+9222,2488,SHIP_TO,"IMPORT SECTION, R&D BUILDING (3RD FLR),60 MOO 8,SETHAKIJ RD,SECTION 5,KLONG MADUEA,KRATOOM BAEN,SAMUTSAKORN 74110, THAILAND",452420
+9222,2488,DELIVER_TO,"PLT (T2) C/O # 02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S 819454",1741079
+9222,2488,SHIP_TO,"PLT (T2) C/O # 02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S 819454",452421
+9222,2488,DELIVER_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",452423
+9222,2488,SHIP_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",452425
+9222,2488,DELIVER_TO,"PLT (T4) C/O #02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CENTRE,119 AIRPORT CARGO RD S819454",452424
+9222,2488,SHIP_TO,"PLT (T4) C/O #02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CENTRE,119 AIRPORT CARGO RD S819454",452426
+9222,3171,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",646978
+9222,3718,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",744735
+9222,1780,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",800747
+9222,1780,SHIP_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",1952240
+9222,3732,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",1969016
+3529,690,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",868035
+3529,1388,SHIP_TO,"No.15, Third Avenue, A Zone, Kunshan ComprehensiveFree Trade Zone, Kunshan, Jiangsu, China",881326
+3529,320,SHIP_TO,"No.69 Guilin Road,B Central Avenue,Comprehensive Free Trade Zone,Kunshan City",884631
+72793,2629,BILL_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",592584
+72793,2629,SHIP_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuet Rd, Kowloon Bay, Kowloon",592587
+72793,2629,DELIVER_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuet Rd, Kowloon Bay, Kowloon",1670765
+72793,1368,DELIVER_TO,DHL A/C NO. 610550292,320254
+72793,1371,DELIVER_TO,"NO. 12C HEDGEFORD INNOVATION PARKJALAN TANDANG, 46050 PETALING JAYA, SELANGOR",404590
+72793,686,DELIVER_TO,"UNIT 01, 31/F, ENTERPRISE SQUARE TWONO 3 SHEUNG YUET ROAD, KOWLOON BAY,KOWLOON, HONG KONG",816005
+72793,686,SHIP_TO,"UNIT 01, 31/F, ENTERPRISE SQUARE TWONO 3 SHEUNG YUET ROAD, KOWLOON BAY,KOWLOON, HONG KONG",816003
+9222,690,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",119676
+9222,1780,BILL_TO,"TROPIC ISLE BUILDING,P.O.BOX 438 ROADTOWN,TORTOLA BRITISH VIRGIN ISLANDS",455711
+9222,686,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWERRACHADAPISEK ROAD KLONGTO, BANGKOK10110 THAILAND (T2)",125550
+72793,2099,DELIVER_TO,,537986
+72793,686,DELIVER_TO,NO. 10 CHANGI SOUTH LANE#02-01 OSSIA BUILDINGSINGAPORE 486162,560291
+72793,686,DELIVER_TO,DHL A/C NO. 610550292,560292
+72793,686,DELIVER_TO,DIMERCO EXPRESS SINGAPORE PTE. LTD. (DIMSIN)80 MARINE PARADE ROAD #10-02 PARKWAY PARADESINGAPORE 449269,560293
+72793,686,DELIVER_TO,Upper Serangoon Road Post OfficeP.O Box 329 Singapore 915431Attn: Mr Kevin 65422966 / 96952615,560294
+72793,686,DELIVER_TO,"Unit 6, 21/F, Enterprise Square Two,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",560295
+72793,686,DELIVER_TO,"Cargo Agents' Building E,Unit 02-18/18A, Changi Airfreight Centre,Singapore 918106.",560296
+72793,686,DELIVER_TO,", CARGO AGENTS BUILDING C #02-13,BOX 652 CHANGI AIRFREIGHT CENTRE,SINGAPORE 918106CONTACT : ANNA +65-9685-6835",560297
+72793,686,DELIVER_TO,,560298
+72793,686,DELIVER_TO,,560299
+72793,686,DELIVER_TO,"Flat B, 9/F, Roxy Industrial Centre58-66 Tai Lin Pai Road, Kwai Chung, Hong Kong",1839893
+9222,3169,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",1799031
+9222,3329,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",1799052
+83114,320,SHIP_TO,"Room 2707,27/F.,New Tech Plaza,34 Tai Yau Street,, San Po Kong,Kowloon,",1831069
+9222,317,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",33876
+9222,1778,BILL_TO,新北市深坑區北深路3段147號,341732
+9222,2488,DELIVER_TO,"PLT(L2) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S819454",1741076
+9222,2488,DELIVER_TO,"PLT(L3) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD SINGAPORE 819454",1741077
+9222,2488,DELIVER_TO,"IMPORT SECTION, R&D BUILDING (3RD FLR),60 MOO 8,SETHAKIJ RD,SECTION 5,KLONG MADUEA,KRATOOM BAEN,SAMUTSAKORN 74110, THAILAND",1741078
+9222,2488,SHIP_TO,"PLT(L2) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S819454",452418
+9222,2488,SHIP_TO,"PLT(L3) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD SINGAPORE 819454",452419
+9222,1388,BILL_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",800911
+9222,2630,BILL_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",1863429
+72793,1371,DELIVER_TO,"No. 21, Jalan Tiang U8/93,Seksyen U8, Bukit Jelutong Industrial Park,40150 Shah Alam , Selangor Darul Ehsan.",568946
+72793,2629,DELIVER_TO,,592585
+72793,2629,DELIVER_TO,,592586
+72793,2099,SHIP_TO,"UNIT 01, 1/F, YUEN FAT INDUSTRIAL BUILDING,25 WANG CHIU ROAD, KOWLOON BAYKLN, HONG KONG",783393
+72793,2099,DELIVER_TO,- AIR CARGO Freight,783395
+9222,686,DELIVER_TO,"191/54, 191/57, 18TH Cti Tower,Rachadapisek Road Klongto,Bangkok,10110,Thailand",1644493
+9222,686,SHIP_TO,"191/54, 191/57, 18TH Cti Tower,Rachadapisek Road Klongto,Bangkok,10110,Thailand",112199
+9222,686,DELIVER_TO,"SINGAPORE REPRESENTATICE OFFICE215 HENDERSON ROAD, #03-01HENDERSON INDUSTRIAL PARK SINGAPORE 159554",1644494
+9222,686,SHIP_TO,"SINGAPORE REPRESENTATICE OFFICE215 HENDERSON ROAD, #03-01HENDERSON INDUSTRIAL PARK SINGAPORE 159554",112239
+9222,686,DELIVER_TO,(BRANCH 00001) 60 MOO 8 SETHAKIJ ROADKLONG MADUEA KRATOOM BEANSAMATHSAKORN 74110 THAILAND,1644495
+9222,686,SHIP_TO,(BRANCH 00001) 60 MOO 8 SETHAKIJ ROADKLONG MADUEA KRATOOM BEANSAMATHSAKORN 74110 THAILAND,112241
+9222,686,DELIVER_TO,"7F,99 NAN-KING E.RD.,SEC.5,TAIPEI(105),TAIWAN,ROC.",1644496
+9222,686,SHIP_TO,"7F,99 NAN-KING E.RD.,SEC.5,TAIPEI(105),TAIWAN,ROC.",112242
+9222,686,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (T4) Attn:Ms.Vipa",1644499
+9222,686,SHIP_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (T4) Attn:Ms.Vipa",112243
+9222,686,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (VMI/WPG/CS2)",1644497
+9222,686,SHIP_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (VMI/WPG/CS2)",112244
+9222,686,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (T1) Factory 1",1644498
+9222,686,SHIP_TO,"191/54, 191/57, 18TH CTI TOWER,RACHADAPISEK ROAD KLONGTO, BANGKOK10110,THAILAND. (T1) Factory 1",112245
+9222,686,DELIVER_TO,,586551
+9222,686,DELIVER_TO,,112247
+9222,686,DELIVER_TO,,112237
+9222,686,DELIVER_TO,,112238
+72793,2630,DELIVER_TO,,501873
+72793,2630,BILL_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuent Rd, Kowloon Bay, Kowloon",501870
+72793,2630,DELIVER_TO,,501871
+72793,2630,SHIP_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuet Rd, Kowloon Bay, Kowloon",501874
+72793,2630,DELIVER_TO,"Unit 6, 21/F, Enterprise Square Two,,No. 3 Sheung Yuet Rd, Kowloon Bay, Kowloon",1679363
+72793,1371,DELIVER_TO,"NO.20, 2ND FLOOR, JALAN KASUARINA 8/KS 7,BOTANIC CAPTIAL, 41200 KLANG,SELANGOR DARUL EHSAN,MALAYSIA",541633
+72793,686,DELIVER_TO,51 Alps AvenueSingapore 498783,541950
+72793,2099,DELIVER_TO,,544813
+72793,1371,DELIVER_TO,"16th Floor, Menara PKNS, Jalan Yong Shook Lin46050 Petaling Jaya, Selangor D.E, Msia.ACC#301534",732139
+72793,686,DELIVER_TO,- AIR CARGO Freight,713879
+83114,219,BILL_TO,"Room 2707,27/F.,New Tech Plaza,34 Tai Yau Street,, San Po Kong,Kowloon,",335535
+83114,219,DELIVER_TO,"Room 2707,27/F.,New Tech Plaza,34 Tai Yau Street,, San Po Kong,Kowloon,",1831498
+83114,219,SHIP_TO,"Room 2707,27/F.,New Tech Plaza,34 Tai Yau Street,, San Po Kong,Kowloon,",1831499
+9222,686,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",112198
+9222,1391,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",253558
+9222,1391,SHIP_TO,"(HEAD OFFICE) 191/54, 191/57 18th Cti Tower,Rachadapised Rd., Klongtoey Bangkok 10110, Thailand.",253560
+9222,219,BILL_TO,"138 Moo 4, Phetkasem Road, Sarpang,Khao-Yoi, Petchaburi Province,THAILAND",1903289
+9222,219,SHIP_TO,"138 Moo 4, Phetkasem Road, Sarpang,Khao-Yoi, Petchaburi Province,THAILAND",1903290
+9222,686,BILL_TO,"191/54, 191/57 18TH FL., CTI TOWER,RACHADAPISEK ROAD, KLONGTOEY,BANGKOK 10110, THAILAND",586379
+9222,686,SHIP_TO,"191/54, 191/57 18TH FL., CTI TOWER,RACHADAPISEK ROAD, KLONGTOEY,BANGKOK 10110, THAILAND",586380
+9222,686,DELIVER_TO,#02-03/04 Changi Cargo Agents Megaplex 1Box 698 Changi Airfreight Centre119 Airport Cargo Road. Tel : 6542 4911 Fax: 6542 3540,586554
+9222,686,DELIVER_TO,,586552
+9222,686,SHIP_TO,CARGO AGENT BLDG D#02-02 CHANGI AIRFREIGHT CTRPO BOX 698 SINGAPORE 918107,586558
+9222,686,DELIVER_TO,"Unit 02-03/04 Changi Cargo Agents Megaplex 1,Box 698 Changi Airfreight Centre,119 Airport Cargo Road, Singapore 819454",586553
+9222,686,SHIP_TO,"CARGO AGENT BLDG DBOX 698 CHANGI AIRFREIGHT CENTRE 119AIRPORT CARGO ROAD, SINGAPORE 819454",586559
+9222,686,SHIP_TO,"191/54, 191/57, 18TH FLOOR CTI TOWER,RACHADAPISEK ROAD KLONGTOEY,BANGKOK 10110, THAILAND",586561
+9222,686,DELIVER_TO,CARGO AGENT BLDG D#02-02 CHANGI AIRFREIGHT CTRPO BOX 698 SINGAPORE 918107,1644482
+9222,686,DELIVER_TO,"CARGO AGENT BLDG DBOX 698 CHANGI AIRFREIGHT CENTRE 119AIRPORT CARGO ROAD, SINGAPORE 819454",1644483
+9222,686,DELIVER_TO,"191/54, 191/57, 18TH FLOOR CTI TOWER,RACHADAPISEK ROAD KLONGTOEY,BANGKOK 10110, THAILAND",1644484
+9222,686,DELIVER_TO,"191/54, 191/57 18TH FL., CTI TOWER,RACHADAPISEK ROAD, KLONGTOEY,BANGKOK 10110, THAILAND",1644485
+9222,686,DELIVER_TO,,586550
+9222,686,DELIVER_TO,COMPANY LIMITED 60 MOO 8SETHAKIJ RD KLONG MADUEAKRATOOM BEAN SAMUTHSAKORN 74410,1644488
+9222,686,SHIP_TO,COMPANY LIMITED 60 MOO 8SETHAKIJ RD KLONG MADUEAKRATOOM BEAN SAMUTHSAKORN 74410,586555
+9222,686,DELIVER_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom Bean Samuthsakorn74110 Thailand (L1)",1644489
+9222,686,SHIP_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom Bean Samuthsakorn74110 Thailand (L1)",586557
+9222,2629,BILL_TO,"(HEAD OFFICE) 191/54, 191/57 18TH FL., CTI TOWER,RACHADAPISEK ROAD, KLONGTOEY,BANGKOK 10110, THAILAND",513015
+9222,2629,DELIVER_TO,"CARGO AGENT BUILDING D, #02-02CHANGI AIRFREIGHT CENTRE, PO BOX 698SINGAPORE 918107",1672281
+9222,2629,SHIP_TO,"CARGO AGENT BUILDING D, #02-02CHANGI AIRFREIGHT CENTRE, PO BOX 698SINGAPORE 918107",513682
+9222,2629,DELIVER_TO,"UNIT02-03/04 CHANGI CARGO AGENTS MEGAPLEX 1BOX 698 CHANGI AIRFREIGHT CENTRE 119AIRPORT CARGO ROAD, SINGAPORE 819454",1672282
+9222,2629,SHIP_TO,"UNIT02-03/04 CHANGI CARGO AGENTS MEGAPLEX 1BOX 698 CHANGI AIRFREIGHT CENTRE 119AIRPORT CARGO ROAD, SINGAPORE 819454",513683
+9222,2629,DELIVER_TO,"191/54, 191/57, 18TH FLOOR CTI TOWER,RACHADAPISEK ROAD KLONGTOEY,BANGKOK 10110, THAILAND",1672283
+9222,2629,SHIP_TO,"191/54, 191/57, 18TH FLOOR CTI TOWER,RACHADAPISEK ROAD KLONGTOEY,BANGKOK 10110, THAILAND",513684
+9222,320,DELIVER_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",916858
+9222,320,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",551607
+9222,2629,DELIVER_TO,"191/54, 191/57, 18TH CTI TOWERRACHADAPISEK ROAD KLONGTO, BANGKOK10110 THAILAND (T2)",597222
+9222,2629,DELIVER_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom Bean Samuthsakorn74110 Thailand (L2)",1672266
+9222,2629,SHIP_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom Bean Samuthsakorn74110 Thailand (L2)",597321
+9222,2629,DELIVER_TO,70 ALPS AVENUE#01-07 SINGAPORE 498801ATTN: MR JEOW,597223
+9222,2629,DELIVER_TO,"A Bldg.,No.147, Sec3, Beishen RdWanshuen Tsuen, Shenkeng ShiangTaipei, Taiwan 222 ROC",1672267
+9222,2629,SHIP_TO,"A Bldg.,No.147, Sec3, Beishen RdWanshuen Tsuen, Shenkeng ShiangTaipei, Taiwan 222 ROC",597315
+9222,2629,DELIVER_TO,,597319
+9222,2629,DELIVER_TO,,597317
+9222,2629,DELIVER_TO,"191/54, 57 18 FL., CTI Tower, Rachadapisek Road,Klong Toey Bangkok 10110, Thailand.ATTN: Jintana Chairotwattana (MAH-2IC)",1672268
+9222,2629,SHIP_TO,"191/54, 57 18 FL., CTI Tower, Rachadapisek Road,Klong Toey Bangkok 10110, Thailand.ATTN: Jintana Chairotwattana (MAH-2IC)",597366
+9222,2629,DELIVER_TO,CARGO AGENT BLDG D#02-02 CHANGI AIRFREIGHT CTRPO BOX 698 SINGAPORE 918107,1672275
+9222,2629,SHIP_TO,CARGO AGENT BLDG D#02-02 CHANGI AIRFREIGHT CTRPO BOX 698 SINGAPORE 918107,597314
+9222,2629,DELIVER_TO,,597318
+9222,1391,SHIP_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd., KlongMaduea,Kratoom Bean,Samuthsakorn 74110Thailand.(SgtExtL3)",725701
+9222,3718,SHIP_TO,"138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, THAILAND",744738
+9222,3719,SHIP_TO,"138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, THAILAND",748886
+9222,3719,SHIP_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, Kratoom Bean,Samuthsakorn,Thailand.",748885
+9222,1780,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",800746
+9222,3169,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",1799032
+9222,3169,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",1799033
+9222,3715,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",885429
+9222,320,SHIP_TO,"Unit K, 2/Fl., Block 2, Leader Ind. Centre,188-202 Texaco Road, Tsuen Wan, N.T., H.K.",1889654
+9222,3329,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",1799053
+9222,3329,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",1799051
+9222,3714,SHIP_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, Kratoom Bean,Samuthsakorn,Thailand.",1859007
+9222,3714,SHIP_TO,"138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, THAILAND",1859008
+9222,3171,SHIP_TO,"138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, THAILAND",1800974
+9222,3732,SHIP_TO,"138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, THAILAND",1969014
+9222,3732,SHIP_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, Kratoom Bean,Samuthsakorn,Thailand.",1969015
+9222,686,DELIVER_TO,"5TH FLOOR , EVERGAIN NO. 3 BLDG , 22 ONSUM STREET SHATIN, NEWTERRITORIES , HONG KONG TEL: 852-2686-2388",112248
+9222,686,DELIVER_TO,"7 AIRLINE ROAD, #04-09 CARGO AGENTS BUILDING ESINGAPORE 819834CONTACT: MARJORIE TEL: 65461236",184996
+9222,686,SHIP_TO,"191/54, 191/57, 18TH CTI TOWERRACHADAPISEK ROAD KLONGTOBANGKOK, 10110,THAILAND. (T2)",289133
+9222,2629,DELIVER_TO,,514438
+9222,2629,DELIVER_TO,"#02-03/04 CHANGI CARGO AGENTS MEGAPLEX 1,BOX 698 CHANGI AIRFREIGHT CENTRE 119,AIRPORT CARGO ROAD, S(819454) TEL : 02-65424911",514317
+9222,2629,DELIVER_TO,"Unit 02-03/04 Changi Cargo Agents Megaplex 1,Box 698 Changi Airfreight Centre,119 Airport Cargo Road, Singapore 819454",514318
+9222,2629,DELIVER_TO,,597369
+9222,2629,DELIVER_TO,,597367
+9222,2629,DELIVER_TO,"7 AIRLINE ROAD, #04-09 CARGO AGENTS BUILDING ESINGAPORE 819834CONTACT: MARJORIE TEL: 65461236",597210
+9222,320,DELIVER_TO,"Unit K, 2/Fl., Block 2, Leader Ind. Centre,188-202 Texaco Road, Tsuen Wan, N.T., H.K.",1777566
+9222,1780,DELIVER_TO,香港新界德士古道188-202號立泰工業中心2期2字樓K室,1952424
+9222,2629,DELIVER_TO,"191/54, 191/57 18TH FL., CTI TOWER,RACHADAPISEK ROAD, KLONGTOEY,BANGKOK 10110, THAILAND",1672284
+9222,2629,SHIP_TO,"191/54, 191/57 18TH FL., CTI TOWER,RACHADAPISEK ROAD, KLONGTOEY,BANGKOK 10110, THAILAND",516499
+9222,686,DELIVER_TO,"(Branch 00002) 138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, Bangkok, ThailandTEL:66-32-447-756-67. Attn:Ms.Chitlada Ritnum (PET-4IC) #25965",1644486
+9222,686,SHIP_TO,"(Branch 00002) 138 Moo 4, Petchakasem Road,T.Srapang, A.Koaw-Yoi,Phetchaburi Province 76140, Bangkok, ThailandTEL:66-32-447-756-67. Attn:Ms.Chitlada Ritnum (PET-4IC) #25965",586560
+9222,686,DELIVER_TO,,586563
+9222,686,DELIVER_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ RDKLONG MADUEA, KRATOOM BEANSAMUTHSAKORN 74110",586549
+9222,686,DELIVER_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom BeanSamuthsakorn 74110 Thailand (L2)",1644487
+9222,686,SHIP_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd.,Klong Maduea, Kratoom BeanSamuthsakorn 74110 Thailand (L2)",586556
+9222,686,DELIVER_TO,,586562
+9222,2629,DELIVER_TO,"(Branch 00002) 138 Moo4,Petchakasem Road, T.Srapang,A.Koaw-Yoi, Phetchaburi Province76140, Bangkok,ThailandTEL:66-32-447-756-67.Attn:Ms.Chitlada Ritnum (PET-4IC)#25965",1672276
+9222,2629,SHIP_TO,"(Branch 00002) 138 Moo4,Petchakasem Road, T.Srapang,A.Koaw-Yoi, Phetchaburi Province76140, Bangkok,ThailandTEL:66-32-447-756-67.Attn:Ms.Chitlada Ritnum (PET-4IC)#25965",597362
+9222,2629,DELIVER_TO,,597370
+9222,2629,DELIVER_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ RDKLONG MADUEA, KRATOOM BEANSAMUTHSAKORN 74110",597209
+9222,2630,DELIVER_TO,"PLT(L3) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD SINGAPORE 819454",1863430
+9222,2630,SHIP_TO,"PLT(L3) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD SINGAPORE 819454",1863109
+9222,686,SHIP_TO,"60 Moo 8, Sethakij Road, T. Klong Maduea,Kratoom Bean, Samutsakron 74110 Thailand.Factory Area: L3 Attn: Vipa/Vinod (Tel: 034 878166)",1759495
+9222,686,DELIVER_TO,"Level 26, Tower 1 Enterprise Square Five38 Wang Chiu Road Kowloon Bay Hong KongDHL Account: 631 255 260",1816094
+9222,686,SHIP_TO,"C/O UPS SCS [M] SDN BHDNo. 161 & 162, Jalan Murni 12, Taman Perindustrian Murni,81400 Senai, Johor, Malaysia.",604216
+9222,3714,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",774469
+9222,3171,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",774448
+9222,2629,DELIVER_TO,,782994
+9222,1780,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",775551
+9222,3714,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",800209
+9222,3715,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",800221
+9222,3731,SHIP_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, KratoomBean Samuthsakorn 74110 Thailand (L1)",798152
+9222,320,DELIVER_TO,"(BRANCH 00001) 60 Moo 8, Sethakij Rd., KlongMaduea,Kratoom Bean,Samuthsakorn 74110TB1000 (MAH-2NPI)",916856
+9222,109,DELIVER_TO,"191/54,191/57 18 TH CTI Tower Rachadapisek RD.Klongtoey Bangkok Thailand.",931653
+9222,2629,DELIVER_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ RD, KLONG MADUEAKRATOOM BEAN, SAMATHSAKORN 74110THAILAND",1672279
+9222,2629,DELIVER_TO,"C/O UPS SCS (Malaysia) SDN BHD.No 161&162 Jln Murni 12, Taman PerindustrianMurni, 81400 Senai, Johor, Malaysia.",1672277
+9222,686,DELIVER_TO,,157136
+9222,686,SHIP_TO,"A Bldg.,No.147, Sec3, Beishen RdWanshuen Tsuen, Shenkeng ShiangTaipei, Taiwan 222 ROC",314083
+9222,686,DELIVER_TO,,319874
+9222,686,DELIVER_TO,,325262
+9222,686,DELIVER_TO,,365865
+9222,2630,DELIVER_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",1863106
+9222,2630,SHIP_TO,"191/54,191/57 18TH, CTI TOWER RACHADAPISEK RDKLONGTOEY, BANGKOK10110 THAILAND",1863102
+9222,2630,DELIVER_TO,"PLT(L2) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S819454",1863103
+9222,2630,SHIP_TO,"PLT(L2) C/O #02-03/04 CHANGI CARGO AGENTSBOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S819454",1863108
+9222,2630,DELIVER_TO,"IMPORT SECTION, R&D BUILDING (3RD FLR),60 MOO 8,SETHAKIJ RD,SECTION 5,KLONG MADUEA,KRATOOM BAEN,SAMUTSAKORN 74110, THAILAND",1863104
+9222,2630,SHIP_TO,"IMPORT SECTION, R&D BUILDING (3RD FLR),60 MOO 8,SETHAKIJ RD,SECTION 5,KLONG MADUEA,KRATOOM BAEN,SAMUTSAKORN 74110, THAILAND",1863110
+9222,2630,DELIVER_TO,"PLT (T2) C/O # 02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S 819454",1863105
+9222,2630,SHIP_TO,"PLT (T2) C/O # 02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CTR,119 AIRPORT CARGO RD S 819454",1863111
+9222,2630,DELIVER_TO,"PLT (T4) C/O #02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CENTRE,119 AIRPORT CARGO RD S819454",1863107
+9222,2630,SHIP_TO,"PLT (T4) C/O #02-03/04 CHANGI CARGO AGENTSMEGAPLEX 1, BOX 698 CHANGI AIRFREIGHT CENTRE,119 AIRPORT CARGO RD S819454",1863112
+9222,2629,SHIP_TO,"60 Moo 8, Sethakij Road, T. Klong Maduea,Kratoom Bean, Samutsakron 74110 Thailand.Factory Area: L3 Attn: Vipa/Vinod (Tel: 034 878166)",1759480
+9222,3718,SHIP_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, Kratoom Bean,Samuthsakorn,Thailand.",1766861
+9222,2629,DELIVER_TO,"Level 26, Tower 1 Enterprise Square Five38 Wang Chiu Road Kowloon Bay Hong KongDHL Account: 631 255 260",1816095
+9222,686,SHIP_TO,"No.10 Date Rd., Beitou Dist.Taipei City, Taipei, Taiwan",1966351
+9222,686,DELIVER_TO,,771319
+9222,686,DELIVER_TO,,773092
+9222,686,DELIVER_TO,NO. 31 ALPS AVENUESINGAPORE 498784Ground floor - AIR EXPORT WAREHOUSE,841738
+9222,2629,SHIP_TO,"C/O UPS SCS [M] SDN BHDNo. 161 & 162, Jalan Murni 12, Taman Perindustrian Murni,81400 Senai, Johor, Malaysia.",820363
+9222,3169,DELIVER_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",1810944
+9222,3329,DELIVER_TO,"香港新界荃灣德士古道 188-202 號立泰工業中心2期 2樓K室Unit K, 2/Fl., Block 2, Leader Industrial Centre,118-202 Texaco Road, Tsuen Wan, N.T.",1799366
+9222,2629,SHIP_TO,"C/O UPS SCS (Malaysia) SDN BHD.No 161&162 Jln Murni 12, Taman PerindustrianMurni, 81400 Senai, Johor, Malaysia.",604230
+9222,686,DELIVER_TO,"C/O UPS SCS (Malaysia) SDN BHD.No 161&162 Jln Murni 12, Taman PerindustrianMurni, 81400 Senai, Johor, Malaysia.",604331
+9222,1391,SHIP_TO,"(BRANCH 00002) 138 MOO 4 ,PETCHKASEM RD.,SAPANG,,KAOW YOI,PETCHABURI 76140THAILAND",604957
+9222,1388,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ ROAD,KLONGMADUEA, KRATOOMBEAN,SAMUTSAKORN 74110 THAILAND",727722
+9222,320,DELIVER_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, KratoomBean Samuthsakorn 74110 ThailandVipa Ongpreechaku",916859
+9222,320,SHIP_TO,"60 Moo 8, Sethakij Rd., Klong Maduea, KratoomBean Samuthsakorn 74110 ThailandVipa Ongpreechaku",775063
+9222,2629,DELIVER_TO,"NO. 31 ALPS AVENUE,SINGAPORE 498784.Ground floor - AIR EXPORT WAREHOUSE",820516
+9222,2629,DELIVER_TO,"191/54, 191/57, 18TH Cti TowerRachadapisek Road KlongtoBangkok,10110,Thailand",1672278
+9222,2629,DELIVER_TO,"C/O UPS SCS (Malaysia) SDN BHD.No 161&162 Jln Murni 12, Taman PerindustrianMurni, 81400 Senai, Johor, Malaysia.",604354
+9222,2629,SHIP_TO,"191/54, 191/57, 18TH Cti TowerRachadapisek Road KlongtoBangkok,10110,Thailand",604422
+9222,2629,DELIVER_TO,,616230
+9222,686,DELIVER_TO,,783029
+9222,2629,SHIP_TO,"(BRANCH 00001) 60 MOO 8 SETHAKIJ RD, KLONG MADUEAKRATOOM BEAN, SAMATHSAKORN 74110THAILAND",766614
+9222,686,DELIVER_TO,"Unit 3303, 33/F., Metroplaza Tower 2,No.223 Hing Fong Road, Kwai Fong, N.T., Hong KongATTN: Celine Shi, Phone: 852-27618056",828666

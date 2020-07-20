@@ -223,12 +223,13 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         # white
         level_1 = ["shipAddr",
                    "payCurrency",
-                   "buyerName",
                    "billAddr",
                    "deliverAddr",
-                   "supplierName"]
+                   ]
         # gray
-        level_0 = ["paymentTerm", "tradeTerm", "tax"]
+        level_0 = ["paymentTerm", "tradeTerm", "tax","buyerName","supplierName",
+                   "poDateStatus","billAddrStatus","deliverAddrStatus","payCurrencyStatus",
+                   "paymentTermStatus","taxStatus","tradeTermStatus","custPartNoStatus","originalRequestDateStatus" ]
 
         all_child = []
 
@@ -458,6 +459,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             if not os.path.exists('./tmp'):
                 os.mkdir('./tmp')
             for f in self.pdf_file:
+                self.statusBar.showMessage('Extracting PDF...%s' % (f), 1)
+                self.statusBar.repaint()
                 fpath = '%s/%s' % (fdir, f)
                 doc = fitz.open(fpath)
                 pages = PdfFileReader(open(fpath, "rb"), strict=False).numPages
@@ -474,8 +477,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             self.img_file = [f for f in os.listdir(self.img_dir) if not f.startswith('.')]
             self.img_file.sort()
 
-            self.img_key =  ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.img_file]
-
+            # self.img_key =  ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.img_file]
+            self.img_key =  [ '_'.join( f.split('.')[0].split('_')[0:-1] ) for f in self.img_file]
+            print(self.img_key)
             self.readimg(self.img_file[0])
 
 
@@ -509,8 +513,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     self.statusBar.showMessage('Json path:%s' % (self.json_dir), 0)
                     self.json_file = [f for f in os.listdir(self.json_dir) if not f.startswith('.')]
                     self.json_file.sort()
-                    self.json_key = ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.json_file]
-
+                    # self.json_key = ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.json_file]
+                    self.json_key = [f.split('.')[0] for f in self.json_file]
 
                     error_lst = ''
                     for key in self.json_key:
