@@ -512,8 +512,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     pix = page.getPixmap(matrix=mat, alpha=False)
                     output = "./tmp/{}_{}.png".format(f.split('.pdf')[0],i)
                     pix.writePNG(output)
-            self.msgBox.setText('\nExtracting images from PDF...\n\nCompleted!!')
+            self.msgBox.setText('\nExtracting images from PDF...\nCompleted!!')
             self.msgBox.button(QMessageBox.Ok).show()
+            self.msgBox.button(QMessageBox.Ok).animateClick(1*1000) 
             self.img_dir = './tmp'
             self.img_file = [f for f in os.listdir(self.img_dir) if not f.startswith('.')]
             self.img_file.sort()
