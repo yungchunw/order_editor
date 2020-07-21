@@ -182,8 +182,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     self.readjson(filename)
                     self.statusBar.showMessage('Save file %s success!!' % (filename), 0)
         except Exception as e:
-            print(e)
-            QtWidgets.QMessageBox.information(None, 'NoData', e, QtWidgets.QMessageBox.Ok)
+            # print(e)
+            QtWidgets.QMessageBox.warning(None, 'Fail', '\nThere is no data to save!', QtWidgets.QMessageBox.Ok)
 
     def genJson(self, item):
 
