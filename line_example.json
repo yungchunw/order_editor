@@ -2,10 +2,9 @@
     "lineNumber": "",
     "custPartNo": "",
     "custPartNoId": "",
-    "custPartNoStatus": "",
+    "custPartNoStatus": "ERROR",
     "sellingPrice": 0.0,
     "voQty": 0,
     "originalRequestDate": "",
-    "originalRequestDateStatus": "",
-    "originalRequestStatus": ""
+    "originalRequestDateStatus": "ERROR"
 }

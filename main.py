@@ -318,9 +318,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     for i in range(parent.childCount()):
                         parent.child(i).setText(0, str(i + 1))
             else:
-                QtWidgets.QMessageBox.information(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
+                QtWidgets.QMessageBox.warning(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
         except:
-            QtWidgets.QMessageBox.information(None, 'NoData', '\nNo Data! Try again.', QtWidgets.QMessageBox.Ok)
+            QtWidgets.QMessageBox.warning(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
 
     def create_line(self):
 
@@ -361,11 +361,11 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     for i in range(parent.childCount()):
                         parent.child(i).setText(0,str(i+1))
             else:
-               QMessageBox.information(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
+               QMessageBox.warning(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
 
         except:
 
-            QMessageBox.information(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
+            QMessageBox.warning(None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
 
     def parent_is_line(self, item):
         if item.parent().text(0) == 'line':
@@ -475,55 +475,62 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
 
     def imgpath(self):
-
+        self.pdf_file =[]
+        self.msgBox = QMessageBox()
+        shutil.rmtree('./tmp', ignore_errors=True)
+        
         fdir = QtWidgets.QFileDialog.getExistingDirectory(None, 'folder name', './')
 
-        if fdir != '':
-            shutil.rmtree('./tmp', ignore_errors=True)
-            self.statusBar.showMessage('Image path:%s'%(fdir),0)
-
-
-            self.pdf_file = [f for f in os.listdir(fdir) if not f.startswith('.')]
-            if not os.path.exists('./tmp'):
-                os.mkdir('./tmp')
-
-            self.msgBox = QMessageBox()
-            self.msgBox.setText('\nExtracting images from PDF...\n')
-            self.msgBox.setWindowFlags(Qt.CustomizeWindowHint | Qt.WindowTitleHint)
-            self.msgBox.addButton(QMessageBox.Ok)
-            self.msgBox.button(QMessageBox.Ok).hide()
-            self.msgBox.show()
+        try :
+            if fdir != '':
             
-        
-            for f in self.pdf_file:
+                self.statusBar.showMessage('Image path:%s'%(fdir),0)
+
+                self.pdf_file = [f for f in os.listdir(fdir) if not f.startswith('.')]
+                if not os.path.exists('./tmp'):
+                    os.mkdir('./tmp')
+
                 
-                self.msgBox.setText('\nExtracting images from PDF...\n%s' % (f))
-                loop = QEventLoop()
-                QTimer.singleShot(100, loop.quit)
-                loop.exec_()
-                fpath = '%s/%s' % (fdir, f)
-                doc = fitz.open(fpath)
-                pages = PdfFileReader(open(fpath, "rb"), strict=False).numPages
-                for i in range(0,pages):
-                    page = doc.loadPage(i) #number of page
-                    zoom_x = 3 #(1.33333333-->1056x816)   (2-->1584x1224)
-                    zoom_y = 3
-                    mat = fitz.Matrix(zoom_x, zoom_y).preRotate(0)
-                    pix = page.getPixmap(matrix=mat, alpha=False)
-                    output = "./tmp/{}_{}.png".format(f.split('.pdf')[0],i)
-                    pix.writePNG(output)
-            self.msgBox.setText('\nExtracting images from PDF...\nCompleted!!')
-            self.msgBox.button(QMessageBox.Ok).show()
-            self.msgBox.button(QMessageBox.Ok).animateClick(1*1000) 
-            self.img_dir = './tmp'
-            self.img_file = [f for f in os.listdir(self.img_dir) if not f.startswith('.')]
-            self.img_file.sort()
+                self.msgBox.setText('\nExtracting images from PDF...\n')
+                self.msgBox.setWindowFlags(Qt.CustomizeWindowHint | Qt.WindowTitleHint)
+                self.msgBox.addButton(QMessageBox.Ok)
+                self.msgBox.button(QMessageBox.Ok).hide()
+                self.msgBox.show()
+                
 
-            # self.img_key =  ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.img_file]
-            self.img_key =  [ '_'.join( f.split('.')[0].split('_')[0:-1] ) for f in self.img_file]
-            # print(self.img_key)
-            self.readimg(self.img_file[0])
+                for f in self.pdf_file:
+                    
+                    self.msgBox.setText('\nExtracting images from PDF...\n%s' % (f))
+                    loop = QEventLoop()
+                    QTimer.singleShot(100, loop.quit)
+                    loop.exec_()
+                    fpath = '%s/%s' % (fdir, f)
+                    doc = fitz.open(fpath)
+                    pages = PdfFileReader(open(fpath, "rb"), strict=False).numPages
+                    for i in range(0,pages):
+                        page = doc.loadPage(i) #number of page
+                        zoom_x = 3 #(1.33333333-->1056x816)   (2-->1584x1224)
+                        zoom_y = 3
+                        mat = fitz.Matrix(zoom_x, zoom_y).preRotate(0)
+                        pix = page.getPixmap(matrix=mat, alpha=False)
+                        output = "./tmp/{}_{}.png".format(f.split('.pdf')[0],i)
+                        pix.writePNG(output)
+                self.msgBox.setText('\nExtracting images from PDF...\nCompleted!!')
+                self.msgBox.button(QMessageBox.Ok).show()
+                self.msgBox.button(QMessageBox.Ok).animateClick(1*1000) 
+                self.img_dir = './tmp'
+                self.img_file = [f for f in os.listdir(self.img_dir) if not f.startswith('.')]
+                self.img_file.sort()
 
+                # self.img_key =  ['_'.join( f.split('.')[0].split('_')[0:3] ) for f in self.img_file]
+                self.img_key =  [ '_'.join( f.split('.')[0].split('_')[0:-1] ) for f in self.img_file]
+                # print(self.img_key)
+                self.readimg(self.img_file[0])
+                
+        except :
+            QtWidgets.QMessageBox.warning(None, 'Fail', '\nFailed to load PDF, Try again！', QtWidgets.QMessageBox.Ok)
+            self.msgBox.hide()
+            self.imgpath()
 
     def readimg(self,_img):
 
