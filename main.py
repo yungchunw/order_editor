@@ -8,6 +8,7 @@ import shutil
 import traceback
 import check_pkg
 import fitz
+import time
 import pandas as pd
 from PyQt5.QtCore import QSortFilterProxyModel, Qt
 from PyQt5.QtGui import QFont, QImage, QPixmap
@@ -15,8 +16,8 @@ from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel
 from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication,
                              QHeaderView, QLabel, QMainWindow, QMenu,
                              QMessageBox, QTreeWidgetItem)
-from PyQt5.QtWidgets import QWidget, QProgressBar, QPushButton
-from PyQt5.QtCore import QBasicTimer
+from PyQt5.QtWidgets import QWidget, QProgressBar, QPushButton,QDesktopWidget, QDialog
+from PyQt5.QtCore import QBasicTimer, QEventLoop, QTimer
 
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from UI2 import *
@@ -54,14 +55,18 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.db.setDatabaseName("./ERP/customerItem.db")
         self.db.open()
 
+        
+        
+
         # read shipaddr csv
 
         self.df_addr = pd.read_csv('./ERP/active_address_table.csv',encoding='utf8',dtype=str)
 
-        self.vNum = QLabel('Version:3.0.5')
+        self.vNum = QLabel('Version:3.0.6')
         self.treeWidget.header().setDefaultSectionSize(210)
         self.treeWidget.itemDoubleClicked.connect(self.checkEdit)
         self.treeWidget.itemChanged.connect(self.enable_action)
+        
 
         # statusBar
         self.statusBar.showMessage('Status:',0)
@@ -91,7 +96,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.loadCsv('./ERP/currency.csv',self.currency_view)
         # self.loadDB("./ERP/customerItem.db",self.customer_view)
-    
+
 
 
     def comparelist_import(self):
@@ -240,7 +245,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                    "deliverAddr",
                    ]
         # gray
-        level_0 = ["paymentTerm", "tradeTerm", "tax","buyerName","supplierName",
+        level_0 = ["paymentTerm", "tradeTerm", "tax","buyerName","supplierName","shipAddrStatus",
                    "poDateStatus","billAddrStatus","deliverAddrStatus","payCurrencyStatus",
                    "paymentTermStatus","taxStatus","tradeTermStatus","originalRequestDateStatus" ]
 
@@ -474,16 +479,28 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         fdir = QtWidgets.QFileDialog.getExistingDirectory(None, 'folder name', './')
 
         if fdir != '':
-            
+            shutil.rmtree('./tmp', ignore_errors=True)
             self.statusBar.showMessage('Image path:%s'%(fdir),0)
 
 
             self.pdf_file = [f for f in os.listdir(fdir) if not f.startswith('.')]
             if not os.path.exists('./tmp'):
                 os.mkdir('./tmp')
+
+            self.msgBox = QMessageBox()
+            self.msgBox.setText('\nExtracting images from PDF...\n')
+            self.msgBox.setWindowFlags(Qt.CustomizeWindowHint | Qt.WindowTitleHint)
+            self.msgBox.addButton(QMessageBox.Ok)
+            self.msgBox.button(QMessageBox.Ok).hide()
+            self.msgBox.show()
+            
+        
             for f in self.pdf_file:
-                self.statusBar.showMessage('Extracting PDF...%s' % (f), 1)
-                self.statusBar.repaint()
+                
+                self.msgBox.setText('\nExtracting images from PDF...\n%s' % (f))
+                loop = QEventLoop()
+                QTimer.singleShot(100, loop.quit)
+                loop.exec_()
                 fpath = '%s/%s' % (fdir, f)
                 doc = fitz.open(fpath)
                 pages = PdfFileReader(open(fpath, "rb"), strict=False).numPages
@@ -495,7 +512,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     pix = page.getPixmap(matrix=mat, alpha=False)
                     output = "./tmp/{}_{}.png".format(f.split('.pdf')[0],i)
                     pix.writePNG(output)
-            
+            self.msgBox.setText('\nExtracting images from PDF...\n\nCompleted!!')
+            self.msgBox.button(QMessageBox.Ok).show()
             self.img_dir = './tmp'
             self.img_file = [f for f in os.listdir(self.img_dir) if not f.startswith('.')]
             self.img_file.sort()
