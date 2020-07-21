@@ -1,7 +1,11 @@
 {
-"lineNumber": "",
-"custPartNo": "",
-"sellingPrice": 0.0,
-"voQty": 0,
-"originalRequestDate": "2019-"
+    "lineNumber": "",
+    "custPartNo": "",
+    "custPartNoId": "",
+    "custPartNoStatus": "",
+    "sellingPrice": 0.0,
+    "voQty": 0,
+    "originalRequestDate": "",
+    "originalRequestDateStatus": "",
+    "originalRequestStatus": ""
 }

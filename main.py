@@ -808,11 +808,15 @@ if __name__ == "__main__":
     app.setPalette(palette)
     Mywin = MyMainWindow()
     Mywin.show()
-    star_info = ("\nOrder Editor"
-                "\nCommand-I : Open Image location"
-                "\nCommand-J : Open Json location"
-                "\nCommand-S : Save Json")
-    QMessageBox.information(None, 'INFO', star_info, QtWidgets.QMessageBox.Ok)
+    start_msg = QMessageBox()
+    star_info = ("DSU OrderEditor V3.0.6\n\n"
+                 "If you want to try experimental features of the Editor before they’re released, you can join the beta tester program. As a beta tester, you’ll become an important part of the app’s development.")
+    start_msg.addButton("Sign up as a beta tester",QMessageBox.YesRole)
+    
+
+    start_msg.setText(star_info)
+    start_msg.show()
+    # QMessageBox.information(None, 'INFO', star_info, QtWidgets.QMessageBox.Ok)
     
     shutil.rmtree('./tmp', ignore_errors=True)
     sys.exit(app.exec_())
