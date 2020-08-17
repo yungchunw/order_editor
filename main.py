@@ -60,7 +60,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         # read shipaddr csv
 
-        self.df_addr = pd.read_csv('./ERP/active_address_table.csv',encoding='utf8',dtype=str)
+        self.df_addr = pd.read_csv('./ERP/active_address_table.csv',encoding='utf8',dtype=str,sep='\t')
 
         self.vNum = QLabel('Version:3.0.6')
         self.treeWidget.header().setDefaultSectionSize(210)
