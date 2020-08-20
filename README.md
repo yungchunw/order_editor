@@ -1,4 +1,4 @@
-DSU OrderEditor V3.2.0
+DSU OrderEditor V3.3.0
 ===
 
 ![image alt](https://img.shields.io/badge/python-3.7.3-blue)
@@ -8,6 +8,8 @@ DSU OrderEditor V3.2.0
 ### Update
 
 2020-08-20
+- 新增 window title
+- 更換 logo.png
 - 連線 Cloud SQL DB
 - 整合 Config
 - 新增分割 PDF 進度資訊

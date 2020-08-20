@@ -56,9 +56,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         super(MyMainWindow, self).__init__(parent)
 
         self.setupUi(self)
-
+        self.setWindowTitle("Order Editor") 
         # define virables
-        self.version = 'Version:3.2.0'
+        self.version = 'Version:3.3.0'
         self.header_page = 0
         self.line_page = 0
         self.img_dir = ''
