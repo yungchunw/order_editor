@@ -69,15 +69,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_key = []
         self.oring_json = {}
 
-<<<<<<< HEAD
-        # setup database
-        self.db = QSqlDatabase.addDatabase("QSQLITE")
-        self.db.setDatabaseName("./ERP/customerItem.db")
-        self.db.open()
-=======
         # setup config
         self.config = yaml.load(open(("setting/config.yaml"), "r"),Loader=yaml.Loader)
->>>>>>> test
 
         # setup DB MySql
         self.dsudb = Database()
@@ -110,13 +103,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_list.clicked.connect(self.jsonclicked)
 
 
-<<<<<<< HEAD
-        self.customer_load_btn.clicked.connect(lambda: self.setQuery(self.customer_view))
-        self.customer_search.textChanged.connect(lambda: self.setQuery(self.customer_view))
-
-        self.loadCsv('./ERP/currency.csv',self.currency_view)
-        # self.loadDB("./ERP/customerItem.db",self.customer_view)
-=======
         self.customer_load_btn.clicked.connect(
             lambda: self.set_custitem_view(self.customer_view))
         self.customer_search.textChanged.connect(
@@ -130,7 +116,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         error_msg = "[{}] {}".format(error_class, detail)
         print(error_msg)
         return error_msg
->>>>>>> test
 
     def checkEdit(self, item, column):
         # allow editing only of column 1:
@@ -732,59 +717,11 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 mylist.addItem(str(item))
             mylist.repaint()
 
-<<<<<<< HEAD
-    def loadCsv(self,filename,view):
-        items = []
-        self.model = QtGui.QStandardItemModel(self)
-        self.proxy = QSortFilterProxyModel(self)
-
-        with open(filename, "r",encoding="utf8") as fileInput:
-            for row in csv.reader(fileInput):
-                items = [
-                    QtGui.QStandardItem(field)
-                    for field in row
-                ]
-                self.model.appendRow(items)
-        labels = []
-        for i in range(self.model.columnCount()):
-            labels.append(self.model.data(self.model.index(0,i), Qt.DisplayRole))
-        self.model.setHorizontalHeaderLabels(labels)
-
-        view.horizontalHeader()
-        self.model.removeRow(0)
-        self.proxy.setSourceModel(self.model)
-        self.proxy.setFilterKeyColumn(self.model.columnCount()-1)
-        view.setModel(self.proxy)
-        view.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        for c in range(view.horizontalHeader().count()):
-            view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
-
-        view.horizontalHeader().setStretchLastSection(True)
-
-    def setQuery(self,view):
-
-        text = self.customer_search.text()
-
-        query = 'SELECT * FROM customerItem WHERE CUSTOMER_ITEM_NUMBER LIKE \"%{}%\"'.format(text)
-
-        self.model = QSqlQueryModel(self)
-        self.model.setQuery(query, self.db)
-        
-        # while self.model.canFetchMore():
-        #     self.model.fetchMore()
-
-        self.column = self.model.columnCount()	#獲取列數
-        self.row = self.model.rowCount()		#獲取行數
-        print(self.row)
-
-        # self.model = QtGui.QStandardItemModel(self)
-=======
     def set_currency_view(self, view):
         items = []
         df_currency = self.dsudb.get_table('currency')
 
         self.model = QtGui.QStandardItemModel(self)
->>>>>>> test
         self.proxy = QSortFilterProxyModel(self)
         self.model.setHorizontalHeaderLabels(df_currency.columns)
 
@@ -792,11 +729,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             items = [QtGui.QStandardItem(field) for field in row]
             self.model.appendRow(items)
 
-<<<<<<< HEAD
-        view.horizontalHeader()
-        self.model.removeRow(0)
-=======
->>>>>>> test
         self.proxy.setSourceModel(self.model)
         self.proxy.setFilterKeyColumn(self.model.columnCount())
 
@@ -805,24 +737,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         view.setSortingEnabled(True)
         view.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
-<<<<<<< HEAD
-        view.resizeColumnsToContents()
-        # for c in range(view.horizontalHeader().count()):
-        #     view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
-
-        view.horizontalHeader().setStretchLastSection(True)
-
-
-
-    # @QtCore.pyqtSlot(str)
-    # def filter(self, text):
-    #     search = QtCore.QRegExp(text,
-    #                             QtCore.Qt.CaseInsensitive,
-    #                             QtCore.QRegExp.RegExp
-    #                             )
-
-    #     self.proxy.setFilterRegExp(search)
-=======
         for c in range(view.horizontalHeader().count()):
             view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
 
@@ -854,7 +768,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
 
         view.horizontalHeader().setStretchLastSection(True)
->>>>>>> test
 
     def closeEvent(self, event):
         summary = 'Confirm Exit'
