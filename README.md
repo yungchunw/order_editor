@@ -7,12 +7,6 @@ DSU OrderEditor V3.3.0
 
 ### Update
 
-<<<<<<< HEAD
-2020-02-03:
-- v3.0.2 release
-- 料號收尋功能優化
-- Bug fix
-=======
 2020-08-20
 - 新增 window title
 - 更換 logo.png
@@ -26,7 +20,6 @@ DSU OrderEditor V3.3.0
 - 修正MAC中文選字問題
 - 高亮特定欄位資訊
 - 更新ERP資料
->>>>>>> test
 
 2019-11-22:
 - Bug fix
