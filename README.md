@@ -1,4 +1,4 @@
-DSU OrderEditor 
+DSU OrderEditor V3.2.0
 ===
 
 ![image alt](https://img.shields.io/badge/python-3.7.3-blue)
@@ -6,6 +6,12 @@ DSU OrderEditor
 ![image alt](https://img.shields.io/badge/pandas-0.24.2-orange)
 
 ### Update
+
+2020-08-20
+- 連線 Cloud SQL DB
+- 整合 Config
+- 新增分割 PDF 進度資訊
+- 移除未使用 UI
 
 2020-07-21:
 - 直接讀取PDF檔

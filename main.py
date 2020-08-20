@@ -1,27 +1,28 @@
 # -*- coding: utf-8 -*-
-import configparser
 import csv
 import json
 import os
-import sys
 import shutil
-import traceback
-import check_pkg
-import fitz
+import sys
 import time
-import yaml
+import traceback
+
+import fitz
 import pandas as pd
-from dsu_mysql.dsu_db import Database
-from PyQt5.QtCore import QSortFilterProxyModel, Qt, QAbstractTableModel,QBasicTimer, QEventLoop, QTimer, QSize
+import yaml
+from PyPDF2 import PdfFileReader, PdfFileWriter
+from PyQt5.QtCore import (QAbstractTableModel, QBasicTimer, QEventLoop, QSize,
+                          QSortFilterProxyModel, Qt, QTimer)
 from PyQt5.QtGui import QFont, QImage, QPixmap
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel
 from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication,
-                             QHeaderView, QLabel, QMainWindow, QMenu,
-                             QMessageBox, QTreeWidgetItem,QWidget, QProgressBar, QPushButton, QDesktopWidget, QDialog)
+                             QDesktopWidget, QDialog, QHeaderView, QLabel,
+                             QMainWindow, QMenu, QMessageBox, QProgressBar,
+                             QPushButton, QTreeWidgetItem, QWidget)
 
-
-from PyPDF2 import PdfFileReader, PdfFileWriter
-from UI2 import *
+from setting.UI import *
+from setting import check_pkg
+from setting.dsu_db import Database
 
 
 class PandasModel(QAbstractTableModel):
@@ -57,7 +58,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         # define virables
-        self.version = 'Version:3.1.0'
+        self.version = 'Version:3.2.0'
         self.header_page = 0
         self.line_page = 0
         self.img_dir = ''
@@ -69,8 +70,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.oring_json = {}
 
         # setup config
-
-        self.config = yaml.load(open("config.yaml", "r"), Loader=yaml.Loader)
+        self.config = yaml.load(open(("setting/config.yaml"), "r"),Loader=yaml.Loader)
 
         # setup DB MySql
         self.dsudb = Database()
@@ -102,7 +102,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.json_list.clicked.connect(self.jsonclicked)
 
-        # self.read_comparelist_btn.clicked.connect(self.comparelist_import)
 
         self.customer_load_btn.clicked.connect(
             lambda: self.set_custitem_view(self.customer_view))
@@ -111,41 +110,12 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.set_currency_view(self.currency_view)
 
-    # def comparelist_import(self):
-    #     try:
-    #         path = (QtWidgets.QFileDialog.getOpenFileNames(
-    #             None, 'Select File', '')[0])
-    #         path = path[0]
-
-    #         df = pd.read_excel(path, index_col=False, encoding='utf8')
-    #         df.fillna('', inplace=True)
-    #         view = self.compare_view
-    #         items = []
-    #         labels = []
-    #         self.model = QtGui.QStandardItemModel(self)
-    #         self.proxy = QSortFilterProxyModel(self)
-
-    #         for col in df.columns:
-    #             items.append(QtGui.QStandardItem(col))
-    #         self.model.appendRow(items)
-
-    #         for index, row in df.iterrows():
-    #             items = [QtGui.QStandardItem(str(field)) for field in row]
-    #             self.model.appendRow(items)
-
-    #         for i in range(self.model.columnCount()):
-    #             labels.append(self.model.data(
-    #                 self.model.index(0, i), Qt.DisplayRole))
-    #         self.model.setHorizontalHeaderLabels(labels)
-
-    #         view.setModel(self.model)
-    #         view.setFont(QFont("Tahoma", 10))
-    #         self.model.removeRow(0)
-    #         view.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeToContents)
-    #         view.verticalHeader().setSectionResizeMode(QHeaderView.Fixed)
-    #         view.horizontalHeader().setStretchLastSection(True)
-    #     except:
-    #         pass
+    def error_exception(self, e):
+        error_class = e.__class__.__name__  # 取得錯誤類型
+        detail = e
+        error_msg = "[{}] {}".format(error_class, detail)
+        print(error_msg)
+        return error_msg
 
     def checkEdit(self, item, column):
         # allow editing only of column 1:
@@ -195,7 +165,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     self.statusBar.showMessage(
                         'Save file %s success!!' % (filename), 0)
         except Exception as e:
-            # print(e)
+            self.error_exception(e)
             QtWidgets.QMessageBox.warning(
                 None, 'Fail', '\nThere is no data to save!', QtWidgets.QMessageBox.Ok)
 
@@ -223,7 +193,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     return int(float(item.text(1)))
                 return float(item.text(1))
             except Exception as e:
-                print(e)
+                self.error_exception(e)
                 return int(0)
 
         elif item.text(2) == 'float':
@@ -232,7 +202,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     return int(float(item.text(1)))
                 return float(item.text(1))
             except Exception as e:
-                print(e)
+                self.error_exception(e)
                 return float(0)
         else:
             return item.text(1)
@@ -319,7 +289,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                             0, QtGui.QBrush(QtGui.QColor("#34383C")))
                         item.child(i).setForeground(
                             1, QtGui.QBrush(QtGui.QColor("#34383C")))
-        except:
+        except Exception as e:
+            self.error_exception(e)
             QtWidgets.QMessageBox.information(
                 None, 'NoData', '\nJson format Error.\n There is no \'header\' or \'line\' in content.', QtWidgets.QMessageBox.Ok)
 
@@ -345,7 +316,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             else:
                 QtWidgets.QMessageBox.warning(
                     None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
-        except:
+        except Exception as e:
+            self.error_exception(e)
             QtWidgets.QMessageBox.warning(
                 None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
 
@@ -368,7 +340,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
                 for i in range(parent.childCount()):
                     parent.child(i).setText(0, str(i + 1))
-        except:
+        except Exception as e:
+            self.error_exception(e)
             QtWidgets.QMessageBox.information(
                 None, 'NoData', '\nNo Data! Try again.', QtWidgets.QMessageBox.Ok)
 
@@ -394,7 +367,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 QMessageBox.warning(
                     None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
 
-        except:
+        except Exception as e:
+            self.error_exception(e)
 
             QMessageBox.warning(
                 None, 'NoData', '\nPlease select the line node! Try again.', QtWidgets.QMessageBox.Ok)
@@ -431,8 +405,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 else:
                     return False
             return True
+
         except Exception as e:
-            print(e)
+            self.error_exception(e)
 
     def jsonchange(self, num):
 
@@ -500,7 +475,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 self.order_name.repaint()
                 self.readimg(self.img_file[img_index + num])
 
-            except:
+            except Exception as e:
+                self.error_exception(e)
                 QtWidgets.QMessageBox.warning(
                     None, 'Fail', '\nPlease check the path of json', QtWidgets.QMessageBox.Ok)
 
@@ -564,7 +540,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                 # print(self.img_key)
                 self.readimg(self.img_file[0])
 
-        except:
+        except Exception as e:
+            self.error_exception(e)
             QtWidgets.QMessageBox.warning(
                 None, 'Fail', '\nFailed to load PDF, Try again！', QtWidgets.QMessageBox.Ok)
             self.msgBox.hide()
@@ -578,11 +555,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             self.order_name.setText("Order Name:%s" % (_img))
             self.order_name.repaint()
             self.statusBar.showMessage('Order Name:%s' % (_img), 0)
-            # self.compare_img_name.setText(
-            #     "Cust Key : %s" % (_img.split('_')[2]))
-            # self.compare_img_name.repaint()
 
-        except:
+        except Exception as e:
+            self.error_exception(e)
             QtWidgets.QMessageBox.warning(
                 None, 'Fail', '\nImage Error, Try again！', QtWidgets.QMessageBox.Ok)
             self.imgpath()
@@ -637,17 +612,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                         self.openMenu)
 
             except Exception as e:
-                error_class = e.__class__.__name__  # 取得錯誤類型
-                detail = e.args[0]  # 取得詳細內容
-                cl, exc, tb = sys.exc_info()  # 取得Call Stack
-                lastCallStack = traceback.extract_tb(
-                    tb)[-1]  # 取得Call Stack的最後一筆資料
-                fileName = lastCallStack[0]  # 取得發生的檔案名稱
-                lineNum = lastCallStack[1]  # 取得發生的行號
-                funcName = lastCallStack[2]  # 取得發生的函數名稱
-                errMsg = "File \"{}\", line {}, in {}: [{}] {}".format(
-                    fileName, lineNum, funcName, error_class, detail)
-                print(errMsg)
+                errMsg = self.error_exception(e)
 
                 QtWidgets.QMessageBox.information(
                     None, 'Exception', errMsg, QtWidgets.QMessageBox.Ok)
@@ -820,7 +785,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     app = QApplication(sys.argv)
-    app.setWindowIcon(QtGui.QIcon('logo.png'))
+    app.setWindowIcon(QtGui.QIcon('setting/logo.png'))
     app.setApplicationName("Order Editor")
     app.setStyle('Fusion')
 
@@ -844,7 +809,8 @@ if __name__ == "__main__":
     Mywin.show()
     start_msg = QMessageBox()
     star_info = ("\nDSU OrderEditor {}").format(Mywin.version)
-    start_msg.setIconPixmap(QPixmap("logo.png").scaled(QSize(50,50), Qt.KeepAspectRatio));
+    start_msg.setIconPixmap(QPixmap("setting/logo.png").scaled(
+        QSize(50, 50), Qt.KeepAspectRatio))
     start_msg.setText(star_info)
     start_msg.addButton("Okay", QMessageBox.YesRole).animateClick(3*1000)
     start_msg.show()

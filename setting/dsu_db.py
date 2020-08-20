@@ -4,6 +4,10 @@
 import pymysql.cursors
 import yaml
 import pandas as pd
+import os
+
+cwd = os.getcwd()
+path_to_ini = os.path.join(cwd, 'setting/config.yaml')
 
 class Database(object):
 
@@ -11,7 +15,7 @@ class Database(object):
 
     def __init__(self):
 
-        with open('config.yaml', "r") as stream:
+        with open(path_to_ini, "r") as stream:
             config = yaml.load(stream, Loader=yaml.Loader)
 
         self.conn = pymysql.connect(host=config['mysql']['host'],
