@@ -1,4 +1,4 @@
-DSU OrderEditor 
+DSU OrderEditor V3.2.0
 ===
 
 ![image alt](https://img.shields.io/badge/python-3.7.3-blue)
@@ -7,10 +7,24 @@ DSU OrderEditor
 
 ### Update
 
+<<<<<<< HEAD
 2020-02-03:
 - v3.0.2 release
 - 料號收尋功能優化
 - Bug fix
+=======
+2020-08-20
+- 連線 Cloud SQL DB
+- 整合 Config
+- 新增分割 PDF 進度資訊
+- 移除未使用 UI
+
+2020-07-21:
+- 直接讀取PDF檔
+- 修正MAC中文選字問題
+- 高亮特定欄位資訊
+- 更新ERP資料
+>>>>>>> test
 
 2019-11-22:
 - Bug fix

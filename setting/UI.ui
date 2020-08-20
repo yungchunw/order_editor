@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.icns</normaloff>logo.icns</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="imagelayout"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="editorlayout">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="json_tab">
+         <attribute name="title">
+          <string>Json editor</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="json_tabLayout" stretch="1,10,4">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="jsonLayout_top" stretch="1,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="order_nameLayout" stretch="40,0,1,1">
+              <property name="spacing">
+               <number>20</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="order_name">
+                <property name="text">
+                 <string>Order Name：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="prev_btn">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>15</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>←</string>
+                </property>
+                <property name="shortcut">
+                 <string>Left</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="img_count">
+                <property name="text">
+                 <string>0/0</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="next_btn">
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>15</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>→</string>
+                </property>
+                <property name="shortcut">
+                 <string>Right</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="json_nameLayout" stretch="0">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="json_name">
+                <property name="text">
+                 <string>Json   Name：</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="jsonLayout_center" rowstretch="0,0,0" columnstretch="6,3">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <item row="0" column="0" rowspan="2">
+             <widget class="QTreeWidget" name="treeWidget">
+              <property name="contextMenuPolicy">
+               <enum>Qt::CustomContextMenu</enum>
+              </property>
+              <property name="acceptDrops">
+               <bool>false</bool>
+              </property>
+              <property name="dragDropOverwriteMode">
+               <bool>false</bool>
+              </property>
+              <property name="dragDropMode">
+               <enum>QAbstractItemView::NoDragDrop</enum>
+              </property>
+              <attribute name="headerDefaultSectionSize">
+               <number>250</number>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>key</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>value</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="save_btn">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <italic>false</italic>
+                <bold>true</bold>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+                <kerning>true</kerning>
+               </font>
+              </property>
+              <property name="text">
+               <string>&amp;Save Json</string>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+S</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" rowspan="3">
+             <widget class="QListWidget" name="json_list"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="jsonLayout_bottom" rowstretch="1,10" columnstretch="3,3,3">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>5</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QListWidget" name="SHIP_TO"/>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="billaddr_label">
+              <property name="text">
+               <string>billAddr</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="deliveraddr_label">
+              <property name="text">
+               <string>deliverAddr</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="shipaddr_label">
+              <property name="text">
+               <string>shipAddr</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QListWidget" name="BILL_TO"/>
+            </item>
+            <item row="1" column="2">
+             <widget class="QListWidget" name="DELIVER_TO"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="customeritem_tab">
+         <attribute name="title">
+          <string>Customer item</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="customeritem_tabLayout">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="customeritemLayout_top">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="search_label">
+              <property name="text">
+               <string>Search：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="customer_search"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="customer_load_btn">
+              <property name="text">
+               <string>Load Data</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="customer_view">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="currency_tab">
+         <attribute name="title">
+          <string>Currency</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="currency_tabLayout">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QTableView" name="currency_view">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::CurrentChanged|QAbstractItemView::EditKeyPressed</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="compare_tab">
+         <attribute name="title">
+          <string>Compare table</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="comparelayout_top" stretch="8,1,1">
+            <item>
+             <widget class="QLabel" name="compare_img_name">
+              <property name="text">
+               <string>PDF Name : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="read_comparelist_btn">
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>Export</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="compare_tab_line">
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="compare_view">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::CurrentChanged|QAbstractItemView::EditKeyPressed</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Image"/>
+    <addaction name="actionOpen_Json"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save"/>
+    <addaction name="separator"/>
+    <addaction name="action_Close"/>
+   </widget>
+   <widget class="QMenu" name="menuControl">
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>Control</string>
+    </property>
+    <addaction name="actionPrev_Page"/>
+    <addaction name="actionNext_Page"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_line"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuControl"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_Image">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Open Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionOpen_Json">
+   <property name="text">
+    <string>Open Json</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="text">
+    <string>Clsoe</string>
+   </property>
+  </action>
+  <action name="actionNext_Page">
+   <property name="text">
+    <string>Next Page</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="actionPrev_Page">
+   <property name="text">
+    <string>Prev Page</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionDelete_line">
+   <property name="text">
+    <string>Delete line</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetShortcut</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

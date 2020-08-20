@@ -1,0 +1,20 @@
+default:
+  cust_key: 0
+  ou_key: 1
+
+mysql:
+  host: 34.80.92.169
+  user: order_user
+  password: dsup@ssw0rd
+  database: order_extract
+
+example_json:
+  lineNumber: 
+  custPartNo: 
+  custPartNoId: 
+  custPartNoStatus: ERROR
+  sellingPrice: 0.0
+  voQty: 0
+  originalRequestDate: 
+  originalRequestDateStatus: ERROR
+
