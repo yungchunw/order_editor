@@ -2,76 +2,17 @@
 
 # Form implementation generated from reading ui file 'UI.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.2
+# Created by: PyQt5 UI code generator 5.12.1
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class PhotoViewer(QtWidgets.QGraphicsView):
-    photoClicked = QtCore.pyqtSignal(QtCore.QPoint)
-
-    def __init__(self, parent):
-        super(PhotoViewer, self).__init__(parent)
-        self._zoom = 0
-        self._empty = True
-        self._scene = QtWidgets.QGraphicsScene(self)
-        self._photo = QtWidgets.QGraphicsPixmapItem()
-        self._scene.addItem(self._photo)
-        self.setScene(self._scene)
-        self.setTransformationAnchor(QtWidgets.QGraphicsView.AnchorUnderMouse)
-        self.setResizeAnchor(QtWidgets.QGraphicsView.AnchorUnderMouse)
-        self.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-        self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-        self.setBackgroundBrush(QtGui.QBrush(QtGui.QColor(30, 30,30)))
-        self.setFrameShape(QtWidgets.QFrame.NoFrame)
-
-    def hasPhoto(self):
-        return not self._empty
-
-
-    def setPhoto(self, pixmap=None):
-        self._zoom = 0
-        if pixmap and not pixmap.isNull():
-            self._empty = False
-            self.setDragMode(QtWidgets.QGraphicsView.ScrollHandDrag)
-            self._photo.setPixmap(pixmap)
-        else:
-            self._empty = True
-            self.setDragMode(QtWidgets.QGraphicsView.NoDrag)
-            self._photo.setPixmap(QtGui.QPixmap())
-        self.fitInView(self._photo)
-
-    def wheelEvent(self, event):
-        if self.hasPhoto():
-            if event.angleDelta().y() > 0:
-                factor = 1.25
-                self._zoom += 1
-            else:
-                factor = 0.8
-                self._zoom -= 1
-            if self._zoom > 0:
-                self.scale(factor, factor)
-            elif self._zoom == 0:
-                self.fitInView(self._photo)
-            else:
-                self._zoom = 0
-
-    def toggleDragMode(self):
-        if self.dragMode() == QtWidgets.QGraphicsView.ScrollHandDrag:
-            self.setDragMode(QtWidgets.QGraphicsView.NoDrag)
-        elif not self._photo.pixmap().isNull():
-            self.setDragMode(QtWidgets.QGraphicsView.ScrollHandDrag)
-
-    def mousePressEvent(self, event):
-        if self._photo.isUnderMouse():
-            self.photoClicked.emit(self.mapToScene(event.pos()).toPoint())
-        super(PhotoViewer, self).mousePressEvent(event)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1440, 800)
+        MainWindow.resize(1440, 792)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("logo.icns"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -83,8 +24,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.imagelayout = QtWidgets.QHBoxLayout()
         self.imagelayout.setObjectName("imagelayout")
-        self.img_view = PhotoViewer(self)
-        self.imagelayout.addWidget(self.img_view)
         self.horizontalLayout.addLayout(self.imagelayout)
         self.editorlayout = QtWidgets.QHBoxLayout()
         self.editorlayout.setObjectName("editorlayout")
@@ -228,34 +167,15 @@ class Ui_MainWindow(object):
         self.customeritemLayout_top.addWidget(self.customer_search)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.customeritemLayout_top.addItem(spacerItem)
+        self.customer_load_btn = QtWidgets.QPushButton(self.customeritem_tab)
+        self.customer_load_btn.setObjectName("customer_load_btn")
+        self.customeritemLayout_top.addWidget(self.customer_load_btn)
         self.customeritem_tabLayout.addLayout(self.customeritemLayout_top)
         self.customer_view = QtWidgets.QTableView(self.customeritem_tab)
         self.customer_view.setEnabled(True)
         self.customer_view.setObjectName("customer_view")
         self.customeritem_tabLayout.addWidget(self.customer_view)
         self.tabWidget.addTab(self.customeritem_tab, "")
-        self.wpgitem_tab = QtWidgets.QWidget()
-        self.wpgitem_tab.setObjectName("wpgitem_tab")
-        self.wpgitem_tabLayout = QtWidgets.QVBoxLayout(self.wpgitem_tab)
-        self.wpgitem_tabLayout.setContentsMargins(5, 5, 5, 5)
-        self.wpgitem_tabLayout.setObjectName("wpgitem_tabLayout")
-        self.wpgitemLayout_top = QtWidgets.QHBoxLayout()
-        self.wpgitemLayout_top.setContentsMargins(-1, 5, -1, -1)
-        self.wpgitemLayout_top.setObjectName("wpgitemLayout_top")
-        self.wpgitem_search_label = QtWidgets.QLabel(self.wpgitem_tab)
-        self.wpgitem_search_label.setObjectName("wpgitem_search_label")
-        self.wpgitemLayout_top.addWidget(self.wpgitem_search_label)
-        self.wpgitem_customer_search = QtWidgets.QLineEdit(self.wpgitem_tab)
-        self.wpgitem_customer_search.setObjectName("wpgitem_customer_search")
-        self.wpgitemLayout_top.addWidget(self.wpgitem_customer_search)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.wpgitemLayout_top.addItem(spacerItem)
-        self.wpgitem_tabLayout.addLayout(self.wpgitemLayout_top)
-        self.wpgitem_view = QtWidgets.QTableView(self.wpgitem_tab)
-        self.wpgitem_view.setEnabled(True)
-        self.wpgitem_view.setObjectName("wpgitem_view")
-        self.wpgitem_tabLayout.addWidget(self.wpgitem_view)
-        self.tabWidget.addTab(self.wpgitem_tab, "")
         self.currency_tab = QtWidgets.QWidget()
         self.currency_tab.setObjectName("currency_tab")
         self.currency_tabLayout = QtWidgets.QHBoxLayout(self.currency_tab)
@@ -316,7 +236,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuControl.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -338,13 +258,12 @@ class Ui_MainWindow(object):
         self.shipaddr_label.setText(_translate("MainWindow", "shipAddr"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.json_tab), _translate("MainWindow", "Json editor"))
         self.search_label.setText(_translate("MainWindow", "Search："))
-        self.wpgitem_search_label.setText(_translate("MainWindow", "Search："))
         self.comboBox.setItemText(0, _translate("MainWindow", "cust_id"))
         self.comboBox.setItemText(1, _translate("MainWindow", "cust_part_no"))
         self.comboBox.setItemText(2, _translate("MainWindow", "part_no_id"))
         self.comboBox.setItemText(3, _translate("MainWindow", "wpg_part_no"))
+        self.customer_load_btn.setText(_translate("MainWindow", "Load Data"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.customeritem_tab), _translate("MainWindow", "Customer item"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.wpgitem_tab), _translate("MainWindow", "WPG item"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.currency_tab), _translate("MainWindow", "Currency"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuControl.setTitle(_translate("MainWindow", "Control"))

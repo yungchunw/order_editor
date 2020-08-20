@@ -58,7 +58,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.setWindowTitle("Order Editor") 
         # define virables
-        self.version = 'Version:3.3.0'
+        self.version = 'Version:3.4.0'
         self.header_page = 0
         self.line_page = 0
         self.img_dir = ''
@@ -68,6 +68,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_file = []
         self.json_key = []
         self.oring_json = {}
+        
+        # setup combobox for custitem table
+        self.comboBox.setCurrentIndex(1)
 
         # setup config
         self.config = yaml.load(open(("setting/config.yaml"), "r"),Loader=yaml.Loader)
@@ -103,10 +106,16 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_list.clicked.connect(self.jsonclicked)
 
 
-        self.customer_load_btn.clicked.connect(
-            lambda: self.set_custitem_view(self.customer_view))
+        # customer item search
         self.customer_search.textChanged.connect(
             lambda: self.set_custitem_view(self.customer_view))
+        self.comboBox.currentTextChanged.connect(
+            lambda: self.set_custitem_view(self.customer_view))
+        
+        # wpg item search
+        self.wpgitem_customer_search.textChanged.connect(
+            lambda: self.set_wpgitem_view(self.wpgitem_view))
+
 
         self.set_currency_view(self.currency_view)
 
@@ -271,12 +280,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                             0, QtGui.QBrush(QtGui.QColor("#F38023")))
                         item.child(i).setForeground(
                             1, QtGui.QBrush(QtGui.QColor("#F38023")))
-                        query = 'SELECT * FROM customerItem WHERE cust_part_no = \"{}\"'.format(
+                        query = 'SELECT * FROM cust_part_no WHERE cust_part_no = \"{}\"'.format(
                             item.child(i).text(1))
-                        # print(query)
-                        model = QSqlQueryModel(self)
-                        model.setQuery(query, self.db)
-                        if model.rowCount() > 0:
+                        df = self.dsudb.query(query)
+                        if len(df) > 0:
                             item.child(i).setForeground(
                                 1, QtGui.QBrush(QtGui.QColor("#F38")))
                     elif item.child(i).text(0) in level_2:
@@ -745,9 +752,35 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
     def set_custitem_view(self, view):
 
         text = self.customer_search.text()
+        column = self.comboBox.currentText()
 
-        query = 'SELECT * FROM cust_part_no WHERE cust_part_no LIKE \"%{}%\" LIMIT 100'.format(
-            text)
+        query = 'SELECT * FROM cust_part_no WHERE {} LIKE \"%{}%\" LIMIT 100'.format(column, text)
+
+        # self.model = QSqlQueryModel(self)
+        # self.model.setQuery(query, self.db)
+        # self.model.removeRow(0)
+        df = self.dsudb.query(query)
+        self.model = PandasModel(df)
+
+        self.proxy = QSortFilterProxyModel(self)
+        self.proxy.setSourceModel(self.model)
+        self.proxy.setFilterKeyColumn(self.model.columnCount()-1)
+
+        view.horizontalHeader()
+        view.setModel(self.proxy)
+        view.setSortingEnabled(True)
+        view.setEditTriggers(QAbstractItemView.NoEditTriggers)
+
+        for c in range(view.horizontalHeader().count()):
+            view.horizontalHeader().setSectionResizeMode(c, QHeaderView.Stretch)
+
+        view.horizontalHeader().setStretchLastSection(True)
+
+    def set_wpgitem_view(self, view):
+
+        text = self.wpgitem_customer_search.text()
+
+        query = 'SELECT * FROM wpg_item WHERE wpg_part_no LIKE \"%{}%\" LIMIT 100'.format(text)
 
         # self.model = QSqlQueryModel(self)
         # self.model.setQuery(query, self.db)

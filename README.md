@@ -1,4 +1,4 @@
-DSU OrderEditor V3.3.0
+DSU OrderEditor V3.4.0
 ===
 
 ![image alt](https://img.shields.io/badge/python-3.7.3-blue)
@@ -14,6 +14,8 @@ DSU OrderEditor V3.3.0
 - 整合 Config
 - 新增分割 PDF 進度資訊
 - 移除未使用 UI
+- 優化客料查詢表
+- 新增內料查詢表
 
 2020-07-21:
 - 直接讀取PDF檔
