@@ -56,7 +56,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         super(MyMainWindow, self).__init__(parent)
 
         self.setupUi(self)
-        self.setWindowTitle("Order Editor") 
+        self.setWindowTitle("Order Editor")
         # define virables
         self.version = 'Version:3.4.0'
         self.header_page = 0
@@ -68,12 +68,13 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.json_file = []
         self.json_key = []
         self.oring_json = {}
-        
+
         # setup combobox for custitem table
         self.comboBox.setCurrentIndex(1)
 
         # setup config
-        self.config = yaml.load(open(("setting/config.yaml"), "r"),Loader=yaml.Loader)
+        self.config = yaml.load(
+            open(("setting/config.yaml"), "r"), Loader=yaml.Loader)
 
         # setup DB MySql
         self.dsudb = Database()
@@ -105,17 +106,15 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         self.json_list.clicked.connect(self.jsonclicked)
 
-
         # customer item search
         self.customer_search.textChanged.connect(
             lambda: self.set_custitem_view(self.customer_view))
         self.comboBox.currentTextChanged.connect(
             lambda: self.set_custitem_view(self.customer_view))
-        
+
         # wpg item search
         self.wpgitem_customer_search.textChanged.connect(
             lambda: self.set_wpgitem_view(self.wpgitem_view))
-
 
         self.set_currency_view(self.currency_view)
 
@@ -340,7 +339,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                                           QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
             if result == QtWidgets.QMessageBox.Yes:
 
-                jf = json.load(open('line_example.json', encoding='utf8'))
+                jf = self.config["example_json"]
                 self.load(jf, parent)
                 self.change_color()
                 self.treeWidget.expandAll()
@@ -530,7 +529,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                         mat = fitz.Matrix(zoom_x, zoom_y).preRotate(0)
                         pix = page.getPixmap(matrix=mat, alpha=False)
                         output = "./tmp/{}_{}.png".format(
-                            f.split('.pdf')[0], i)
+                            f.split('.')[0], i)
                         pix.writePNG(output)
                 self.msgBox.setText(
                     '\nExtracting images from PDF...\nCompleted!!')
@@ -754,7 +753,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         text = self.customer_search.text()
         column = self.comboBox.currentText()
 
-        query = 'SELECT * FROM cust_part_no WHERE {} LIKE \"%{}%\" LIMIT 100'.format(column, text)
+        query = 'SELECT * FROM cust_part_no WHERE {} LIKE \"%{}%\" LIMIT 100'.format(
+            column, text)
 
         # self.model = QSqlQueryModel(self)
         # self.model.setQuery(query, self.db)
@@ -780,7 +780,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         text = self.wpgitem_customer_search.text()
 
-        query = 'SELECT * FROM wpg_item WHERE wpg_part_no LIKE \"%{}%\" LIMIT 100'.format(text)
+        query = 'SELECT * FROM wpg_item WHERE wpg_part_no LIKE \"%{}%\" LIMIT 100'.format(
+            text)
 
         # self.model = QSqlQueryModel(self)
         # self.model.setQuery(query, self.db)
